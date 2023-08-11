@@ -32,7 +32,7 @@ export default class EnemyControl extends cc.Component {
 
     //碰撞检测回调函数
     onCollisionEnter(other:cc.Collider,self){
-        console.log(other + " on collision enter " + self);
+        console.log(other.tag + " on collision enter " + self.tag);
 
         if(other.tag == 0)//Player
             other.getComponent(Player).die();
