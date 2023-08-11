@@ -2,7 +2,10 @@ const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class Player extends cc.Component {
-
+    @property(cc.Prefab)
+    bulletFab:cc.Prefab = null;
+    @property
+    shootInterval:number = 0.5;
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
@@ -12,6 +15,14 @@ export default class Player extends cc.Component {
         this.node.on(cc.Node.EventType.TOUCH_MOVE,(event)=>{
             this.node.setPosition(event.getLocationX()-240,event.getLocationY()-320);
         });
+
+        // 生成子弹
+        this.schedule(()=>{
+            let bullet = cc.instantiate(this.bulletFab);
+            bullet.setParent(this.node.parent);
+            bullet.setPosition(this.node.x,this.node.y + 25);
+            //console.log("生成子弹");
+        },this.shootInterval);
     }
 
     // update (dt) {}

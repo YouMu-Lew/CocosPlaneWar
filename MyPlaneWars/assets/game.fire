@@ -617,6 +617,9 @@
       "__id__": 11
     },
     "_enabled": true,
+    "bulletFab": {
+      "__uuid__": "a6c33e38-c26a-47f7-b66f-5b8149051fb4"
+    },
     "_id": "00JJp5XhxI35xTx9ZB/uzn"
   },
   {
@@ -631,12 +634,12 @@
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": -12.4
     },
     "_size": {
       "__type__": "cc.Size",
       "width": 184,
-      "height": 160
+      "height": 135.3
     },
     "_id": "fbjYR4rX9PObEe1S61Fc+4"
   },

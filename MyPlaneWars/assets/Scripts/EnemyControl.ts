@@ -37,7 +37,7 @@ export default class EnemyControl extends cc.Component {
         if(other.tag == 0)//Player
             other.getComponent(Player).die();
         if(other.tag == 1)//Bullet
-            other.destroy();
+            other.node.destroy();
         this.isDead = true;
         this.die();
     }
