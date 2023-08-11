@@ -14,7 +14,7 @@ export default class EnemyControl extends cc.Component {
 
     start () {
         cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = true;
+        //cc.director.getCollisionManager().enabledDebugDraw = true;
     }
 
     update (dt) {
@@ -26,8 +26,8 @@ export default class EnemyControl extends cc.Component {
     }
 
     onDestroy(): void {
-        cc.director.getCollisionManager().enabled = false;
-        cc.director.getCollisionManager().enabledDebugDraw = false;
+        //cc.director.getCollisionManager().enabled = false;
+        //cc.director.getCollisionManager().enabledDebugDraw = false;
     }
 
     //碰撞检测回调函数
