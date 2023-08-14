@@ -13,7 +13,6 @@ export default class EnemyControl extends cc.Component {
     // onLoad () {}
 
     start () {
-        cc.director.getCollisionManager().enabled = true;
         //cc.director.getCollisionManager().enabledDebugDraw = true;
     }
 
