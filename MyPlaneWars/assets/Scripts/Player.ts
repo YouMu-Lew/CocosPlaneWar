@@ -16,12 +16,21 @@ export default class Player extends cc.Component {
             this.node.setPosition(event.getLocationX()-240,event.getLocationY()-320);
         });
 
+        // 加载子弹音效
+        let bulletPlayer : cc.AudioSource = this.getComponent(cc.AudioSource);
+        cc.loader.loadRes("shootSound", cc.AudioClip,(err,clip)=>{
+            bulletPlayer.clip = clip;
+            bulletPlayer.volume = 0.3;
+            bulletPlayer.loop = false;
+        });
+
         // 生成子弹
         this.schedule(()=>{
             let bullet = cc.instantiate(this.bulletFab);
             bullet.setParent(this.node.parent);
             bullet.setPosition(this.node.x,this.node.y + 25);
             //console.log("生成子弹");
+            bulletPlayer.play();
         },this.shootInterval);
     }
 
