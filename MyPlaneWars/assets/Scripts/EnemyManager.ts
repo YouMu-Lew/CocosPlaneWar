@@ -11,6 +11,8 @@ export default class EnemyManager extends cc.Component {
     // onLoad () {}
 
     start () {
+        cc.director.getCollisionManager().enabled = true;
+
         this.node.destroyAllChildren();
         this.node.setPosition(-200,360);
 
@@ -25,4 +27,8 @@ export default class EnemyManager extends cc.Component {
     }
 
     // update (dt) {}
+
+    protected onDestroy(): void {
+        cc.director.getCollisionManager().enabled = false;
+    }
 }
