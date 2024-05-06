@@ -1,629 +1,0 @@
-2024-5-6 14:40:25-log: Cannot access game frame or container.
-2024-5-6 14:40:25-debug: asset-db:require-engine-code (717ms)
-2024-5-6 14:40:25-log: meshopt wasm decoder initialized
-2024-5-6 14:40:25-log: [box2d]:box2d wasm lib loaded.
-2024-5-6 14:40:25-log: [bullet]:bullet wasm lib loaded.
-2024-5-6 14:40:26-log: Cocos Creator v3.8.2
-2024-5-6 14:40:26-debug: [Assets Memory track]: asset-db-plugin-register: programming start:105.64MB, end 109.05MB, increase: 3.41MB
-2024-5-6 14:40:26-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:23.54MB, end 104.97MB, increase: 81.43MB
-2024-5-6 14:40:28-debug: [Assets Memory track]: asset-db-plugin-register: engine-extends start:109.10MB, end 179.85MB, increase: 70.76MB
-2024-5-6 14:40:28-debug: [Assets Memory track]: asset-db-plugin-enable: builder start:109.64MB, end 176.71MB, increase: 67.07MB
-2024-5-6 14:40:28-debug: [Assets Memory track]: asset-db-plugin-enable: project start:109.27MB, end 179.86MB, increase: 70.59MB
-2024-5-6 14:40:28-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:104.98MB, end 179.86MB, increase: 74.88MB
-2024-5-6 14:40:28-debug: run package(extension) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(hierarchy) handler(enable) start
-2024-5-6 14:40:28-debug: run package(extension) handler(enable) start
-2024-5-6 14:40:28-debug: run package(hierarchy) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(light-probe) handler(enable) start
-2024-5-6 14:40:28-debug: run package(inspector) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(inspector) handler(enable) start
-2024-5-6 14:40:28-debug: run package(lightmap) handler(enable) start
-2024-5-6 14:40:28-debug: run package(lightmap) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(node-library) handler(enable) start
-2024-5-6 14:40:28-debug: run package(light-probe) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(node-library) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(package-asset) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(process) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(package-asset) handler(enable) start
-2024-5-6 14:40:28-debug: run package(reference-image) handler(enable) start
-2024-5-6 14:40:28-debug: run package(reference-image) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(reflection-probe) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(process) handler(enable) start
-2024-5-6 14:40:28-debug: run package(reflection-probe) handler(enable) start
-2024-5-6 14:40:28-debug: run package(engine-extends) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(adsense-h5g-plugin) handler(enable) start
-2024-5-6 14:40:28-debug: run package(adsense-h5g-plugin) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(alipay-mini-game) handler(enable) start
-2024-5-6 14:40:28-debug: run package(alipay-mini-game) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(android) handler(enable) start
-2024-5-6 14:40:28-debug: run package(engine-extends) handler(enable) start
-2024-5-6 14:40:28-debug: run package(bytedance-mini-game) handler(enable) start
-2024-5-6 14:40:28-debug: run package(bytedance-mini-game) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(android) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(certificate) handler(enable) start
-2024-5-6 14:40:28-debug: run package(channel-upload-tools) handler(enable) start
-2024-5-6 14:40:28-debug: run package(channel-upload-tools) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(fb-instant-games) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(fb-instant-games) handler(enable) start
-2024-5-6 14:40:28-debug: run package(huawei-agc) handler(enable) start
-2024-5-6 14:40:28-debug: run package(huawei-agc) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(certificate) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(huawei-quick-game) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(huawei-quick-game) handler(enable) start
-2024-5-6 14:40:28-debug: run package(linux) handler(enable) start
-2024-5-6 14:40:28-debug: run package(ios) handler(enable) start
-2024-5-6 14:40:28-debug: run package(ios) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(linux) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(mac) handler(enable) start
-2024-5-6 14:40:28-debug: run package(mac) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(native) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(ohos) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(ohos) handler(enable) start
-2024-5-6 14:40:28-debug: run package(openharmony) handler(enable) start
-2024-5-6 14:40:28-debug: run package(openharmony) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(oppo-mini-game) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(oppo-mini-game) handler(enable) start
-2024-5-6 14:40:28-debug: run package(runtime-dev-tools) handler(enable) start
-2024-5-6 14:40:28-debug: run package(runtime-dev-tools) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(taobao-creative-app) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(taobao-creative-app) handler(enable) start
-2024-5-6 14:40:28-debug: run package(taobao-mini-game) handler(enable) start
-2024-5-6 14:40:28-debug: run package(taobao-mini-game) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(vivo-mini-game) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(vivo-mini-game) handler(enable) start
-2024-5-6 14:40:28-debug: run package(native) handler(enable) start
-2024-5-6 14:40:28-debug: run package(web-desktop) handler(enable) start
-2024-5-6 14:40:28-debug: run package(web-mobile) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(web-desktop) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(wechatgame) handler(enable) start
-2024-5-6 14:40:28-debug: run package(wechatgame) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(wechatprogram) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(wechatprogram) handler(enable) start
-2024-5-6 14:40:28-debug: run package(windows) handler(enable) start
-2024-5-6 14:40:28-debug: run package(windows) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(xiaomi-quick-game) handler(enable) start
-2024-5-6 14:40:28-debug: run package(xiaomi-quick-game) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(cocos-service) handler(enable) start
-2024-5-6 14:40:28-debug: run package(cocos-service) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(web-mobile) handler(enable) start
-2024-5-6 14:40:28-debug: run package(im-plugin) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(fix-device) handler(enable) success!
-2024-5-6 14:40:28-debug: run package(fix-device) handler(enable) start
-2024-5-6 14:40:28-debug: run package(placeholder) handler(enable) start
-2024-5-6 14:40:28-debug: run package(placeholder) handler(enable) success!
-2024-5-6 14:40:28-debug: asset-db:worker-init: initPlugin (1881ms)
-2024-5-6 14:40:28-debug: run package(im-plugin) handler(enable) start
-2024-5-6 14:40:28-debug: [Assets Memory track]: asset-db:worker-init start:23.54MB, end 178.05MB, increase: 154.51MB
-2024-5-6 14:40:28-debug: Run asset db hook programming:beforePreStart ...
-2024-5-6 14:40:28-debug: Run asset db hook engine-extends:beforePreStart ...
-2024-5-6 14:40:28-debug: Run asset db hook programming:beforePreStart success!
-2024-5-6 14:40:28-debug: Run asset db hook engine-extends:beforePreStart success!
-2024-5-6 14:40:28-debug: asset-db-hook-programming-beforePreStart (368ms)
-2024-5-6 14:40:28-debug: asset-db:worker-init (4070ms)
-2024-5-6 14:40:28-debug: asset-db-hook-engine-extends-beforePreStart (367ms)
-2024-5-6 14:40:29-debug: Preimport db internal success
-2024-5-6 14:40:29-debug: Preimport db assets success
-2024-5-6 14:40:29-debug: Run asset db hook programming:afterPreStart ...
-2024-5-6 14:40:29-debug: starting packer-driver...
-2024-5-6 14:40:29-debug: initialize scripting environment...
-2024-5-6 14:40:29-debug: Set detail map pack:///resolution-detail-map.json: {}
-2024-5-6 14:40:29-debug: Run asset db hook programming:afterPreStart success!
-2024-5-6 14:40:29-debug: Run asset db hook engine-extends:afterPreStart success!
-2024-5-6 14:40:29-debug: [Assets Memory track]: asset-db:worker-init: preStart start:178.06MB, end 184.02MB, increase: 5.96MB
-2024-5-6 14:40:29-debug: Run asset db hook engine-extends:afterPreStart ...
-2024-5-6 14:40:29-debug: Start up the 'internal' database...
-2024-5-6 14:40:29-debug: asset-db-hook-programming-afterPreStart (300ms)
-2024-5-6 14:40:29-debug: asset-db:worker-effect-data-processing (23ms)
-2024-5-6 14:40:29-debug: asset-db-hook-engine-extends-afterPreStart (24ms)
-2024-5-6 14:40:29-debug: [Assets Memory track]: asset-db:worker-startup-database[internal] start:186.26MB, end 188.16MB, increase: 1.90MB
-2024-5-6 14:40:29-debug: Start up the 'assets' database...
-2024-5-6 14:40:29-debug: asset-db:worker-startup-database[internal] (532ms)
-2024-5-6 14:40:29-debug: [Assets Memory track]: asset-db:worker-startup-database[assets] start:183.40MB, end 191.51MB, increase: 8.11MB
-2024-5-6 14:40:29-debug: [Assets Memory track]: asset-db:worker-init: startup start:184.02MB, end 191.52MB, increase: 7.50MB
-2024-5-6 14:40:29-debug: asset-db:worker-startup-database[assets] (518ms)
-2024-5-6 14:40:29-debug: asset-db:start-database (950ms)
-2024-5-6 14:40:29-debug: asset-db:ready (6783ms)
-2024-5-6 14:40:29-debug: init worker message success
-2024-5-6 14:40:30-debug: [Build Memory track]: builder:worker-init start:189.53MB, end 197.86MB, increase: 8.33MB
-2024-5-6 14:40:30-debug: programming:execute-script (30ms)
-2024-5-6 14:40:30-debug: builder:worker-init (486ms)
-2024-5-6 14:40:31-debug: programming:execute-script (26ms)
-2024-5-6 14:43:21-debug: refresh db internal success
-2024-5-6 14:43:21-debug: refresh db assets success
-2024-5-6 14:43:21-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:43:21-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:43:21-debug: asset-db:refresh-all-database (142ms)
-2024-5-6 14:43:21-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 14:47:17-debug: refresh db internal success
-2024-5-6 14:47:17-debug: refresh db assets success
-2024-5-6 14:47:17-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:47:17-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:47:17-debug: asset-db:refresh-all-database (128ms)
-2024-5-6 14:47:17-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 14:47:17-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 14:47:25-debug: refresh db internal success
-2024-5-6 14:47:25-debug: refresh db assets success
-2024-5-6 14:47:25-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:47:25-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:47:25-debug: asset-db:refresh-all-database (112ms)
-2024-5-6 14:47:30-debug: %cMigrate%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-5-6 14:47:30-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels...
-2024-5-6 14:47:30-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levelsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:47:30-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets success
-2024-5-6 14:47:36-debug: refresh db internal success
-2024-5-6 14:47:36-debug: refresh db assets success
-2024-5-6 14:47:36-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:47:36-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:47:36-debug: asset-db:refresh-all-database (110ms)
-2024-5-6 14:47:44-debug: refresh db internal success
-2024-5-6 14:47:44-debug: refresh db assets success
-2024-5-6 14:47:44-debug: asset-db:refresh-all-database (114ms)
-2024-5-6 14:47:44-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:47:44-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:47:44-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 14:47:44-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 14:47:49-debug: refresh db internal success
-2024-5-6 14:47:50-debug: refresh db assets success
-2024-5-6 14:47:50-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:47:50-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:47:50-debug: asset-db:refresh-all-database (98ms)
-2024-5-6 14:47:58-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\level01.ts...
-2024-5-6 14:47:58-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\level01.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:47:58-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels success
-2024-5-6 14:47:58-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levelsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:48:13-debug: refresh db internal success
-2024-5-6 14:48:13-debug: refresh db assets success
-2024-5-6 14:48:13-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:48:13-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:48:13-debug: asset-db:refresh-all-database (110ms)
-2024-5-6 14:48:21-debug: refresh db internal success
-2024-5-6 14:48:21-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\level01.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:48:21-debug: refresh db assets success
-2024-5-6 14:48:21-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:48:21-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:48:21-debug: asset-db:refresh-all-database (117ms)
-2024-5-6 14:48:21-debug: asset-db:worker-effect-data-processing (2ms)
-2024-5-6 14:48:21-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-5-6 14:50:27-debug: refresh db internal success
-2024-5-6 14:50:28-debug: refresh db assets success
-2024-5-6 14:50:28-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:50:28-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:50:28-debug: asset-db:refresh-all-database (119ms)
-2024-5-6 14:50:39-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Enums...
-2024-5-6 14:50:39-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Enumsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:50:39-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets success
-2024-5-6 14:50:47-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Enums\index.ts...
-2024-5-6 14:50:47-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Enums\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:50:47-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Enums success
-2024-5-6 14:50:47-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Enumsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:50:50-debug: refresh db internal success
-2024-5-6 14:50:50-debug: refresh db assets success
-2024-5-6 14:50:50-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:50:50-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:50:50-debug: asset-db:refresh-all-database (114ms)
-2024-5-6 14:50:50-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 14:50:50-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 14:52:02-debug: refresh db internal success
-2024-5-6 14:52:02-debug: refresh db assets success
-2024-5-6 14:52:02-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:52:02-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:52:02-debug: asset-db:refresh-all-database (124ms)
-2024-5-6 14:56:20-debug: refresh db internal success
-2024-5-6 14:56:20-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Enums\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:56:20-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\level01.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 14:56:20-debug: refresh db assets success
-2024-5-6 14:56:20-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 14:56:20-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 14:56:20-debug: asset-db:refresh-all-database (113ms)
-2024-5-6 14:56:20-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 14:56:20-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:13:29-debug: refresh db internal success
-2024-5-6 15:13:29-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:13:29-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levelsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:13:29-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\level01.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:13:29-debug: refresh db assets success
-2024-5-6 15:13:29-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:13:29-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:13:29-debug: asset-db:refresh-all-database (125ms)
-2024-5-6 15:13:29-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:13:29-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:13:29-debug: refresh db internal success
-2024-5-6 15:13:30-debug: refresh db assets success
-2024-5-6 15:13:30-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:13:30-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:13:30-debug: asset-db:refresh-all-database (89ms)
-2024-5-6 15:13:30-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:13:30-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:18:49-debug: refresh db internal success
-2024-5-6 15:18:49-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:18:49-debug: refresh db assets success
-2024-5-6 15:18:49-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:18:49-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:18:49-debug: asset-db:refresh-all-database (102ms)
-2024-5-6 15:18:49-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:18:49-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:24:13-debug: refresh db internal success
-2024-5-6 15:24:13-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:24:13-debug: refresh db assets success
-2024-5-6 15:24:13-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:24:13-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:24:13-debug: asset-db:refresh-all-database (110ms)
-2024-5-6 15:24:13-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:24:25-debug: refresh db internal success
-2024-5-6 15:24:25-debug: refresh db assets success
-2024-5-6 15:24:25-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:24:25-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:24:25-debug: asset-db:refresh-all-database (96ms)
-2024-5-6 15:24:25-debug: asset-db:worker-effect-data-processing (-1ms)
-2024-5-6 15:25:33-debug: refresh db internal success
-2024-5-6 15:25:33-debug: refresh db assets success
-2024-5-6 15:25:33-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:25:33-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:25:33-debug: asset-db:refresh-all-database (95ms)
-2024-5-6 15:25:48-debug: refresh db internal success
-2024-5-6 15:25:48-debug: refresh db assets success
-2024-5-6 15:25:48-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:25:48-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:25:48-debug: asset-db:refresh-all-database (103ms)
-2024-5-6 15:25:55-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene...
-2024-5-6 15:25:55-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scenebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:25:55-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts success
-2024-5-6 15:25:55-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scriptsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:25:57-debug: start move asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\battle.ts -> D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\battle.ts...
-2024-5-6 15:25:57-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\battle.ts...
-2024-5-6 15:25:57-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\battle.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:25:57-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene success
-2024-5-6 15:25:57-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts...
-2024-5-6 15:25:57-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scenebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:25:57-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scriptsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:25:57-debug: move asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\battle.ts -> D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\battle.ts success
-2024-5-6 15:25:57-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets success
-2024-5-6 15:26:03-debug: start move asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\battle.ts -> D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\BattleManager.ts...
-2024-5-6 15:26:03-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\BattleManager.ts...
-2024-5-6 15:26:03-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:26:03-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene success
-2024-5-6 15:26:03-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene...
-2024-5-6 15:26:03-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scenebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:26:03-debug: move asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\battle.ts -> D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\BattleManager.ts success
-2024-5-6 15:26:03-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts success
-2024-5-6 15:26:20-debug: refresh db internal success
-2024-5-6 15:26:20-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:26:20-debug: refresh db assets success
-2024-5-6 15:26:20-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:26:20-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:26:20-debug: asset-db:refresh-all-database (110ms)
-2024-5-6 15:26:35-debug: refresh db internal success
-2024-5-6 15:26:35-debug: refresh db assets success
-2024-5-6 15:26:35-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:26:35-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:26:35-debug: asset-db:refresh-all-database (117ms)
-2024-5-6 15:26:35-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:26:35-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:26:43-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile...
-2024-5-6 15:26:43-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tilebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:26:43-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts success
-2024-5-6 15:26:43-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scriptsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:26:51-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileManager.ts...
-2024-5-6 15:26:51-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:26:51-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile success
-2024-5-6 15:26:51-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tilebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:26:56-debug: refresh db internal success
-2024-5-6 15:26:56-debug: refresh db assets success
-2024-5-6 15:26:56-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:26:56-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:26:56-debug: asset-db:refresh-all-database (130ms)
-2024-5-6 15:26:56-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:26:56-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:27:06-debug: refresh db internal success
-2024-5-6 15:27:06-debug: refresh db assets success
-2024-5-6 15:27:06-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:27:06-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:27:06-debug: asset-db:refresh-all-database (97ms)
-2024-5-6 15:27:06-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:27:06-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:27:14-debug: refresh db internal success
-2024-5-6 15:27:14-debug: refresh db assets success
-2024-5-6 15:27:14-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:27:14-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:27:14-debug: asset-db:refresh-all-database (112ms)
-2024-5-6 15:27:14-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:32:50-debug: refresh db internal success
-2024-5-6 15:32:50-debug: %cDestroy%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileManager.tsbackground: #ffb8b8; color: #000;color: #000;
-2024-5-6 15:32:50-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileMapManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:32:50-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tilebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:32:50-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Scene\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:32:50-debug: refresh db assets success
-2024-5-6 15:32:50-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:32:50-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:32:50-debug: asset-db:refresh-all-database (115ms)
-2024-5-6 15:32:50-debug: asset-db:worker-effect-data-processing (2ms)
-2024-5-6 15:32:50-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-5-6 15:32:53-debug: Query all assets info in project
-2024-5-6 15:32:53-debug:   Number of all scenes: 1
-2024-5-6 15:32:53-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-5-6 15:32:53-debug:   Number of other assets: 1176
-2024-5-6 15:32:53-debug:   Number of all scripts: 6
-2024-5-6 15:32:53-debug: Query asset bundle start, progress: 0%
-2024-5-6 15:32:53-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:32:53-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-5-6 15:32:53-debug: // ---- build task Query asset bundle ---- (17ms)
-2024-5-6 15:32:53-debug: run build task Query asset bundle success in 17 ms√, progress: 5%
-2024-5-6 15:32:53-debug: [Build Memory track]: Query asset bundle start:198.73MB, end 198.92MB, increase: 190.68KB
-2024-5-6 15:32:53-debug: Query asset bundle start, progress: 5%
-2024-5-6 15:32:53-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:32:53-debug: // ---- build task Query asset bundle ---- (1ms)
-2024-5-6 15:32:53-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
-2024-5-6 15:32:53-debug: [Build Memory track]: Query asset bundle start:198.93MB, end 198.95MB, increase: 17.43KB
-2024-5-6 15:32:53-debug: Sort some build options to settings.json start, progress: 10%
-2024-5-6 15:32:53-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:32:53-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-5-6 15:32:53-debug: [Build Memory track]: Sort some build options to settings.json start:198.97MB, end 198.99MB, increase: 28.46KB
-2024-5-6 15:32:53-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-5-6 15:32:53-debug: Fill script data to settings start, progress: 12%
-2024-5-6 15:32:53-debug: // ---- build task Fill script data to settings ----
-2024-5-6 15:32:53-debug: // ---- build task Fill script data to settings ---- (2ms)
-2024-5-6 15:32:53-debug: run build task Fill script data to settings success in 2 ms√, progress: 13%
-2024-5-6 15:32:53-debug: [Build Memory track]: Fill script data to settings start:199.01MB, end 199.03MB, increase: 17.41KB
-2024-5-6 15:32:53-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:32:53-debug: Sort some build options to settings.json start, progress: 13%
-2024-5-6 15:32:53-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
-2024-5-6 15:32:53-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
-2024-5-6 15:32:53-debug: [Build Memory track]: Sort some build options to settings.json start:199.04MB, end 199.18MB, increase: 140.58KB
-2024-5-6 15:33:04-debug: refresh db internal success
-2024-5-6 15:33:04-debug: refresh db assets success
-2024-5-6 15:33:04-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:33:04-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:33:04-debug: asset-db:refresh-all-database (90ms)
-2024-5-6 15:33:04-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-5-6 15:33:04-debug: asset-db:worker-effect-data-processing (2ms)
-2024-5-6 15:33:10-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scene...
-2024-5-6 15:33:10-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scenebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:33:10-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes success
-2024-5-6 15:33:11-debug: Query all assets info in project
-2024-5-6 15:33:11-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-5-6 15:33:11-debug:   Number of all scripts: 6
-2024-5-6 15:33:11-debug:   Number of other assets: 1176
-2024-5-6 15:33:11-debug:   Number of all scenes: 1
-2024-5-6 15:33:11-debug: Query asset bundle start, progress: 0%
-2024-5-6 15:33:11-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:33:11-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-5-6 15:33:11-debug: // ---- build task Query asset bundle ---- (17ms)
-2024-5-6 15:33:11-debug: run build task Query asset bundle success in 17 ms√, progress: 5%
-2024-5-6 15:33:11-debug: [Build Memory track]: Query asset bundle start:205.01MB, end 204.52MB, increase: -500.92KB
-2024-5-6 15:33:11-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:33:11-debug: Query asset bundle start, progress: 5%
-2024-5-6 15:33:11-debug: // ---- build task Query asset bundle ---- (2ms)
-2024-5-6 15:33:11-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
-2024-5-6 15:33:11-debug: [Build Memory track]: Query asset bundle start:204.53MB, end 204.55MB, increase: 16.65KB
-2024-5-6 15:33:11-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:33:11-debug: Sort some build options to settings.json start, progress: 10%
-2024-5-6 15:33:11-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-5-6 15:33:11-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 12%
-2024-5-6 15:33:11-debug: [Build Memory track]: Sort some build options to settings.json start:204.57MB, end 204.58MB, increase: 18.89KB
-2024-5-6 15:33:11-debug: Fill script data to settings start, progress: 12%
-2024-5-6 15:33:11-debug: // ---- build task Fill script data to settings ----
-2024-5-6 15:33:11-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-5-6 15:33:11-debug: [Build Memory track]: Fill script data to settings start:204.60MB, end 204.62MB, increase: 18.36KB
-2024-5-6 15:33:11-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-5-6 15:33:11-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:33:11-debug: Sort some build options to settings.json start, progress: 13%
-2024-5-6 15:33:11-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
-2024-5-6 15:33:11-debug: run build task Sort some build options to settings.json success in 3 ms√, progress: 15%
-2024-5-6 15:33:11-debug: [Build Memory track]: Sort some build options to settings.json start:204.63MB, end 204.75MB, increase: 122.70KB
-2024-5-6 15:33:21-debug: refresh db internal success
-2024-5-6 15:33:21-debug: refresh db assets success
-2024-5-6 15:33:21-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:33:21-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:33:21-debug: asset-db:refresh-all-database (106ms)
-2024-5-6 15:33:21-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:33:21-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:33:24-debug: refresh db internal success
-2024-5-6 15:33:24-debug: refresh db assets success
-2024-5-6 15:33:24-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:33:24-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:33:24-debug: asset-db:refresh-all-database (97ms)
-2024-5-6 15:33:24-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:33:24-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:34:26-debug: refresh db internal success
-2024-5-6 15:34:26-debug: refresh db assets success
-2024-5-6 15:34:26-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:34:26-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:34:26-debug: asset-db:refresh-all-database (96ms)
-2024-5-6 15:42:16-debug: refresh db internal success
-2024-5-6 15:42:16-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:42:16-debug: refresh db assets success
-2024-5-6 15:42:16-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:42:16-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:42:16-debug: asset-db:refresh-all-database (149ms)
-2024-5-6 15:42:16-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:42:16-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:42:17-debug: Query all assets info in project
-2024-5-6 15:42:17-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-5-6 15:42:17-debug:   Number of all scripts: 6
-2024-5-6 15:42:17-debug:   Number of other assets: 1176
-2024-5-6 15:42:17-debug:   Number of all scenes: 1
-2024-5-6 15:42:17-debug: Query asset bundle start, progress: 0%
-2024-5-6 15:42:17-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:42:17-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-5-6 15:42:17-debug: run build task Query asset bundle success in 14 ms√, progress: 5%
-2024-5-6 15:42:17-debug: [Build Memory track]: Query asset bundle start:197.18MB, end 196.79MB, increase: -391.07KB
-2024-5-6 15:42:17-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:42:17-debug: // ---- build task Query asset bundle ---- (14ms)
-2024-5-6 15:42:17-debug: Query asset bundle start, progress: 5%
-2024-5-6 15:42:17-debug: [Build Memory track]: Query asset bundle start:196.81MB, end 196.82MB, increase: 11.11KB
-2024-5-6 15:42:17-debug: Sort some build options to settings.json start, progress: 10%
-2024-5-6 15:42:17-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:42:17-debug: run build task Query asset bundle success in √, progress: 10%
-2024-5-6 15:42:17-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-5-6 15:42:17-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-5-6 15:42:17-debug: [Build Memory track]: Sort some build options to settings.json start:196.84MB, end 196.86MB, increase: 24.82KB
-2024-5-6 15:42:17-debug: Fill script data to settings start, progress: 12%
-2024-5-6 15:42:17-debug: // ---- build task Fill script data to settings ----
-2024-5-6 15:42:17-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-5-6 15:42:17-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-5-6 15:42:17-debug: [Build Memory track]: Fill script data to settings start:196.88MB, end 196.89MB, increase: 16.96KB
-2024-5-6 15:42:17-debug: Sort some build options to settings.json start, progress: 13%
-2024-5-6 15:42:17-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:42:17-debug: run build task Sort some build options to settings.json success in 3 ms√, progress: 15%
-2024-5-6 15:42:17-debug: [Build Memory track]: Sort some build options to settings.json start:196.91MB, end 197.06MB, increase: 151.09KB
-2024-5-6 15:42:17-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
-2024-5-6 15:46:07-debug: refresh db internal success
-2024-5-6 15:46:07-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:46:07-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\Levels\level01.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:46:07-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileMapManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:46:08-debug: refresh db assets success
-2024-5-6 15:46:08-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:46:08-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:46:08-debug: asset-db:refresh-all-database (121ms)
-2024-5-6 15:46:08-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:46:08-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:46:09-debug: Query all assets info in project
-2024-5-6 15:46:09-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-5-6 15:46:09-debug:   Number of all scenes: 1
-2024-5-6 15:46:09-debug:   Number of all scripts: 6
-2024-5-6 15:46:09-debug:   Number of other assets: 1176
-2024-5-6 15:46:09-debug: Query asset bundle start, progress: 0%
-2024-5-6 15:46:09-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:46:09-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-5-6 15:46:09-debug: // ---- build task Query asset bundle ---- (17ms)
-2024-5-6 15:46:09-debug: run build task Query asset bundle success in 17 ms√, progress: 5%
-2024-5-6 15:46:09-debug: [Build Memory track]: Query asset bundle start:201.23MB, end 203.66MB, increase: 2.43MB
-2024-5-6 15:46:09-debug: Query asset bundle start, progress: 5%
-2024-5-6 15:46:09-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:46:09-debug: run build task Query asset bundle success in √, progress: 10%
-2024-5-6 15:46:09-debug: [Build Memory track]: Query asset bundle start:203.68MB, end 203.69MB, increase: 11.38KB
-2024-5-6 15:46:09-debug: run build task Sort some build options to settings.json success in √, progress: 12%
-2024-5-6 15:46:09-debug: Sort some build options to settings.json start, progress: 10%
-2024-5-6 15:46:09-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:46:09-debug: [Build Memory track]: Sort some build options to settings.json start:203.71MB, end 203.72MB, increase: 10.04KB
-2024-5-6 15:46:09-debug: // ---- build task Fill script data to settings ----
-2024-5-6 15:46:09-debug: Fill script data to settings start, progress: 12%
-2024-5-6 15:46:09-debug: run build task Fill script data to settings success in √, progress: 13%
-2024-5-6 15:46:09-debug: [Build Memory track]: Fill script data to settings start:203.73MB, end 203.75MB, increase: 14.82KB
-2024-5-6 15:46:09-debug: Sort some build options to settings.json start, progress: 13%
-2024-5-6 15:46:09-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:46:09-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-5-6 15:46:09-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 15%
-2024-5-6 15:46:09-debug: [Build Memory track]: Sort some build options to settings.json start:203.76MB, end 203.88MB, increase: 121.96KB
-2024-5-6 15:59:03-debug: refresh db internal success
-2024-5-6 15:59:03-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileMapManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:59:03-debug: refresh db assets success
-2024-5-6 15:59:03-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:59:03-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:59:03-debug: asset-db:refresh-all-database (116ms)
-2024-5-6 15:59:03-debug: asset-db:worker-effect-data-processing (1ms)
-2024-5-6 15:59:03-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 15:59:03-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scene...
-2024-5-6 15:59:03-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scenebackground: #aaff85; color: #000;color: #000;
-2024-5-6 15:59:03-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes success
-2024-5-6 15:59:04-debug: Query all assets info in project
-2024-5-6 15:59:04-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-5-6 15:59:04-debug:   Number of other assets: 1176
-2024-5-6 15:59:04-debug:   Number of all scenes: 1
-2024-5-6 15:59:04-debug:   Number of all scripts: 6
-2024-5-6 15:59:04-debug: Query asset bundle start, progress: 0%
-2024-5-6 15:59:04-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:59:04-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-5-6 15:59:04-debug: // ---- build task Query asset bundle ---- (13ms)
-2024-5-6 15:59:04-debug: run build task Query asset bundle success in 13 ms√, progress: 5%
-2024-5-6 15:59:04-debug: [Build Memory track]: Query asset bundle start:206.81MB, end 209.12MB, increase: 2.30MB
-2024-5-6 15:59:04-debug: Query asset bundle start, progress: 5%
-2024-5-6 15:59:04-debug: // ---- build task Query asset bundle ----
-2024-5-6 15:59:04-debug: run build task Query asset bundle success in √, progress: 10%
-2024-5-6 15:59:04-debug: [Build Memory track]: Query asset bundle start:209.13MB, end 209.14MB, increase: 11.70KB
-2024-5-6 15:59:04-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:59:04-debug: Sort some build options to settings.json start, progress: 10%
-2024-5-6 15:59:04-debug: run build task Sort some build options to settings.json success in √, progress: 12%
-2024-5-6 15:59:04-debug: [Build Memory track]: Sort some build options to settings.json start:209.16MB, end 209.17MB, increase: 13.53KB
-2024-5-6 15:59:04-debug: Fill script data to settings start, progress: 12%
-2024-5-6 15:59:04-debug: // ---- build task Fill script data to settings ----
-2024-5-6 15:59:04-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-5-6 15:59:04-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-5-6 15:59:04-debug: [Build Memory track]: Fill script data to settings start:209.19MB, end 209.21MB, increase: 18.57KB
-2024-5-6 15:59:04-debug: Sort some build options to settings.json start, progress: 13%
-2024-5-6 15:59:04-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 15:59:04-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-5-6 15:59:04-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 15%
-2024-5-6 15:59:04-debug: [Build Memory track]: Sort some build options to settings.json start:209.22MB, end 209.34MB, increase: 121.21KB
-2024-5-6 15:59:11-debug: refresh db internal success
-2024-5-6 15:59:11-debug: refresh db assets success
-2024-5-6 15:59:11-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 15:59:11-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 15:59:11-debug: asset-db:refresh-all-database (97ms)
-2024-5-6 16:03:34-debug: refresh db internal success
-2024-5-6 16:03:34-debug: refresh db assets success
-2024-5-6 16:03:34-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 16:03:34-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 16:03:34-debug: asset-db:refresh-all-database (107ms)
-2024-5-6 16:25:11-debug: refresh db internal success
-2024-5-6 16:25:11-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileMapManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 16:25:11-debug: refresh db assets success
-2024-5-6 16:25:11-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 16:25:11-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 16:25:11-debug: asset-db:refresh-all-database (110ms)
-2024-5-6 16:25:12-debug: Query all assets info in project
-2024-5-6 16:25:12-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-5-6 16:25:12-debug:   Number of all scenes: 1
-2024-5-6 16:25:12-debug:   Number of all scripts: 6
-2024-5-6 16:25:12-debug:   Number of other assets: 1176
-2024-5-6 16:25:12-debug: Query asset bundle start, progress: 0%
-2024-5-6 16:25:12-debug: // ---- build task Query asset bundle ----
-2024-5-6 16:25:12-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-5-6 16:25:12-debug: // ---- build task Query asset bundle ---- (29ms)
-2024-5-6 16:25:12-debug: [Build Memory track]: Query asset bundle start:216.15MB, end 194.81MB, increase: -21851.70KB
-2024-5-6 16:25:12-debug: run build task Query asset bundle success in 29 ms√, progress: 5%
-2024-5-6 16:25:12-debug: // ---- build task Query asset bundle ----
-2024-5-6 16:25:12-debug: Query asset bundle start, progress: 5%
-2024-5-6 16:25:12-debug: run build task Query asset bundle success in √, progress: 10%
-2024-5-6 16:25:12-debug: [Build Memory track]: Query asset bundle start:194.82MB, end 194.84MB, increase: 11.39KB
-2024-5-6 16:25:12-debug: Sort some build options to settings.json start, progress: 10%
-2024-5-6 16:25:12-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 16:25:12-debug: run build task Sort some build options to settings.json success in √, progress: 12%
-2024-5-6 16:25:12-debug: Fill script data to settings start, progress: 12%
-2024-5-6 16:25:12-debug: [Build Memory track]: Sort some build options to settings.json start:194.85MB, end 194.87MB, increase: 14.40KB
-2024-5-6 16:25:12-debug: // ---- build task Fill script data to settings ----
-2024-5-6 16:25:12-debug: run build task Fill script data to settings success in √, progress: 13%
-2024-5-6 16:25:12-debug: [Build Memory track]: Fill script data to settings start:194.88MB, end 194.89MB, increase: 11.92KB
-2024-5-6 16:25:12-debug: Sort some build options to settings.json start, progress: 13%
-2024-5-6 16:25:12-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 16:25:12-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-5-6 16:25:12-debug: [Build Memory track]: Sort some build options to settings.json start:194.91MB, end 195.05MB, increase: 144.89KB
-2024-5-6 16:25:12-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 15%
-2024-5-6 16:25:31-debug: refresh db internal success
-2024-5-6 16:25:31-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scripts\Tile\TileMapManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-5-6 16:25:31-debug: refresh db assets success
-2024-5-6 16:25:31-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-5-6 16:25:31-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-5-6 16:25:31-debug: asset-db:refresh-all-database (159ms)
-2024-5-6 16:25:31-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-5-6 16:25:32-debug: Query all assets info in project
-2024-5-6 16:25:32-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-5-6 16:25:32-debug:   Number of all scenes: 1
-2024-5-6 16:25:32-debug:   Number of all scripts: 6
-2024-5-6 16:25:32-debug:   Number of other assets: 1176
-2024-5-6 16:25:32-debug: Query asset bundle start, progress: 0%
-2024-5-6 16:25:32-debug: // ---- build task Query asset bundle ----
-2024-5-6 16:25:32-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-5-6 16:25:32-debug: [Build Memory track]: Query asset bundle start:198.71MB, end 198.14MB, increase: -592.63KB
-2024-5-6 16:25:32-debug: run build task Query asset bundle success in 15 ms√, progress: 5%
-2024-5-6 16:25:32-debug: Query asset bundle start, progress: 5%
-2024-5-6 16:25:32-debug: // ---- build task Query asset bundle ---- (15ms)
-2024-5-6 16:25:32-debug: // ---- build task Query asset bundle ----
-2024-5-6 16:25:32-debug: // ---- build task Query asset bundle ---- (1ms)
-2024-5-6 16:25:32-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
-2024-5-6 16:25:32-debug: [Build Memory track]: Query asset bundle start:198.15MB, end 198.17MB, increase: 16.46KB
-2024-5-6 16:25:32-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 16:25:32-debug: Sort some build options to settings.json start, progress: 10%
-2024-5-6 16:25:32-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-5-6 16:25:32-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-5-6 16:25:32-debug: [Build Memory track]: Sort some build options to settings.json start:198.18MB, end 198.20MB, increase: 20.21KB
-2024-5-6 16:25:32-debug: // ---- build task Fill script data to settings ----
-2024-5-6 16:25:32-debug: Fill script data to settings start, progress: 12%
-2024-5-6 16:25:32-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-5-6 16:25:32-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-5-6 16:25:32-debug: [Build Memory track]: Fill script data to settings start:198.22MB, end 198.24MB, increase: 17.91KB
-2024-5-6 16:25:32-debug: Sort some build options to settings.json start, progress: 13%
-2024-5-6 16:25:32-debug: // ---- build task Sort some build options to settings.json ----
-2024-5-6 16:25:32-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-5-6 16:25:32-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 15%
-2024-5-6 16:25:32-debug: [Build Memory track]: Sort some build options to settings.json start:198.25MB, end 198.37MB, increase: 124.38KB
