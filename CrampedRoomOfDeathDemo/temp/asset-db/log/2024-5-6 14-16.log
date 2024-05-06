@@ -1571,3 +1571,238 @@
 2024-5-6 14:22:28-debug: asset-db:refresh-all-database (109ms)
 2024-5-6 14:22:28-debug: asset-db:worker-effect-data-processing (1ms)
 2024-5-6 14:22:28-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:25:31-debug: refresh db internal success
+2024-5-6 14:25:31-debug: refresh db assets success
+2024-5-6 14:25:31-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:25:31-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:25:31-debug: asset-db:refresh-all-database (132ms)
+2024-5-6 14:25:31-debug: asset-db:worker-effect-data-processing (2ms)
+2024-5-6 14:25:31-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-5-6 14:25:45-debug: refresh db internal success
+2024-5-6 14:25:45-debug: refresh db assets success
+2024-5-6 14:25:45-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:25:45-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:25:45-debug: asset-db:refresh-all-database (105ms)
+2024-5-6 14:25:45-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:25:45-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:25:48-debug: refresh db internal success
+2024-5-6 14:25:48-debug: refresh db assets success
+2024-5-6 14:25:48-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:25:48-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:25:48-debug: asset-db:refresh-all-database (98ms)
+2024-5-6 14:25:48-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:25:48-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-5-6 14:26:03-debug: refresh db internal success
+2024-5-6 14:26:03-debug: refresh db assets success
+2024-5-6 14:26:03-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:26:03-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:26:03-debug: asset-db:refresh-all-database (94ms)
+2024-5-6 14:26:03-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:26:03-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:26:07-debug: refresh db internal success
+2024-5-6 14:26:07-debug: refresh db assets success
+2024-5-6 14:26:07-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:26:07-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:26:07-debug: asset-db:refresh-all-database (91ms)
+2024-5-6 14:26:07-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:26:07-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:26:34-debug: refresh db internal success
+2024-5-6 14:26:34-debug: refresh db assets success
+2024-5-6 14:26:34-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:26:34-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:26:34-debug: asset-db:refresh-all-database (115ms)
+2024-5-6 14:26:34-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:26:34-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:27:21-debug: refresh db internal success
+2024-5-6 14:27:21-debug: refresh db assets success
+2024-5-6 14:27:21-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:27:21-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:27:21-debug: asset-db:refresh-all-database (94ms)
+2024-5-6 14:27:47-debug: refresh db internal success
+2024-5-6 14:27:47-debug: refresh db assets success
+2024-5-6 14:27:47-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:27:47-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:27:47-debug: asset-db:refresh-all-database (122ms)
+2024-5-6 14:30:07-debug: refresh db internal success
+2024-5-6 14:30:07-debug: refresh db assets success
+2024-5-6 14:30:07-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:30:07-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:30:07-debug: asset-db:refresh-all-database (99ms)
+2024-5-6 14:30:07-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:30:07-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:31:02-debug: refresh db internal success
+2024-5-6 14:31:02-debug: refresh db assets success
+2024-5-6 14:31:02-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:31:02-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:31:02-debug: asset-db:refresh-all-database (98ms)
+2024-5-6 14:31:02-debug: asset-db:worker-effect-data-processing (2ms)
+2024-5-6 14:31:02-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-5-6 14:31:38-debug: refresh db internal success
+2024-5-6 14:31:38-debug: refresh db assets success
+2024-5-6 14:31:38-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:31:38-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:31:38-debug: asset-db:refresh-all-database (90ms)
+2024-5-6 14:31:38-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:31:38-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:32:06-debug: refresh db internal success
+2024-5-6 14:32:06-debug: refresh db assets success
+2024-5-6 14:32:06-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:32:06-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:32:06-debug: asset-db:refresh-all-database (97ms)
+2024-5-6 14:32:06-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:32:06-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:32:30-debug: refresh db internal success
+2024-5-6 14:32:30-debug: refresh db assets success
+2024-5-6 14:32:30-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:32:30-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:32:30-debug: asset-db:refresh-all-database (96ms)
+2024-5-6 14:32:30-debug: asset-db:worker-effect-data-processing (2ms)
+2024-5-6 14:32:30-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-5-6 14:33:00-debug: refresh db internal success
+2024-5-6 14:33:00-debug: refresh db assets success
+2024-5-6 14:33:00-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:33:00-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:33:00-debug: asset-db:refresh-all-database (101ms)
+2024-5-6 14:33:00-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:33:18-debug: refresh db internal success
+2024-5-6 14:33:18-debug: refresh db assets success
+2024-5-6 14:33:18-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:33:18-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:33:18-debug: asset-db:refresh-all-database (98ms)
+2024-5-6 14:33:18-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:33:18-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:33:26-debug: refresh db internal success
+2024-5-6 14:33:26-debug: refresh db assets success
+2024-5-6 14:33:26-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:33:26-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:33:26-debug: asset-db:refresh-all-database (89ms)
+2024-5-6 14:33:26-debug: asset-db:worker-effect-data-processing (2ms)
+2024-5-6 14:33:26-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-5-6 14:36:26-debug: refresh db internal success
+2024-5-6 14:36:26-debug: refresh db assets success
+2024-5-6 14:36:26-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:36:26-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:36:26-debug: asset-db:refresh-all-database (96ms)
+2024-5-6 14:36:26-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:36:28-debug: refresh db internal success
+2024-5-6 14:36:28-debug: refresh db assets success
+2024-5-6 14:36:28-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:36:28-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:36:28-debug: asset-db:refresh-all-database (84ms)
+2024-5-6 14:37:44-debug: refresh db internal success
+2024-5-6 14:37:44-debug: refresh db assets success
+2024-5-6 14:37:44-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:37:44-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:37:44-debug: asset-db:refresh-all-database (89ms)
+2024-5-6 14:38:20-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scene...
+2024-5-6 14:38:20-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scenebackground: #aaff85; color: #000;color: #000;
+2024-5-6 14:38:20-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes success
+2024-5-6 14:38:21-debug: refresh db internal success
+2024-5-6 14:38:22-debug: refresh db assets success
+2024-5-6 14:38:22-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:38:22-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:38:22-debug: asset-db:refresh-all-database (102ms)
+2024-5-6 14:38:22-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:38:22-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:38:54-debug: refresh db internal success
+2024-5-6 14:38:55-debug: refresh db assets success
+2024-5-6 14:38:55-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:38:55-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:38:55-debug: asset-db:refresh-all-database (97ms)
+2024-5-6 14:38:55-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:38:55-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:38:58-debug: refresh db internal success
+2024-5-6 14:38:58-debug: refresh db assets success
+2024-5-6 14:38:58-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:38:58-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:38:58-debug: asset-db:refresh-all-database (119ms)
+2024-5-6 14:38:58-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:39:00-debug: refresh db internal success
+2024-5-6 14:39:00-debug: refresh db assets success
+2024-5-6 14:39:00-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:39:00-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:39:00-debug: asset-db:refresh-all-database (93ms)
+2024-5-6 14:39:14-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scene...
+2024-5-6 14:39:14-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scenebackground: #aaff85; color: #000;color: #000;
+2024-5-6 14:39:14-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes success
+2024-5-6 14:39:15-debug: refresh db internal success
+2024-5-6 14:39:15-debug: refresh db assets success
+2024-5-6 14:39:15-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:39:15-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:39:15-debug: asset-db:refresh-all-database (99ms)
+2024-5-6 14:39:15-debug: asset-db:worker-effect-data-processing (1ms)
+2024-5-6 14:39:15-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:39:17-debug: Query all assets info in project
+2024-5-6 14:39:17-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-5-6 14:39:17-debug:   Number of other assets: 1176
+2024-5-6 14:39:17-debug:   Number of all scripts: 2
+2024-5-6 14:39:17-debug:   Number of all scenes: 1
+2024-5-6 14:39:17-debug: Query asset bundle start, progress: 0%
+2024-5-6 14:39:17-debug: // ---- build task Query asset bundle ----
+2024-5-6 14:39:17-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-5-6 14:39:17-debug: // ---- build task Query asset bundle ---- (13ms)
+2024-5-6 14:39:17-debug: run build task Query asset bundle success in 13 ms√, progress: 5%
+2024-5-6 14:39:17-debug: [Build Memory track]: Query asset bundle start:198.26MB, end 197.12MB, increase: -1166.20KB
+2024-5-6 14:39:17-debug: // ---- build task Query asset bundle ----
+2024-5-6 14:39:17-debug: Query asset bundle start, progress: 5%
+2024-5-6 14:39:17-debug: // ---- build task Query asset bundle ---- (1ms)
+2024-5-6 14:39:17-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
+2024-5-6 14:39:17-debug: [Build Memory track]: Query asset bundle start:197.14MB, end 197.16MB, increase: 17.35KB
+2024-5-6 14:39:17-debug: // ---- build task Sort some build options to settings.json ----
+2024-5-6 14:39:17-debug: Sort some build options to settings.json start, progress: 10%
+2024-5-6 14:39:17-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-5-6 14:39:17-debug: Fill script data to settings start, progress: 12%
+2024-5-6 14:39:17-debug: // ---- build task Fill script data to settings ----
+2024-5-6 14:39:17-debug: [Build Memory track]: Sort some build options to settings.json start:197.17MB, end 197.19MB, increase: 19.96KB
+2024-5-6 14:39:17-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-5-6 14:39:17-debug: run build task Fill script data to settings success in √, progress: 13%
+2024-5-6 14:39:17-debug: [Build Memory track]: Fill script data to settings start:197.21MB, end 197.22MB, increase: 12.40KB
+2024-5-6 14:39:17-debug: // ---- build task Sort some build options to settings.json ----
+2024-5-6 14:39:17-debug: Sort some build options to settings.json start, progress: 13%
+2024-5-6 14:39:17-debug: // ---- build task Sort some build options to settings.json ---- (22ms)
+2024-5-6 14:39:17-debug: run build task Sort some build options to settings.json success in 22 ms√, progress: 15%
+2024-5-6 14:39:17-debug: [Build Memory track]: Sort some build options to settings.json start:197.24MB, end 197.36MB, increase: 126.73KB
+2024-5-6 14:39:27-debug: refresh db internal success
+2024-5-6 14:39:27-debug: refresh db assets success
+2024-5-6 14:39:27-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:39:27-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:39:27-debug: asset-db:refresh-all-database (95ms)
+2024-5-6 14:39:27-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-5-6 14:39:30-debug: start refresh asset from D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scene...
+2024-5-6 14:39:30-debug: %cImport%c: D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes\Battle.scenebackground: #aaff85; color: #000;color: #000;
+2024-5-6 14:39:30-debug: refresh asset D:\myCocos\cocosProjects\FamousGamesImitations\CrampedRoomOfDeathDemo\assets\scenes success
+2024-5-6 14:39:31-debug: Query all assets info in project
+2024-5-6 14:39:31-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-5-6 14:39:31-debug:   Number of all scenes: 1
+2024-5-6 14:39:31-debug:   Number of all scripts: 2
+2024-5-6 14:39:31-debug:   Number of other assets: 1176
+2024-5-6 14:39:31-debug: Query asset bundle start, progress: 0%
+2024-5-6 14:39:31-debug: // ---- build task Query asset bundle ----
+2024-5-6 14:39:31-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-5-6 14:39:31-debug: // ---- build task Query asset bundle ---- (13ms)
+2024-5-6 14:39:31-debug: run build task Query asset bundle success in 13 ms√, progress: 5%
+2024-5-6 14:39:31-debug: [Build Memory track]: Query asset bundle start:204.05MB, end 203.13MB, increase: -946.52KB
+2024-5-6 14:39:31-debug: // ---- build task Query asset bundle ----
+2024-5-6 14:39:31-debug: Query asset bundle start, progress: 5%
+2024-5-6 14:39:31-debug: // ---- build task Query asset bundle ---- (1ms)
+2024-5-6 14:39:31-debug: [Build Memory track]: Query asset bundle start:203.14MB, end 203.16MB, increase: 16.09KB
+2024-5-6 14:39:31-debug: Sort some build options to settings.json start, progress: 10%
+2024-5-6 14:39:31-debug: run build task Query asset bundle success in 1 ms√, progress: 10%
+2024-5-6 14:39:31-debug: // ---- build task Sort some build options to settings.json ----
+2024-5-6 14:39:31-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-5-6 14:39:31-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-5-6 14:39:31-debug: Fill script data to settings start, progress: 12%
+2024-5-6 14:39:31-debug: [Build Memory track]: Sort some build options to settings.json start:203.18MB, end 203.20MB, increase: 22.47KB
+2024-5-6 14:39:31-debug: // ---- build task Fill script data to settings ----
+2024-5-6 14:39:31-debug: run build task Fill script data to settings success in √, progress: 13%
+2024-5-6 14:39:31-debug: [Build Memory track]: Fill script data to settings start:203.21MB, end 203.22MB, increase: 12.07KB
+2024-5-6 14:39:31-debug: Sort some build options to settings.json start, progress: 13%
+2024-5-6 14:39:31-debug: // ---- build task Sort some build options to settings.json ----
+2024-5-6 14:39:31-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
+2024-5-6 14:39:31-debug: [Build Memory track]: Sort some build options to settings.json start:203.24MB, end 203.36MB, increase: 121.73KB
+2024-5-6 14:39:31-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 15%
+2024-5-6 14:40:06-debug: refresh db internal success
+2024-5-6 14:40:06-debug: refresh db assets success
+2024-5-6 14:40:06-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-5-6 14:40:06-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-5-6 14:40:06-debug: asset-db:refresh-all-database (101ms)

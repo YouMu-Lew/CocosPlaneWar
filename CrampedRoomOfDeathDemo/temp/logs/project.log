@@ -1,10 +1,10 @@
-2024-5-6 14:16:14 - log: Load engine in D:\myCocos\cocos\editors\Creator\3.8.2\resources\resources\3d\engine
-2024-5-6 14:16:15 - log: Profile changed: engine (modules.includeModules: 2d,animation,base,gfx-webgl,gfx-webgl2,light-probe,marionette,profiler,skeletal-animation,tween,ui,websocket)
-2024-5-6 14:16:15 - log: Register native engine in D:\myCocos\cocos\editors\Creator\3.8.2\resources\resources\3d\engine\native
-2024-5-6 14:16:25 - log: [Scene] meshopt wasm decoder initialized
-2024-5-6 14:16:25 - log: [Scene] [box2d]:box2d wasm lib loaded.
-2024-5-6 14:16:25 - log: [Scene] [bullet]:bullet wasm lib loaded.
-2024-5-6 14:16:26 - log: [Scene] [PHYSICS]: using builtin.
-2024-5-6 14:16:26 - log: [Scene] Cocos Creator v3.8.2
-2024-5-6 14:16:26 - info: [Scene] Forward render pipeline initialized.
-2024-5-6 14:16:26 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to builtin.
+2024-5-6 14:40:21 - log: Load engine in D:\myCocos\cocos\editors\Creator\3.8.2\resources\resources\3d\engine
+2024-5-6 14:40:22 - log: Profile changed: engine (modules.includeModules: 2d,animation,base,gfx-webgl,gfx-webgl2,light-probe,marionette,profiler,skeletal-animation,tween,ui,websocket)
+2024-5-6 14:40:22 - log: Register native engine in D:\myCocos\cocos\editors\Creator\3.8.2\resources\resources\3d\engine\native
+2024-5-6 14:40:30 - log: [Scene] meshopt wasm decoder initialized
+2024-5-6 14:40:30 - log: [Scene] [box2d]:box2d wasm lib loaded.
+2024-5-6 14:40:30 - log: [Scene] [bullet]:bullet wasm lib loaded.
+2024-5-6 14:40:31 - log: [Scene] [PHYSICS]: using builtin.
+2024-5-6 14:40:31 - log: [Scene] Cocos Creator v3.8.2
+2024-5-6 14:40:31 - info: [Scene] Forward render pipeline initialized.
+2024-5-6 14:40:31 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to builtin.

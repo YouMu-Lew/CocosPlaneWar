@@ -8596,7 +8596,13 @@
     "value": {
       "depends": [
         "efb96b82-28a3-4477-b5ba-c5887ee5016b",
-        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941"
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "0d4bbcc3-f346-4cac-9424-63144a385768@02de7",
+        "0d4bbcc3-f346-4cac-9424-63144a385768@3c87d",
+        "0d4bbcc3-f346-4cac-9424-63144a385768@d53cc",
+        "0d4bbcc3-f346-4cac-9424-63144a385768@ff004",
+        "0d4bbcc3-f346-4cac-9424-63144a385768@9d1ee",
+        "0d4bbcc3-f346-4cac-9424-63144a385768@11037"
       ],
       "dependScripts": []
     },
