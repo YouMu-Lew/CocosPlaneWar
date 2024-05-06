@@ -424,9 +424,11 @@ const mapInfo = [
     ],
   ];
 
+  /**
+   * 因为地图信息不只有瓦片信息，还包括人物和敌人位置信息，所以多加一层封装
+   */
   const level:ILevel ={
     mapInfo
   };
-
 
   export default level;
