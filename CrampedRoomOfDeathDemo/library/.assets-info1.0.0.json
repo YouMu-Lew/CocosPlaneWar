@@ -4604,22 +4604,78 @@
       "time": 1714976286989.9312
     },
     "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts": {
-      "time": 1714976315641.8037,
+      "time": 1714980403234.8582,
       "uuid": "daf14e7d-14fa-4dc3-9e66-56ee5f260408"
-    },
-    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\battle.ts.meta": {
-      "time": 1714976315646.521
-    },
-    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\battle.ts": {
-      "time": 1714976315640.803,
-      "uuid": "2296705f-4fd0-4266-8295-6b3e746d73ba"
     },
     "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scenes\\Battle.scene.meta": {
       "time": 1714967897765.0835
     },
     "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scenes\\Battle.scene": {
-      "time": 1714977570545.8809,
+      "time": 1714982343868.0588,
       "uuid": "efb96b82-28a3-4477-b5ba-c5887ee5016b"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Levels.meta": {
+      "time": 1714978050413.3467
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Levels": {
+      "time": 1714979609238.8462,
+      "uuid": "30700d78-893e-4054-ba0f-762bbf77382d"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Levels\\level01.ts.meta": {
+      "time": 1714978078245.8828
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Levels\\level01.ts": {
+      "time": 1714981486036.8005,
+      "uuid": "22bf6e52-537b-4394-9f35-e4631275c004"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Enums.meta": {
+      "time": 1714978239744.1948
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Enums": {
+      "time": 1714978247722.4573,
+      "uuid": "daa0e619-1168-4302-85b9-562fa2482ead"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Enums\\index.ts.meta": {
+      "time": 1714978247727.457
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Enums\\index.ts": {
+      "time": 1714978446448.7097,
+      "uuid": "e3f1f01d-5b2a-4a91-a24c-6d8696f45777"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Levels\\index.ts.meta": {
+      "time": 1714979609243.8599
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\Levels\\index.ts": {
+      "time": 1714981511892.3264,
+      "uuid": "3838da96-16f1-4549-9093-aa5f43dca5fb"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Scene.meta": {
+      "time": 1714980355224.8298
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Scene": {
+      "time": 1714980363237.3943,
+      "uuid": "6c18d809-496a-4205-9130-85faa49c308c"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Scene\\BattleManager.ts.meta": {
+      "time": 1714976315646.521
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Scene\\BattleManager.ts": {
+      "time": 1714980662585.01,
+      "uuid": "2296705f-4fd0-4266-8295-6b3e746d73ba"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Tile.meta": {
+      "time": 1714980403235.8584
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Tile": {
+      "time": 1714980770588.1787,
+      "uuid": "c36546dd-1bec-4744-8d61-f02efc174f14"
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Tile\\TileMapManager.ts.meta": {
+      "time": 1714980770595.8525
+    },
+    "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Tile\\TileMapManager.ts": {
+      "time": 1714983929666.906,
+      "uuid": "a5861956-1577-4e8c-a01f-3f915ecd9a07"
     }
   },
   "missing": {
@@ -4627,6 +4683,16 @@
       "path": "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scenes\\battle.scene",
       "time": 1714976276642.8113,
       "removeTime": 1714976533178
+    },
+    "2296705f-4fd0-4266-8295-6b3e746d73ba": {
+      "path": "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Scene\\battle.ts",
+      "time": 1714976315640.803,
+      "removeTime": 1714980363239
+    },
+    "ec486abb-117c-4fe9-9feb-89a875cb4cb3": {
+      "path": "D:\\myCocos\\cocosProjects\\FamousGamesImitations\\CrampedRoomOfDeathDemo\\assets\\scripts\\Tile\\TileManager.ts",
+      "time": 1714980411373.4934,
+      "removeTime": 1714980770587
     }
   }
 }

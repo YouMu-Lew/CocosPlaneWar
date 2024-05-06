@@ -8604,7 +8604,9 @@
         "0d4bbcc3-f346-4cac-9424-63144a385768@9d1ee",
         "0d4bbcc3-f346-4cac-9424-63144a385768@11037"
       ],
-      "dependScripts": []
+      "dependScripts": [
+        "2296705f-4fd0-4266-8295-6b3e746d73ba"
+      ]
     },
     "versionCode": 0
   },
@@ -8614,7 +8616,52 @@
     "versionCode": 0
   },
   "2296705f-4fd0-4266-8295-6b3e746d73ba": {
-    "url": "db://assets/scripts/battle.ts",
+    "url": "db://assets/scripts/Scene/BattleManager.ts",
+    "value": {},
+    "versionCode": 0
+  },
+  "30700d78-893e-4054-ba0f-762bbf77382d": {
+    "url": "db://assets/Levels",
+    "value": {},
+    "versionCode": 0
+  },
+  "22bf6e52-537b-4394-9f35-e4631275c004": {
+    "url": "db://assets/Levels/level01.ts",
+    "value": {},
+    "versionCode": 0
+  },
+  "daa0e619-1168-4302-85b9-562fa2482ead": {
+    "url": "db://assets/Enums",
+    "value": {},
+    "versionCode": 0
+  },
+  "e3f1f01d-5b2a-4a91-a24c-6d8696f45777": {
+    "url": "db://assets/Enums/index.ts",
+    "value": {},
+    "versionCode": 0
+  },
+  "3838da96-16f1-4549-9093-aa5f43dca5fb": {
+    "url": "db://assets/Levels/index.ts",
+    "value": {},
+    "versionCode": 0
+  },
+  "6c18d809-496a-4205-9130-85faa49c308c": {
+    "url": "db://assets/scripts/Scene",
+    "value": {},
+    "versionCode": 0
+  },
+  "c36546dd-1bec-4744-8d61-f02efc174f14": {
+    "url": "db://assets/scripts/Tile",
+    "value": {},
+    "versionCode": 0
+  },
+  "ec486abb-117c-4fe9-9feb-89a875cb4cb3": {
+    "url": "db://assets/scripts/Tile/TileManager.ts",
+    "value": {},
+    "versionCode": 0
+  },
+  "a5861956-1577-4e8c-a01f-3f915ecd9a07": {
+    "url": "db://assets/scripts/Tile/TileMapManager.ts",
     "value": {},
     "versionCode": 0
   }

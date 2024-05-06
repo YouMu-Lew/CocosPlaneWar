@@ -640,7 +640,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 7913.3637999892235,
+      "mTimestamp": 6309364.470699966,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -658,7 +658,7 @@
           }
         },
         {
-          "value": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts",
+          "value": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
@@ -667,7 +667,63 @@
             },
             "end": {
               "line": 5,
-              "column": 283
+              "column": 280
+            }
+          }
+        },
+        {
+          "value": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 296
+            },
+            "end": {
+              "line": 5,
+              "column": 398
+            }
+          }
+        },
+        {
+          "value": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 414
+            },
+            "end": {
+              "line": 5,
+              "column": 518
+            }
+          }
+        },
+        {
+          "value": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 534
+            },
+            "end": {
+              "line": 5,
+              "column": 651
+            }
+          }
+        },
+        {
+          "value": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 667
+            },
+            "end": {
+              "line": 5,
+              "column": 784
             }
           }
         }
@@ -684,7 +740,35 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts"
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts"
           },
           "messages": []
         }
@@ -789,6 +873,415 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts": {
+      "mTimestamp": {
+        "mtime": 1714981486036.8005,
+        "uuid": "22bf6e52-537b-4394-9f35-e4631275c004"
+      },
+      "chunkId": "a7aef90e81cb6776c405c45108c54d4e49bb953b",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../Enums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 31
+            },
+            "end": {
+              "line": 2,
+              "column": 41
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts": {
+      "mTimestamp": {
+        "mtime": 1714978446448.7097,
+        "uuid": "e3f1f01d-5b2a-4a91-a24c-6d8696f45777"
+      },
+      "chunkId": "0b58368eb0c8cd2673a90f6c5e39404b2de14b8f",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "cce:/internal/code-quality/cr.mjs": {
+      "mTimestamp": 1714977622217,
+      "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
+      "imports": [],
+      "type": "esm",
+      "resolutions": []
+    },
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts": {
+      "mTimestamp": {
+        "mtime": 1714981511892.3264,
+        "uuid": "3838da96-16f1-4549-9093-aa5f43dca5fb"
+      },
+      "chunkId": "43112713a2864a049455fb172d904f8ed987ce4d",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "./level01",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 19
+            },
+            "end": {
+              "line": 2,
+              "column": 30
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts": {
+      "mTimestamp": {
+        "mtime": 1714976315640.803,
+        "uuid": "2296705f-4fd0-4266-8295-6b3e746d73ba"
+      },
+      "chunkId": "3b8fdcc0cdcc1f0461589d76a3742f32b9707b78",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts": {
+      "mTimestamp": {
+        "mtime": 1714980662585.01,
+        "uuid": "2296705f-4fd0-4266-8295-6b3e746d73ba"
+      },
+      "chunkId": "672808406140c663130840e5ea30df3a5b79c4dc",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        },
+        {
+          "value": "../Tile/TileMapManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 31
+            },
+            "end": {
+              "line": 2,
+              "column": 55
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts": {
+      "mTimestamp": {
+        "mtime": 1714980411373.4934,
+        "uuid": "ec486abb-117c-4fe9-9feb-89a875cb4cb3"
+      },
+      "chunkId": "c91db32706871861aa52dba754481133a0f0cb52",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts": {
+      "mTimestamp": {
+        "mtime": 1714983929666.906,
+        "uuid": "a5861956-1577-4e8c-a01f-3f915ecd9a07"
+      },
+      "chunkId": "9aad67e5e704de425cda3c296507eb1b9eeccf64",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 110
+            },
+            "end": {
+              "line": 1,
+              "column": 114
+            }
+          }
+        },
+        {
+          "value": "../../Levels",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 19
+            },
+            "end": {
+              "line": 2,
+              "column": 33
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts"
           },
           "messages": []
         }

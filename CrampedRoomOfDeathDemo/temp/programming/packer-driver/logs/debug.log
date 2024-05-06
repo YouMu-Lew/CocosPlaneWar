@@ -136,3 +136,603 @@ Feature changed: false
 14:40:30 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
 14:40:30 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
 14:40:30 debug: Target(preview) ends with cost 24.74559998512268ms.
+14:47:58 debug: Dispatch build request for time accumulated 1 asset changes.
+14:47:58 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+14:47:58 debug: Target(editor) build started.
+14:47:58 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:07 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:07:36 GMT+0800 (中国标准时间)
+14:47:58 debug: Inspect cce:/internal/x/prerequisite-imports
+14:47:58 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:47:58 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:47:58 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+14:47:58 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:47:58 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:47:58 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:47:58 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:47:58 debug: Target(editor) ends with cost 50.820899963378906ms.
+14:47:58 debug: Target(preview) build started.
+14:47:58 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:07 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:07:36 GMT+0800 (中国标准时间)
+14:47:58 debug: Inspect cce:/internal/x/prerequisite-imports
+14:47:58 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:47:58 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:47:58 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+14:47:58 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:47:58 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:47:58 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:47:58 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:47:58 debug: Target(preview) ends with cost 52.180999994277954ms.
+14:48:21 debug: Dispatch build request for time accumulated 1 asset changes.
+14:48:21 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+14:48:21 debug: Target(editor) build started.
+14:48:21 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:07:36 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:07:59 GMT+0800 (中国标准时间)
+14:48:21 debug: Inspect cce:/internal/x/prerequisite-imports
+14:48:21 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:48:21 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:48:21 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 14:47:58 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 14:48:18 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+14:48:21 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+14:48:21 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:48:21 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:48:21 debug: Target(editor) ends with cost 77.51029998064041ms.
+14:48:21 debug: Target(preview) build started.
+14:48:21 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:07:36 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:07:59 GMT+0800 (中国标准时间)
+14:48:21 debug: Inspect cce:/internal/x/prerequisite-imports
+14:48:21 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:48:21 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:48:21 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 14:47:58 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 14:48:18 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+14:48:21 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+14:48:21 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:48:21 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:48:21 debug: Target(preview) ends with cost 74.17899996042252ms.
+14:50:47 debug: Dispatch build request for time accumulated 1 asset changes.
+14:50:47 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+14:50:47 debug: Target(editor) build started.
+14:50:47 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:07:59 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:10:25 GMT+0800 (中国标准时间)
+14:50:47 debug: Inspect cce:/internal/x/prerequisite-imports
+14:50:47 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:50:47 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+14:50:47 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts
+14:50:47 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:50:47 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:50:47 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:50:47 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:50:47 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:50:47 debug: Target(editor) ends with cost 39.224399983882904ms.
+14:50:47 debug: Target(preview) build started.
+14:50:47 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:07:59 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:10:25 GMT+0800 (中国标准时间)
+14:50:47 debug: Inspect cce:/internal/x/prerequisite-imports
+14:50:47 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:50:47 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+14:50:47 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts
+14:50:47 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:50:47 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:50:47 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:50:47 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:50:47 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:50:47 debug: Target(preview) ends with cost 43.94080001115799ms.
+14:56:20 debug: Dispatch build request for time accumulated 2 asset changes.
+14:56:20 debug: Build iteration starts.
+Number of accumulated asset changes: 2
+Feature changed: false
+14:56:20 debug: Target(editor) build started.
+14:56:20 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:10:25 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:15:58 GMT+0800 (中国标准时间)
+14:56:20 debug: Inspect cce:/internal/x/prerequisite-imports
+14:56:20 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:56:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+14:56:20 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts. Last mtime: Mon May 06 2024 14:50:47 GMT+0800 (中国标准时间)@e3f1f01d-5b2a-4a91-a24c-6d8696f45777, Current mtime: Mon May 06 2024 14:54:06 GMT+0800 (中国标准时间)@e3f1f01d-5b2a-4a91-a24c-6d8696f45777
+14:56:20 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts
+14:56:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:56:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:56:20 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 14:48:18 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 14:53:17 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+14:56:20 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+14:56:20 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/code-quality/cr.mjs.
+14:56:20 debug: Inspect cce:/internal/code-quality/cr.mjs
+14:56:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:56:20 debug: Resolve ../Enums from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+14:56:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:56:20 debug: Target(editor) ends with cost 136.7263000011444ms.
+14:56:20 debug: Target(preview) build started.
+14:56:20 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:10:25 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:15:58 GMT+0800 (中国标准时间)
+14:56:20 debug: Inspect cce:/internal/x/prerequisite-imports
+14:56:20 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:56:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+14:56:20 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts. Last mtime: Mon May 06 2024 14:50:47 GMT+0800 (中国标准时间)@e3f1f01d-5b2a-4a91-a24c-6d8696f45777, Current mtime: Mon May 06 2024 14:54:06 GMT+0800 (中国标准时间)@e3f1f01d-5b2a-4a91-a24c-6d8696f45777
+14:56:20 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts
+14:56:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts as cce:/internal/x/cc.
+14:56:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+14:56:20 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 14:48:18 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 14:53:17 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+14:56:20 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+14:56:20 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/code-quality/cr.mjs.
+14:56:20 debug: Inspect cce:/internal/code-quality/cr.mjs
+14:56:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+14:56:20 debug: Resolve ../Enums from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+14:56:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+14:56:20 debug: Target(preview) ends with cost 102.43370002508163ms.
+15:13:29 debug: Dispatch build request for time accumulated 2 asset changes.
+15:13:29 debug: Build iteration starts.
+Number of accumulated asset changes: 2
+Feature changed: false
+15:13:29 debug: Target(editor) build started.
+15:13:29 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:15:58 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:33:07 GMT+0800 (中国标准时间)
+15:13:29 debug: Inspect cce:/internal/x/prerequisite-imports
+15:13:29 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:13:29 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:13:29 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:13:29 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:13:29 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:13:29 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 14:53:17 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 15:11:44 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+15:13:29 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+15:13:29 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/code-quality/cr.mjs.
+15:13:29 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+15:13:29 debug: Resolve ../Enums from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+15:13:29 debug: Target(editor) ends with cost 104.39700001478195ms.
+15:13:29 debug: Target(preview) build started.
+15:13:29 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:15:58 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:33:07 GMT+0800 (中国标准时间)
+15:13:29 debug: Inspect cce:/internal/x/prerequisite-imports
+15:13:29 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:13:29 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:13:29 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:13:29 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:13:29 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:13:29 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 14:53:17 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 15:11:44 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+15:13:29 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+15:13:29 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/code-quality/cr.mjs.
+15:13:29 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+15:13:29 debug: Resolve ../Enums from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:13:29 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+15:13:29 debug: Target(preview) ends with cost 122.70570003986359ms.
+15:18:49 debug: Dispatch build request for time accumulated 1 asset changes.
+15:18:49 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:18:49 debug: Target(editor) build started.
+15:18:49 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:33:07 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:38:27 GMT+0800 (中国标准时间)
+15:18:49 debug: Inspect cce:/internal/x/prerequisite-imports
+15:18:49 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:18:49 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:13:03 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:17:15 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:18:49 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:18:49 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:18:49 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:18:49 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+15:18:49 debug: Target(editor) ends with cost 56.061100006103516ms.
+15:18:49 debug: Target(preview) build started.
+15:18:49 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:33:07 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:38:27 GMT+0800 (中国标准时间)
+15:18:49 debug: Inspect cce:/internal/x/prerequisite-imports
+15:18:49 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:18:49 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:13:03 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:17:15 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:18:49 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:18:49 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:18:49 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:18:49 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:18:49 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+15:18:49 debug: Target(preview) ends with cost 51.91069996356964ms.
+15:24:13 debug: Dispatch build request for time accumulated 1 asset changes.
+15:24:13 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:24:13 debug: Target(editor) build started.
+15:24:13 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:38:27 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:43:51 GMT+0800 (中国标准时间)
+15:24:13 debug: Inspect cce:/internal/x/prerequisite-imports
+15:24:13 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:24:13 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:17:15 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:22:53 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:24:13 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:24:13 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:24:13 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:24:13 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+15:24:13 debug: Target(editor) ends with cost 52.22089999914169ms.
+15:24:13 debug: Target(preview) build started.
+15:24:13 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:38:27 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:43:51 GMT+0800 (中国标准时间)
+15:24:13 debug: Inspect cce:/internal/x/prerequisite-imports
+15:24:13 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:24:13 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:17:15 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:22:53 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:24:13 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:24:13 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:24:13 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:24:13 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:24:13 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts.
+15:24:13 debug: Target(preview) ends with cost 44.04680001735687ms.
+15:25:57 debug: Dispatch build request for time accumulated 1 asset changes.
+15:25:57 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:25:57 debug: Target(editor) build started.
+15:25:57 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:43:51 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:45:35 GMT+0800 (中国标准时间)
+15:25:57 debug: Inspect cce:/internal/x/prerequisite-imports
+15:25:57 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts.
+15:25:57 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts
+15:25:57 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts as cce:/internal/x/cc.
+15:25:57 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts as cce:/internal/x/cc.
+15:25:57 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts as cce:/internal/x/cc.
+15:25:57 debug: Target(editor) ends with cost 49.99580001831055ms.
+15:25:57 debug: Target(preview) build started.
+15:25:57 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:43:51 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:45:35 GMT+0800 (中国标准时间)
+15:25:57 debug: Inspect cce:/internal/x/prerequisite-imports
+15:25:57 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:25:57 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts.
+15:25:57 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts
+15:25:57 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts as cce:/internal/x/cc.
+15:25:57 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts as cce:/internal/x/cc.
+15:25:57 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/battle.ts as cce:/internal/x/cc.
+15:25:57 debug: Target(preview) ends with cost 50.100099980831146ms.
+15:26:03 debug: Dispatch build request for time accumulated 1 asset changes.
+15:26:03 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:26:03 debug: Target(editor) build started.
+15:26:03 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:45:35 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:45:41 GMT+0800 (中国标准时间)
+15:26:03 debug: Inspect cce:/internal/x/prerequisite-imports
+15:26:03 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:26:03 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts
+15:26:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:03 debug: Target(editor) ends with cost 38.26450002193451ms.
+15:26:03 debug: Target(preview) build started.
+15:26:03 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:45:35 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:45:41 GMT+0800 (中国标准时间)
+15:26:03 debug: Inspect cce:/internal/x/prerequisite-imports
+15:26:03 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:26:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:26:03 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts
+15:26:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:03 debug: Target(preview) ends with cost 37.555999994277954ms.
+15:26:20 debug: Dispatch build request for time accumulated 1 asset changes.
+15:26:20 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:26:20 debug: Target(editor) build started.
+15:26:20 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:45:41 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:45:58 GMT+0800 (中国标准时间)
+15:26:20 debug: Inspect cce:/internal/x/prerequisite-imports
+15:26:20 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:26:20 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts. Last mtime: Mon May 06 2024 14:18:35 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba, Current mtime: Mon May 06 2024 15:26:10 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba
+15:26:20 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts
+15:26:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:20 debug: Target(editor) ends with cost 41.07970005273819ms.
+15:26:20 debug: Target(preview) build started.
+15:26:20 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:45:41 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:45:58 GMT+0800 (中国标准时间)
+15:26:20 debug: Inspect cce:/internal/x/prerequisite-imports
+15:26:20 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:26:20 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:26:20 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts. Last mtime: Mon May 06 2024 14:18:35 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba, Current mtime: Mon May 06 2024 15:26:10 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba
+15:26:20 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts
+15:26:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:20 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:26:20 debug: Target(preview) ends with cost 38.63770002126694ms.
+15:26:51 debug: Dispatch build request for time accumulated 1 asset changes.
+15:26:51 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:26:51 debug: Target(editor) build started.
+15:26:51 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:45:58 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:46:29 GMT+0800 (中国标准时间)
+15:26:51 debug: Inspect cce:/internal/x/prerequisite-imports
+15:26:51 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts.
+15:26:51 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts
+15:26:51 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts as cce:/internal/x/cc.
+15:26:51 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts as cce:/internal/x/cc.
+15:26:51 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts as cce:/internal/x/cc.
+15:26:51 debug: Target(editor) ends with cost 38.0077999830246ms.
+15:26:51 debug: Target(preview) build started.
+15:26:51 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:45:58 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:46:29 GMT+0800 (中国标准时间)
+15:26:51 debug: Inspect cce:/internal/x/prerequisite-imports
+15:26:51 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:26:51 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts.
+15:26:51 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts
+15:26:51 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts as cce:/internal/x/cc.
+15:26:51 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts as cce:/internal/x/cc.
+15:26:51 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileManager.ts as cce:/internal/x/cc.
+15:26:51 debug: Target(preview) ends with cost 39.2771999835968ms.
+15:32:50 debug: Dispatch build request for time accumulated 3 asset changes.
+15:32:50 debug: Build iteration starts.
+Number of accumulated asset changes: 3
+Feature changed: false
+15:32:50 debug: Target(editor) build started.
+15:32:50 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:46:29 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:52:28 GMT+0800 (中国标准时间)
+15:32:50 debug: Inspect cce:/internal/x/prerequisite-imports
+15:32:50 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:32:50 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts. Last mtime: Mon May 06 2024 15:26:10 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba, Current mtime: Mon May 06 2024 15:31:02 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba
+15:32:50 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts
+15:32:50 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/code-quality/cr.mjs.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve ../Tile/TileMapManager from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:32:50 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+15:32:50 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:32:50 debug: Target(editor) ends with cost 98.68799996376038ms.
+15:32:50 debug: Target(preview) build started.
+15:32:50 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:46:29 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:52:28 GMT+0800 (中国标准时间)
+15:32:50 debug: Inspect cce:/internal/x/prerequisite-imports
+15:32:50 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:32:50 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts. Last mtime: Mon May 06 2024 15:26:10 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba, Current mtime: Mon May 06 2024 15:31:02 GMT+0800 (中国标准时间)@2296705f-4fd0-4266-8295-6b3e746d73ba
+15:32:50 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts
+15:32:50 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/code-quality/cr.mjs.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve ../Tile/TileMapManager from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:32:50 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+15:32:50 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:32:50 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:32:50 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:32:50 debug: Target(preview) ends with cost 78.60579997301102ms.
+15:42:16 debug: Dispatch build request for time accumulated 1 asset changes.
+15:42:16 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:42:16 debug: Target(editor) build started.
+15:42:16 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:52:28 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:01:54 GMT+0800 (中国标准时间)
+15:42:16 debug: Inspect cce:/internal/x/prerequisite-imports
+15:42:16 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:42:16 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:22:53 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:34:31 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:42:16 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:42:16 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:42:16 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:42:16 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:42:16 debug: Target(editor) ends with cost 48.26489996910095ms.
+15:42:16 debug: Target(preview) build started.
+15:42:16 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:52:28 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:01:54 GMT+0800 (中国标准时间)
+15:42:16 debug: Inspect cce:/internal/x/prerequisite-imports
+15:42:16 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:42:16 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:22:53 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:34:31 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:42:16 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:42:16 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:42:16 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:42:16 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:42:16 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:42:16 debug: Target(preview) ends with cost 48.828599989414215ms.
+15:46:08 debug: Dispatch build request for time accumulated 3 asset changes.
+15:46:08 debug: Build iteration starts.
+Number of accumulated asset changes: 3
+Feature changed: false
+15:46:08 debug: Target(editor) build started.
+15:46:08 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:01:54 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:05:45 GMT+0800 (中国标准时间)
+15:46:08 debug: Inspect cce:/internal/x/prerequisite-imports
+15:46:08 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:46:08 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:34:31 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:45:11 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:46:08 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:46:08 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:46:08 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 15:11:44 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 15:44:46 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+15:46:08 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+15:46:08 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/code-quality/cr.mjs.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve ../Enums from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:46:08 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 15:32:36 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 15:46:07 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+15:46:08 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+15:46:08 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:46:08 debug: Target(editor) ends with cost 148.62529999017715ms.
+15:46:08 debug: Target(preview) build started.
+15:46:08 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:01:54 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:05:45 GMT+0800 (中国标准时间)
+15:46:08 debug: Inspect cce:/internal/x/prerequisite-imports
+15:46:08 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:46:08 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts. Last mtime: Mon May 06 2024 15:34:31 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb, Current mtime: Mon May 06 2024 15:45:11 GMT+0800 (中国标准时间)@3838da96-16f1-4549-9093-aa5f43dca5fb
+15:46:08 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts
+15:46:08 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/code-quality/cr.mjs.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve ./level01 from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:46:08 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts. Last mtime: Mon May 06 2024 15:11:44 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004, Current mtime: Mon May 06 2024 15:44:46 GMT+0800 (中国标准时间)@22bf6e52-537b-4394-9f35-e4631275c004
+15:46:08 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts
+15:46:08 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/code-quality/cr.mjs.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve ../Enums from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:46:08 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 15:32:36 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 15:46:07 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+15:46:08 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+15:46:08 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:46:08 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:46:08 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:46:08 debug: Target(preview) ends with cost 182.88389998674393ms.
+15:59:03 debug: Dispatch build request for time accumulated 1 asset changes.
+15:59:03 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:59:03 debug: Target(editor) build started.
+15:59:03 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:05:45 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:18:40 GMT+0800 (中国标准时间)
+15:59:03 debug: Inspect cce:/internal/x/prerequisite-imports
+15:59:03 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:59:03 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 15:46:07 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 15:58:59 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+15:59:03 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+15:59:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+15:59:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:59:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:59:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:59:03 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:59:03 debug: Target(editor) ends with cost 52.18059998750687ms.
+15:59:03 debug: Target(preview) build started.
+15:59:03 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:05:45 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:18:41 GMT+0800 (中国标准时间)
+15:59:03 debug: Inspect cce:/internal/x/prerequisite-imports
+15:59:03 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+15:59:03 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 15:46:07 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 15:58:59 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+15:59:03 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+15:59:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+15:59:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:59:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:59:03 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+15:59:03 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+15:59:03 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+15:59:03 debug: Target(preview) ends with cost 68.90299999713898ms.
+16:25:11 debug: Dispatch build request for time accumulated 1 asset changes.
+16:25:11 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:25:11 debug: Target(editor) build started.
+16:25:11 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:18:40 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:44:49 GMT+0800 (中国标准时间)
+16:25:11 debug: Inspect cce:/internal/x/prerequisite-imports
+16:25:11 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+16:25:11 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 15:58:59 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 16:25:09 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+16:25:11 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+16:25:11 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+16:25:11 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:11 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:11 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:11 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+16:25:11 debug: Target(editor) ends with cost 69.66580003499985ms.
+16:25:11 debug: Target(preview) build started.
+16:25:11 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:18:41 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:44:49 GMT+0800 (中国标准时间)
+16:25:11 debug: Inspect cce:/internal/x/prerequisite-imports
+16:25:11 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+16:25:11 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 15:58:59 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 16:25:09 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+16:25:11 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+16:25:11 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+16:25:11 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:11 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:11 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:11 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:11 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+16:25:11 debug: Target(preview) ends with cost 72.25340002775192ms.
+16:25:31 debug: Dispatch build request for time accumulated 1 asset changes.
+16:25:31 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:25:31 debug: Target(editor) build started.
+16:25:31 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:44:49 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:45:09 GMT+0800 (中国标准时间)
+16:25:31 debug: Inspect cce:/internal/x/prerequisite-imports
+16:25:31 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+16:25:31 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 16:25:09 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 16:25:29 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+16:25:31 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+16:25:31 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+16:25:31 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:31 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:31 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:31 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+16:25:31 debug: Target(editor) ends with cost 60.803700029850006ms.
+16:25:31 debug: Target(preview) build started.
+16:25:31 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:44:49 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:45:09 GMT+0800 (中国标准时间)
+16:25:31 debug: Inspect cce:/internal/x/prerequisite-imports
+16:25:31 debug: Resolve file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Enums/index.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/level01.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Scene/BattleManager.ts.
+16:25:31 debug: Detected change: file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts. Last mtime: Mon May 06 2024 16:25:09 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07, Current mtime: Mon May 06 2024 16:25:29 GMT+0800 (中国标准时间)@a5861956-1577-4e8c-a01f-3f915ecd9a07
+16:25:31 debug: Inspect file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts
+16:25:31 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+16:25:31 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:31 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:31 debug: Resolve cc from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as cce:/internal/x/cc.
+16:25:31 debug: Resolve ../../Levels from file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/Levels/index.ts.
+16:25:31 debug: Resolve file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/Tile/TileMapManager.ts.
+16:25:31 debug: Target(preview) ends with cost 65.52240002155304ms.
