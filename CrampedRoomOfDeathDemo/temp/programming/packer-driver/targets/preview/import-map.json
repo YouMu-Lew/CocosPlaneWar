@@ -1,0 +1,33 @@
+{
+  "imports": {
+    "cce:/internal/x/cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js",
+    "cce:/internal/x/prerequisite-imports": "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js",
+    "file:///D:/myCocos/cocos/editors/Creator/3.8.2/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "./chunks/47/47144a73bb425e76f7f202ebd84e4522702a0427.js",
+    "file:///D:/myCocos/cocosProjects/FamousGamesImitations/CrampedRoomOfDeathDemo/assets/scripts/battle.ts": "./chunks/e5/e55be56343383b8e3346706c37b89d50cba73d23.js"
+  },
+  "scopes": {
+    "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js": {
+      "__unresolved_0": "cce:/internal/x/cc-fu/2d",
+      "__unresolved_1": "cce:/internal/x/cc-fu/sorting",
+      "__unresolved_10": "cce:/internal/x/cc-fu/ui",
+      "__unresolved_2": "cce:/internal/x/cc-fu/animation",
+      "__unresolved_3": "cce:/internal/x/cc-fu/base",
+      "__unresolved_4": "cce:/internal/x/cc-fu/gfx-webgl",
+      "__unresolved_5": "cce:/internal/x/cc-fu/gfx-webgl2",
+      "__unresolved_6": "cce:/internal/x/cc-fu/light-probe",
+      "__unresolved_7": "cce:/internal/x/cc-fu/profiler",
+      "__unresolved_8": "cce:/internal/x/cc-fu/skeletal-animation",
+      "__unresolved_9": "cce:/internal/x/cc-fu/tween"
+    },
+    "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js": {
+      "__unresolved_0": "./chunks/47/47144a73bb425e76f7f202ebd84e4522702a0427.js",
+      "__unresolved_1": "./chunks/e5/e55be56343383b8e3346706c37b89d50cba73d23.js"
+    },
+    "./chunks/e5/e55be56343383b8e3346706c37b89d50cba73d23.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/47/47144a73bb425e76f7f202ebd84e4522702a0427.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    }
+  }
+}
