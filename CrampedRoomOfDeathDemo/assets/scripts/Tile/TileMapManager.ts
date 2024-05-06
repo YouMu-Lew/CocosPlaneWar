@@ -1,9 +1,11 @@
 import { _decorator, Component, ForwardFlow, Layers, Node, resources, Sprite, SpriteFrame, UITransform } from 'cc';
 import levels from '../../Levels';
+import { createUINode } from '../Utils';
+import { TileManager } from './TileManager';
 const { ccclass, property } = _decorator;
 
-export const TILE_WIDTH = 55;
-export const TILE_HEIGHT = 55;
+// export const TILE_WIDTH = 55;
+// export const TILE_HEIGHT = 55;
 
 @ccclass('TileMapManager')
 export class TileMapManager extends Component {
@@ -20,16 +22,12 @@ export class TileMapManager extends Component {
                     continue;
 
                 // 创建Tile
-                const tile = new Node();
-                const sprite = tile.addComponent(Sprite);
+                const tile = createUINode();
                 const imgSrc = `tile (${item.src})`;
-                sprite.spriteFrame = spriteFrames.find(v => v.name === imgSrc) || spriteFrames[0];
+                const spriteFrame = spriteFrames.find(v => v.name === imgSrc) || spriteFrames[0];
 
-                const transform = tile.addComponent(UITransform);
-                transform.setContentSize(TILE_WIDTH,TILE_HEIGHT);
-
-                tile.layer = Layers.Enum.UI_2D;
-                tile.setPosition(i * TILE_WIDTH,-j * TILE_HEIGHT);
+                const tileManager = tile.addComponent(TileManager);
+                tileManager.init(spriteFrame,i,j);
 
                 tile.setParent(this.node);
             }
