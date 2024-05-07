@@ -10,3 +10,13 @@ export const createUINode = (name: string = ''): Node => {
 
 	return node;
 };
+
+/**
+ * @param min
+ * @param max
+ * @returns a pseudorandom integer between [min, max).
+ */
+export const randomIntByRange = (min: number, max: number): number => {
+	// (cc.) math.randomRangeInt(min.max);
+	return Math.floor(min + (max - min) * Math.random());
+};

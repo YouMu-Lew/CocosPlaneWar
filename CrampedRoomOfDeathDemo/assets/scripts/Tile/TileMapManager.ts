@@ -1,4 +1,4 @@
-import { _decorator, Component } from 'cc';
+import { _decorator, Component, math } from 'cc';
 import { createUINode } from '../Utils';
 import { TileManager } from './TileManager';
 import DataManager from '../../Runtime/DataManager';
@@ -20,8 +20,17 @@ export class TileMapManager extends Component {
 				if (item.src === null || item.type === null) continue;
 
 				// 创建Tile
+
+				// 增加图片随机性
+				let num = item.src;
+				if ((num === 1 || num === 5 || num === 9) && Math.random() > 0.8) {
+					// 每种 tile 有四张图
+					num = math.randomRangeInt(num, num + 4);
+				}
+
+				const imgSrc = `tile (${num})`;
+
 				const tile = createUINode();
-				const imgSrc = `tile (${item.src})`;
 				const spriteFrame = spriteFrames.find(v => v.name === imgSrc) || spriteFrames[0];
 
 				const tileManager = tile.addComponent(TileManager);
