@@ -1,13 +1,14 @@
-import { _decorator, Component, ForwardFlow, Layers, Node, resources, Sprite, SpriteFrame, UITransform } from 'cc';
+import { _decorator, Component } from 'cc';
 import { createUINode } from '../Utils';
 import { TileManager } from './TileManager';
 import DataManager from '../../Runtime/DataManager';
+import ResourceManager from '../../Runtime/ResourceManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('TileMapManager')
 export class TileMapManager extends Component {
 	async init() {
-		const spriteFrames = await this.loadRes();
+		const spriteFrames = await ResourceManager.Instance.loadDir('texture/tile/tile');
 		// console.log(spriteFrames);
 
 		const { mapInfo } = DataManager.Instance;
@@ -29,20 +30,5 @@ export class TileMapManager extends Component {
 				tile.setParent(this.node);
 			}
 		}
-	}
-
-	/**
-	 * 官方为回调函数写法，不太好写，封装为 Promise
-	 */
-	loadRes() {
-		return new Promise<SpriteFrame[]>((resolve, reject) => {
-			resources.loadDir('texture/tile/tile', SpriteFrame, function (err, assets) {
-				if (err) {
-					reject(err);
-					return;
-				}
-				resolve(assets);
-			});
-		});
 	}
 }
