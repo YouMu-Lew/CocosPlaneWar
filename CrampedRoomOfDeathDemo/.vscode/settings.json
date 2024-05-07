@@ -47,7 +47,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -77,5 +77,9 @@
   "svg.preview.background": "black",
   // css modules 默认支持 camelCase
   "cssModules.camelCase": true,
-  "compile-hero.disable-compile-files-on-did-save-code": true
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "prettier.tabWidth": 4,
+  "prettier.semi": false,
+  "prettier.useTabs": true,
+  "javascript.format.semicolons": "insert"
 }
