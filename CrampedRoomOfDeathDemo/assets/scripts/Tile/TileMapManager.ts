@@ -1,18 +1,17 @@
 import { _decorator, Component, ForwardFlow, Layers, Node, resources, Sprite, SpriteFrame, UITransform } from 'cc';
-import levels from '../../Levels';
 import { createUINode } from '../Utils';
 import { TileManager } from './TileManager';
+import { DataManagerInstance } from '../../Runtime/DataManager';
 const { ccclass, property } = _decorator;
-
-// export const TILE_WIDTH = 55;
-// export const TILE_HEIGHT = 55;
 
 @ccclass('TileMapManager')
 export class TileMapManager extends Component {
     async init() {
-        const {mapInfo} = levels[`level${1}`];
+
         const spriteFrames = await this.loadRes();
-        console.log(spriteFrames);
+        // console.log(spriteFrames);
+
+        const { mapInfo } = DataManagerInstance;
 
         for (let i = 0; i < mapInfo.length; i++) {
             const column = mapInfo[i];
@@ -44,7 +43,6 @@ export class TileMapManager extends Component {
                     reject(err);
                     return;
                 }
-
                 resolve(assets);
             });
         })

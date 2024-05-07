@@ -4,7 +4,7 @@ export const createUINode = (name:string = ''):Node => {
   const node = new Node(name);
 
   const transform = node.addComponent(UITransform);
-  transform.setAnchorPoint
+  transform.setAnchorPoint(0,1);
 
   node.layer = Layers.Enum.UI_2D;
 
