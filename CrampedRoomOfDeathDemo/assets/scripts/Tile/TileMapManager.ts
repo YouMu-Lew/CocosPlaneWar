@@ -1,7 +1,7 @@
 import { _decorator, Component, ForwardFlow, Layers, Node, resources, Sprite, SpriteFrame, UITransform } from 'cc';
 import { createUINode } from '../Utils';
 import { TileManager } from './TileManager';
-import { DataManagerInstance } from '../../Runtime/DataManager';
+import DataManager from '../../Runtime/DataManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('TileMapManager')
@@ -11,7 +11,7 @@ export class TileMapManager extends Component {
         const spriteFrames = await this.loadRes();
         // console.log(spriteFrames);
 
-        const { mapInfo } = DataManagerInstance;
+        const { mapInfo } = DataManager.Instance;
 
         for (let i = 0; i < mapInfo.length; i++) {
             const column = mapInfo[i];

@@ -1,5 +1,4 @@
-import { _decorator, Component, ForwardFlow, Layers, Node, resources, Sprite, SpriteFrame, UITransform } from 'cc';
-import levels from '../../Levels';
+import { _decorator, Component, Sprite, SpriteFrame, UITransform } from 'cc';
 const { ccclass, property } = _decorator;
 
 export const TILE_WIDTH = 55;

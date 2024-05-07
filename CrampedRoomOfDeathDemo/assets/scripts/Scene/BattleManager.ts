@@ -2,7 +2,7 @@ import { _decorator, Component, error, Node, Widget } from 'cc';
 import { TileMapManager } from '../Tile/TileMapManager';
 import { createUINode } from '../Utils';
 import levels, { ILevel } from "../../Levels";
-import { DataManagerInstance } from '../../Runtime/DataManager';
+import  DataManager  from '../../Runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 const { ccclass, property } = _decorator;
 
@@ -27,9 +27,9 @@ export class BattleManager extends Component {
 			error("获取 level info 失败");
 
 		this.level = level;
-		DataManagerInstance.mapInfo = this.level.mapInfo;
-		DataManagerInstance.mapRowCount = this.level.mapInfo.length || 0;
-		DataManagerInstance.mapColumnCount = this.level.mapInfo[0].length || 0;
+		DataManager.Instance.mapInfo = this.level.mapInfo;
+		DataManager.Instance.mapRowCount = this.level.mapInfo.length || 0;
+		DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
 
 		this.generateTileMap();
 	}
@@ -53,7 +53,7 @@ export class BattleManager extends Component {
 
 	adpatPos () {
 		// TODO 是否可以用 widget 实现
-		const { mapRowCount, mapColumnCount } = DataManagerInstance;
+		const { mapRowCount, mapColumnCount } = DataManager.Instance;
 		const disX = mapRowCount * TILE_WIDTH / 2;
 		const disY = mapColumnCount * TILE_HEIGHT / 2 + 50;
 		this.stage.setPosition(-disX, disY);
