@@ -1,0 +1,1 @@
+assets/Runtime 中通常会放一些 全局的单例
