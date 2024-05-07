@@ -10,3 +10,7 @@ export enum TILE_TYPE_ENUM {
 	CLIFF_RIGHT,
 	FLOOR,
 }
+
+export enum EVENT_TYPE {
+	NEXT_LEVEL = 'NEXT_LEVEL',
+}
