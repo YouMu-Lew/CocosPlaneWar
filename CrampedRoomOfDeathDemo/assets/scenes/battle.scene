@@ -596,7 +596,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "ControllerBtn_Back",
+    "_name": "ControllerBtn_TurnLeft",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -1244,7 +1244,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "ControllerBtn_Forward",
+    "_name": "ControllerBtn_TurnRight",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
