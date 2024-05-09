@@ -1,12 +1,19 @@
 import { Layers, Node, UITransform } from 'cc';
 
-export const createUINode = (name: string = ''): Node => {
+/**
+ * 统一创建 Node 的接口
+ * @param name
+ * @returns 返回 cc.Node 类型节点
+ */
+export const createUINode = (parent: Node | null = null, name: string = ''): Node => {
 	const node = new Node(name);
 
 	const transform = node.addComponent(UITransform);
 	transform.setAnchorPoint(0, 1);
 
 	node.layer = Layers.Enum.UI_2D;
+
+	node.setParent(parent);
 
 	return node;
 };
