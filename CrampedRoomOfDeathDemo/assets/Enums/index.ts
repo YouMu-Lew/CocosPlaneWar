@@ -24,3 +24,13 @@ export enum CONTROLLER_EVENT {
 	TURNLEFT = 'TURNLEFT',
 	TURNRIGHT = 'TURNRIGHT',
 }
+
+export enum FSM_PARAMS_TYPE {
+	TRIGGER = 'TRIGGER',
+	NUMBER = 'NUMBER',
+}
+
+export enum STATE_TYPE {
+	IDLE = 'IDLE',
+	TURNLEFT = 'TURNLEFT',
+}

@@ -1,11 +1,10 @@
 import { _decorator, Animation, animation, AnimationClip, Component, Node, Sprite, SpriteFrame, UITransform } from 'cc';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import ResourceManager from '../../Runtime/ResourceManager';
-import { CONTROLLER_EVENT, EVENT_TYPE } from '../../Enums';
+import { CONTROLLER_EVENT, EVENT_TYPE, STATE_TYPE } from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
+import { PlayerStateMachine } from './PlayerStateMachine';
 const { ccclass, property } = _decorator;
-
-const ANIMATION_SPEED = 1 / 8;
 
 @ccclass('PlayerManager')
 export class PlayerManager extends Component {
@@ -13,11 +12,19 @@ export class PlayerManager extends Component {
 	y: number = 0;
 	targetX: number = 0;
 	targetY: number = 0;
+	private fsm: PlayerStateMachine;
 
 	private speed: number = 0.1;
 
 	async init() {
-		await this.render();
+		const sprite = this.addComponent(Sprite);
+		sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+
+		this.getComponent(UITransform).setContentSize(TILE_WIDTH * 4, TILE_HEIGHT * 4);
+
+		this.fsm = this.addComponent(PlayerStateMachine);
+		await this.fsm.init();
+		this.fsm.setParams(STATE_TYPE.IDLE, true);
 
 		this.registerEvents();
 	}
@@ -62,32 +69,9 @@ export class PlayerManager extends Component {
 			case CONTROLLER_EVENT.RIGHT:
 				this.targetX++;
 				break;
+			case CONTROLLER_EVENT.TURNLEFT:
+				this.fsm.setParams(STATE_TYPE.TURNLEFT, true);
+				break;
 		}
-	}
-
-	async render() {
-		const sprite = this.addComponent(Sprite);
-		sprite.sizeMode = Sprite.SizeMode.CUSTOM;
-
-		this.getComponent(UITransform).setContentSize(TILE_WIDTH * 4, TILE_HEIGHT * 4);
-
-		const spriteFrames = await ResourceManager.Instance.loadDir('texture/player/idle/top');
-		const animationComponent = this.addComponent(Animation);
-
-		const animationClip = new AnimationClip();
-
-		const track = new animation.ObjectTrack(); // 创建一个对象轨道
-		track.path = new animation.TrackPath().toComponent(Sprite).toProperty('spriteFrame'); // 指定轨道路径
-
-		const frames: Array<[number, SpriteFrame]> = spriteFrames.map((item, index) => [ANIMATION_SPEED * index, item]);
-		track.channel.curve.assignSorted(frames);
-
-		// 最后将轨道添加到动画剪辑以应用
-		animationClip.addTrack(track);
-		animationClip.duration = frames.length * ANIMATION_SPEED; // 整个动画剪辑的周期
-		animationClip.wrapMode = AnimationClip.WrapMode.Loop;
-
-		animationComponent.defaultClip = animationClip;
-		animationComponent.play();
 	}
 }
