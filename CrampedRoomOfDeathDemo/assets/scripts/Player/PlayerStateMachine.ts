@@ -26,7 +26,7 @@ export class PlayerStateMachine extends Component {
 
 	animationComponent: Animation;
 
-	waitingList: Array<Promise<SpriteFrame[]>>;
+	waitingList: Array<Promise<SpriteFrame[]>> = [];
 
 	getParams(paramsName: string) {
 		if (this.params.has(paramsName)) {
@@ -42,12 +42,12 @@ export class PlayerStateMachine extends Component {
 	}
 
 	get currentState() {
-		return this.currentState;
+		return this._currentState;
 	}
 
 	set currentState(newState: State) {
-		this.currentState = newState;
-		this.currentState.run();
+		this._currentState = newState;
+		this._currentState.run();
 	}
 
 	async init() {
@@ -78,6 +78,7 @@ export class PlayerStateMachine extends Component {
 			case this.stateMachines.get(STATE_TYPE.TURNLEFT):
 			case this.stateMachines.get(STATE_TYPE.IDLE):
 				if (this.params.get(STATE_TYPE.TURNLEFT)) {
+					this.currentState = this.stateMachines.get(STATE_TYPE.TURNLEFT);
 				} else if (this.params.get(STATE_TYPE.IDLE)) {
 					this.currentState = this.stateMachines.get(STATE_TYPE.IDLE);
 				}
