@@ -1,4 +1,4 @@
-import { TILE_TYPE_ENUM } from '../Enums';
+import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, TILE_TYPE_ENUM } from '../Enums';
 import level1 from './level01';
 import level2 from './level02';
 
@@ -9,6 +9,14 @@ export interface ITile {
 
 export interface ILevel {
 	mapInfo: Array<Array<ITile>>;
+}
+
+export interface IEntity {
+	x: number;
+	y: number;
+	type: ENTITY_TYPE_ENUM;
+	state: ENTITY_STATE_ENUM;
+	direction: DIRECTION_ENUM;
 }
 
 //TODO Record是啥

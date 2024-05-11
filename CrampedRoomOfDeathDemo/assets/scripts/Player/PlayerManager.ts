@@ -1,4 +1,4 @@
-import { _decorator, Component, Sprite, UITransform } from 'cc';
+import { _decorator, Sprite, UITransform } from 'cc';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import {
 	CONTROLLER_EVENT,
@@ -10,50 +10,27 @@ import {
 } from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
+import { EntityManager } from '../../Base/EntityManager';
+import { StateMachine } from '../../Base/StateMachine';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerManager')
-export class PlayerManager extends Component {
-	x: number = 0;
-	y: number = 0;
+export class PlayerManager extends EntityManager {
 	targetX: number = 0;
 	targetY: number = 0;
-	private fsm: PlayerStateMachine;
 
-	private speed: number = 0.1;
+	// fsm: PlayerStateMachine;
 
-	private _state: ENTITY_STATE_ENUM = ENTITY_STATE_ENUM.IDLE;
-	private _direction: DIRECTION_ENUM = DIRECTION_ENUM.TOP;
-
-	get state() {
-		return this._state;
-	}
-
-	set state(newState: ENTITY_STATE_ENUM) {
-		this._state = newState;
-		this.fsm.setParams(newState, true);
-	}
-
-	get direction() {
-		return this._direction;
-	}
-
-	set direction(newDirection: DIRECTION_ENUM) {
-		this._direction = newDirection;
-		this.fsm.setParams(PARAMS_NAME_ENUM.DIRECTION, DIRECTION_ORDER_ENUM[newDirection]);
-	}
+	private readonly speed: number = 0.1;
 
 	async init() {
-		const sprite = this.addComponent(Sprite);
-		sprite.sizeMode = Sprite.SizeMode.CUSTOM;
-
-		this.getComponent(UITransform).setContentSize(TILE_WIDTH * 4, TILE_HEIGHT * 4);
-
 		this.fsm = this.addComponent(PlayerStateMachine);
+		super.fsm.init();
 		await this.fsm.init();
 		this.state = ENTITY_STATE_ENUM.IDLE;
 
 		this.registerEvents();
+		this.state;
 	}
 
 	registerEvents() {
