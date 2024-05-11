@@ -1,5 +1,5 @@
-import { _decorator, AnimationClip, Component, Node, Animation, SpriteFrame } from 'cc';
-import { FSM_PARAMS_TYPE, STATE_TYPE } from '../../Enums';
+import { _decorator, AnimationClip, Animation } from 'cc';
+import { STATE_TYPE } from '../../Enums';
 import State from '../../Base/State';
 import { StateMachine, getInitParamsTrigger } from '../../Base/StateMachine';
 const { ccclass, property } = _decorator;

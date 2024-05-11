@@ -920,7 +920,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "ControllerBtn_Up",
+    "_name": "ControllerBtn_Top",
     "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
@@ -1082,7 +1082,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "ControllerBtn_Down",
+    "_name": "ControllerBtn_Bottom",
     "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
