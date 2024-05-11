@@ -77,9 +77,9 @@ export class PlayerStateMachine extends Component {
 		switch (this.currentState) {
 			case this.stateMachines.get(STATE_TYPE.TURNLEFT):
 			case this.stateMachines.get(STATE_TYPE.IDLE):
-				if (this.params.get(STATE_TYPE.TURNLEFT)) {
+				if (this.params.get(STATE_TYPE.TURNLEFT).value) {
 					this.currentState = this.stateMachines.get(STATE_TYPE.TURNLEFT);
-				} else if (this.params.get(STATE_TYPE.IDLE)) {
+				} else if (this.params.get(STATE_TYPE.IDLE).value) {
 					this.currentState = this.stateMachines.get(STATE_TYPE.IDLE);
 				}
 			default:
