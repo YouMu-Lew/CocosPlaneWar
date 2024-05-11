@@ -47,3 +47,10 @@ export enum ENTITY_STATE_ENUM {
 	IDLE = 'IDLE',
 	TURNLEFT = 'TURNLEFT',
 }
+
+export enum DIRECTION_ORDER_ENUM {
+	TOP = 0,
+	BOTTOM = 1,
+	LEFT = 2,
+	RIGHT = 3,
+}

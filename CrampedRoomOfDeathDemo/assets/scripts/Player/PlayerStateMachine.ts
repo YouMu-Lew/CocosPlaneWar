@@ -1,7 +1,8 @@
 import { _decorator, AnimationClip, Animation } from 'cc';
 import { STATE_TYPE } from '../../Enums';
-import State from '../../Base/State';
 import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
+import TrunLeftSubStateMachine from './TurnLeftSubStateMachine';
+import IdleSubStateMachine from './TurnLeftSubStateMachine copy';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerStateMachine')
@@ -24,11 +25,8 @@ export class PlayerStateMachine extends StateMachine {
 	}
 
 	initStateMachines() {
-		this.stateMachines.set(
-			STATE_TYPE.IDLE,
-			new State(this, 'texture/player/idle/top', AnimationClip.WrapMode.Loop),
-		);
-		this.stateMachines.set(STATE_TYPE.TURNLEFT, new State(this, 'texture/player/turnleft/left'));
+		this.stateMachines.set(STATE_TYPE.IDLE, new IdleSubStateMachine(this));
+		this.stateMachines.set(STATE_TYPE.TURNLEFT, new TrunLeftSubStateMachine(this));
 	}
 
 	initAnimationEvents() {
@@ -49,6 +47,9 @@ export class PlayerStateMachine extends StateMachine {
 					this.currentState = this.stateMachines.get(STATE_TYPE.TURNLEFT);
 				} else if (this.params.get(STATE_TYPE.IDLE).value) {
 					this.currentState = this.stateMachines.get(STATE_TYPE.IDLE);
+				}
+				else{
+					this.currentState = this.currentState;
 				}
 				break;
 			default:

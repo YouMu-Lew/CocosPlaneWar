@@ -3,9 +3,9 @@ import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import {
 	CONTROLLER_EVENT,
 	DIRECTION_ENUM,
+	DIRECTION_ORDER_ENUM,
 	ENTITY_STATE_ENUM,
 	EVENT_TYPE,
-	FSM_PARAMS_TYPE,
 	STATE_TYPE,
 } from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
@@ -40,7 +40,7 @@ export class PlayerManager extends Component {
 
 	set direction(newDirection: DIRECTION_ENUM) {
 		this._direction = newDirection;
-		this.fsm.setParams(STATE_TYPE.DIRECTION, true);
+		this.fsm.setParams(STATE_TYPE.DIRECTION, DIRECTION_ORDER_ENUM[newDirection]);
 	}
 
 	async init() {
