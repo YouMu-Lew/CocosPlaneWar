@@ -17,8 +17,8 @@ export enum EVENT_TYPE {
 }
 
 export enum CONTROLLER_EVENT {
-	UP = 'UP',
-	DOWN = 'DOWN',
+	TOP = 'TOP',
+	BOTTOM = 'BOTTOM',
 	LEFT = 'LEFT',
 	RIGHT = 'RIGHT',
 	TURNLEFT = 'TURNLEFT',
@@ -31,6 +31,18 @@ export enum FSM_PARAMS_TYPE {
 }
 
 export enum STATE_TYPE {
+	IDLE = 'IDLE',
+	TURNLEFT = 'TURNLEFT',
+}
+
+export enum DIRECTION_ENUM {
+	TOP = 'TOP',
+	BOTTOM = 'BOTTOM',
+	LEFT = 'LEFT',
+	RIGHT = 'RIGHT',
+}
+
+export enum ENTITY_STATE_ENUM {
 	IDLE = 'IDLE',
 	TURNLEFT = 'TURNLEFT',
 }

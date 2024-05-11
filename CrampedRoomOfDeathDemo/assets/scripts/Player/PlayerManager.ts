@@ -1,7 +1,6 @@
-import { _decorator, Animation, animation, AnimationClip, Component, Node, Sprite, SpriteFrame, UITransform } from 'cc';
+import { _decorator, Component, Sprite, UITransform } from 'cc';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
-import ResourceManager from '../../Runtime/ResourceManager';
-import { CONTROLLER_EVENT, EVENT_TYPE, STATE_TYPE } from '../../Enums';
+import { CONTROLLER_EVENT, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_TYPE, STATE_TYPE } from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 const { ccclass, property } = _decorator;
@@ -16,6 +15,26 @@ export class PlayerManager extends Component {
 
 	private speed: number = 0.1;
 
+	private _state: ENTITY_STATE_ENUM = ENTITY_STATE_ENUM.IDLE;
+	private _direction: DIRECTION_ENUM = DIRECTION_ENUM.TOP;
+
+	get state() {
+		return this._state;
+	}
+
+	set state(newState: ENTITY_STATE_ENUM) {
+		this._state = newState;
+		this.fsm.setParams(newState, true);
+	}
+
+	get direction() {
+		return this._direction;
+	}
+
+	set direction(newDirection: DIRECTION_ENUM) {
+		this._direction = newDirection;
+	}
+
 	async init() {
 		const sprite = this.addComponent(Sprite);
 		sprite.sizeMode = Sprite.SizeMode.CUSTOM;
@@ -24,7 +43,7 @@ export class PlayerManager extends Component {
 
 		this.fsm = this.addComponent(PlayerStateMachine);
 		await this.fsm.init();
-		this.fsm.setParams(STATE_TYPE.IDLE, true);
+		this.state = ENTITY_STATE_ENUM.IDLE;
 
 		this.registerEvents();
 	}
@@ -57,10 +76,10 @@ export class PlayerManager extends Component {
 
 	move(inputDirection: CONTROLLER_EVENT) {
 		switch (inputDirection) {
-			case CONTROLLER_EVENT.UP:
+			case CONTROLLER_EVENT.TOP:
 				this.targetY--;
 				break;
-			case CONTROLLER_EVENT.DOWN:
+			case CONTROLLER_EVENT.BOTTOM:
 				this.targetY++;
 				break;
 			case CONTROLLER_EVENT.LEFT:
@@ -70,7 +89,21 @@ export class PlayerManager extends Component {
 				this.targetX++;
 				break;
 			case CONTROLLER_EVENT.TURNLEFT:
-				this.fsm.setParams(STATE_TYPE.TURNLEFT, true);
+				switch (this.direction) {
+					case DIRECTION_ENUM.TOP:
+						this.direction = DIRECTION_ENUM.LEFT;
+						break;
+					case DIRECTION_ENUM.LEFT:
+						this.direction = DIRECTION_ENUM.BOTTOM;
+						break;
+					case DIRECTION_ENUM.BOTTOM:
+						this.direction = DIRECTION_ENUM.RIGHT;
+						break;
+					case DIRECTION_ENUM.RIGHT:
+						this.direction = DIRECTION_ENUM.TOP;
+						break;
+				}
+				this.state = ENTITY_STATE_ENUM.TURNLEFT;
 				break;
 		}
 	}
