@@ -82,6 +82,7 @@ export class PlayerStateMachine extends Component {
 				} else if (this.params.get(STATE_TYPE.IDLE).value) {
 					this.currentState = this.stateMachines.get(STATE_TYPE.IDLE);
 				}
+				break;
 			default:
 				this.currentState = this.stateMachines.get(STATE_TYPE.IDLE);
 		}
