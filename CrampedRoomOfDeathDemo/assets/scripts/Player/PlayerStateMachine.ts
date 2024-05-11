@@ -1,8 +1,8 @@
 import { _decorator, AnimationClip, Animation } from 'cc';
-import { STATE_TYPE } from '../../Enums';
+import { PARAMS_NAME_ENUM } from '../../Enums';
 import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
 import TrunLeftSubStateMachine from './TurnLeftSubStateMachine';
-import IdleSubStateMachine from './TurnLeftSubStateMachine copy';
+import IdleSubStateMachine from './IdleSubStateMachine';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerStateMachine')
@@ -19,14 +19,14 @@ export class PlayerStateMachine extends StateMachine {
 	}
 
 	initParams() {
-		this.params.set(STATE_TYPE.IDLE, getInitParamsTrigger());
-		this.params.set(STATE_TYPE.TURNLEFT, getInitParamsTrigger());
-		this.params.set(STATE_TYPE.DIRECTION, getInitParamsNumber());
+		this.params.set(PARAMS_NAME_ENUM.IDLE, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.TURNLEFT, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.DIRECTION, getInitParamsNumber());
 	}
 
 	initStateMachines() {
-		this.stateMachines.set(STATE_TYPE.IDLE, new IdleSubStateMachine(this));
-		this.stateMachines.set(STATE_TYPE.TURNLEFT, new TrunLeftSubStateMachine(this));
+		this.stateMachines.set(PARAMS_NAME_ENUM.IDLE, new IdleSubStateMachine(this));
+		this.stateMachines.set(PARAMS_NAME_ENUM.TURNLEFT, new TrunLeftSubStateMachine(this));
 	}
 
 	initAnimationEvents() {
@@ -34,26 +34,26 @@ export class PlayerStateMachine extends StateMachine {
 			const name = this.animationComponent.defaultClip.name;
 			const whiteList = ['turn'];
 			if (!name.includes('idle')) {
-				this.setParams(STATE_TYPE.IDLE, true);
+				this.setParams(PARAMS_NAME_ENUM.IDLE, true);
 			}
 		});
 	}
 
 	run() {
 		switch (this.currentState) {
-			case this.stateMachines.get(STATE_TYPE.TURNLEFT):
-			case this.stateMachines.get(STATE_TYPE.IDLE):
-				if (this.params.get(STATE_TYPE.TURNLEFT).value) {
-					this.currentState = this.stateMachines.get(STATE_TYPE.TURNLEFT);
-				} else if (this.params.get(STATE_TYPE.IDLE).value) {
-					this.currentState = this.stateMachines.get(STATE_TYPE.IDLE);
-				}
-				else{
+			case this.stateMachines.get(PARAMS_NAME_ENUM.TURNLEFT):
+			case this.stateMachines.get(PARAMS_NAME_ENUM.IDLE):
+				if (this.params.get(PARAMS_NAME_ENUM.TURNLEFT).value) {
+					this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.TURNLEFT);
+				} else if (this.params.get(PARAMS_NAME_ENUM.IDLE).value) {
+					this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
+				} else {
+					// 确保 set 被触发
 					this.currentState = this.currentState;
 				}
 				break;
 			default:
-				this.currentState = this.stateMachines.get(STATE_TYPE.IDLE);
+				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
 		}
 	}
 }

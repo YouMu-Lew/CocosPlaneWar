@@ -30,7 +30,7 @@ export enum FSM_PARAMS_TYPE {
 	NUMBER = 'NUMBER',
 }
 
-export enum STATE_TYPE {
+export enum PARAMS_NAME_ENUM {
 	IDLE = 'IDLE',
 	TURNLEFT = 'TURNLEFT',
 	DIRECTION = 'DIRECTION',

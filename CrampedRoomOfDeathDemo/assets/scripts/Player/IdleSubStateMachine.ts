@@ -1,7 +1,7 @@
 import { AnimationClip } from 'cc';
 import State from '../../Base/State';
 import { SubStateMachine } from '../../Base/SubStateMachine';
-import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, STATE_TYPE } from '../../Enums';
+import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
 import { PlayerStateMachine } from './PlayerStateMachine';
 
 const BASE_URL = 'texture/player/idle/';
@@ -16,7 +16,7 @@ export default class IdleSubStateMachine extends SubStateMachine {
 	}
 
 	run() {
-		const dir = this.fsm.getParams(STATE_TYPE.DIRECTION).value;
+		const dir = this.fsm.getParams(PARAMS_NAME_ENUM.DIRECTION).value;
 		this.currentState = this.stateMachines.get(DIRECTION_ORDER_ENUM[dir as number]);
 	}
 }

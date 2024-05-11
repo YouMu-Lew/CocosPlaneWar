@@ -6,7 +6,7 @@ import {
 	DIRECTION_ORDER_ENUM,
 	ENTITY_STATE_ENUM,
 	EVENT_TYPE,
-	STATE_TYPE,
+	PARAMS_NAME_ENUM,
 } from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
@@ -40,7 +40,7 @@ export class PlayerManager extends Component {
 
 	set direction(newDirection: DIRECTION_ENUM) {
 		this._direction = newDirection;
-		this.fsm.setParams(STATE_TYPE.DIRECTION, DIRECTION_ORDER_ENUM[newDirection]);
+		this.fsm.setParams(PARAMS_NAME_ENUM.DIRECTION, DIRECTION_ORDER_ENUM[newDirection]);
 	}
 
 	async init() {
