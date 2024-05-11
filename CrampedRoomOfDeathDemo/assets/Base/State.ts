@@ -1,6 +1,6 @@
 import { AnimationClip, Sprite, SpriteFrame, animation } from 'cc';
-import { PlayerStateMachine } from '../scripts/Player/PlayerStateMachine';
 import ResourceManager from '../Runtime/ResourceManager';
+import { StateMachine } from './StateMachine';
 
 /**
  * 1、需要 animationClip
@@ -12,12 +12,7 @@ const ANIMATION_SPEED = 1 / 8;
 export default class State {
 	private animationClip: AnimationClip;
 	constructor(
-		/**
-		 * State 作为基类，此处却引用了一个子类 PlayerStateMachine，这样是不规范且不易维护和拓展的
-		 * 需要新增基类 StateMachine，PlayerStateMachine 去 继承 StateMachine
-		 * State 引用 StateMachine
-		 */
-		private fsm: PlayerStateMachine,
+		private fsm: StateMachine,
 		private path: string,
 		private wrapMode: AnimationClip.WrapMode = AnimationClip.WrapMode.Normal,
 	) {
