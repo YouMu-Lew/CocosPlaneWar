@@ -29,7 +29,7 @@ export default class State {
 		this.fsm.waitingList.push(promise);
 		const spriteFrames = await promise;
 
-		this.animationClip = new AnimationClip();
+		this.animationClip = new AnimationClip(this.path);
 
 		const track = new animation.ObjectTrack(); // 创建一个对象轨道
 		track.path = new animation.TrackPath().toComponent(Sprite).toProperty('spriteFrame'); // 指定轨道路径
@@ -43,7 +43,7 @@ export default class State {
 		this.animationClip.wrapMode = this.wrapMode;
 	}
 
-	async run() {
+	run() {
 		this.fsm.animationComponent.defaultClip = this.animationClip;
 		this.fsm.animationComponent.play();
 	}

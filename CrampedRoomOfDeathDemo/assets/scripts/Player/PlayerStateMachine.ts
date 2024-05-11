@@ -38,6 +38,7 @@ export class PlayerStateMachine extends Component {
 		if (this.params.has(paramsName)) {
 			this.params.get(paramsName).value = value;
 			this.run();
+			this.resetTriggers();
 		}
 	}
 
@@ -55,9 +56,16 @@ export class PlayerStateMachine extends Component {
 
 		this.initParams();
 		this.initStateMachines();
+		this.initAnimationEvents();
 
 		// 使用 Promise 封装，确保所有资源加载完成之后才推出 init 方法
 		await Promise.all(this.waitingList);
+	}
+
+	resetTriggers() {
+		for (const [, v] of this.params) {
+			if (v.type === FSM_PARAMS_TYPE.TRIGGER) v.value = false;
+		}
 	}
 
 	initParams() {
@@ -71,6 +79,16 @@ export class PlayerStateMachine extends Component {
 			new State(this, 'texture/player/idle/top', AnimationClip.WrapMode.Loop),
 		);
 		this.stateMachines.set(STATE_TYPE.TURNLEFT, new State(this, 'texture/player/turnleft/left'));
+	}
+
+	initAnimationEvents() {
+		this.animationComponent.on(Animation.EventType.FINISHED, () => {
+			const name = this.animationComponent.defaultClip.name;
+			const whiteList = ['turn'];
+			if (!name.includes('idle')) {
+				this.setParams(STATE_TYPE.IDLE, true);
+			}
+		});
 	}
 
 	run() {
