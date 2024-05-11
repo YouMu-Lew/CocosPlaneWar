@@ -1,7 +1,7 @@
 import { _decorator, AnimationClip, Animation } from 'cc';
 import { STATE_TYPE } from '../../Enums';
 import State from '../../Base/State';
-import { StateMachine, getInitParamsTrigger } from '../../Base/StateMachine';
+import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerStateMachine')
@@ -20,6 +20,7 @@ export class PlayerStateMachine extends StateMachine {
 	initParams() {
 		this.params.set(STATE_TYPE.IDLE, getInitParamsTrigger());
 		this.params.set(STATE_TYPE.TURNLEFT, getInitParamsTrigger());
+		this.params.set(STATE_TYPE.DIRECTION, getInitParamsNumber());
 	}
 
 	initStateMachines() {

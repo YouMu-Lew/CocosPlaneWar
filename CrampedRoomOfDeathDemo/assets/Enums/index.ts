@@ -33,6 +33,7 @@ export enum FSM_PARAMS_TYPE {
 export enum STATE_TYPE {
 	IDLE = 'IDLE',
 	TURNLEFT = 'TURNLEFT',
+	DIRECTION = 'DIRECTION',
 }
 
 export enum DIRECTION_ENUM {

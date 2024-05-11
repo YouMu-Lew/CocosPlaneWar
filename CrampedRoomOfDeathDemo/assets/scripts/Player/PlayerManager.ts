@@ -1,6 +1,13 @@
 import { _decorator, Component, Sprite, UITransform } from 'cc';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
-import { CONTROLLER_EVENT, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_TYPE, STATE_TYPE } from '../../Enums';
+import {
+	CONTROLLER_EVENT,
+	DIRECTION_ENUM,
+	ENTITY_STATE_ENUM,
+	EVENT_TYPE,
+	FSM_PARAMS_TYPE,
+	STATE_TYPE,
+} from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 const { ccclass, property } = _decorator;
@@ -33,6 +40,7 @@ export class PlayerManager extends Component {
 
 	set direction(newDirection: DIRECTION_ENUM) {
 		this._direction = newDirection;
+		this.fsm.setParams(STATE_TYPE.DIRECTION, true);
 	}
 
 	async init() {
