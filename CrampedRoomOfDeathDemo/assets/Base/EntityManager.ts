@@ -3,6 +3,7 @@ import { StateMachine } from './StateMachine';
 import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM } from '../Enums';
 import { TILE_HEIGHT, TILE_WIDTH } from '../scripts/Tile/TileManager';
 import { IEntity } from '../Levels';
+import { PlayerStateMachine } from '../scripts/Player/PlayerStateMachine';
 
 const { ccclass, property } = _decorator;
 
@@ -37,6 +38,8 @@ export class EntityManager extends Component {
 	async init(params: IEntity) {
 		const sprite = this.addComponent(Sprite);
 		sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+		const transform = this.getComponent(UITransform);
+		transform.setContentSize(TILE_WIDTH * 4, TILE_HEIGHT * 4);
 
 		this.x = params.x;
 		this.y = params.y;
@@ -46,7 +49,7 @@ export class EntityManager extends Component {
 		this.getComponent(UITransform).setContentSize(TILE_WIDTH * 4, TILE_HEIGHT * 4);
 	}
 
-	protected update(dt: number): void {
+	update(): void {
 		this.updatePos();
 	}
 

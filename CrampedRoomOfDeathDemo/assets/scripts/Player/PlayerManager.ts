@@ -1,17 +1,8 @@
-import { _decorator, Sprite, UITransform } from 'cc';
-import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
-import {
-	CONTROLLER_EVENT,
-	DIRECTION_ENUM,
-	DIRECTION_ORDER_ENUM,
-	ENTITY_STATE_ENUM,
-	EVENT_TYPE,
-	PARAMS_NAME_ENUM,
-} from '../../Enums';
+import { _decorator } from 'cc';
+import { CONTROLLER_EVENT, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 import { EntityManager } from '../../Base/EntityManager';
-import { StateMachine } from '../../Base/StateMachine';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerManager')
@@ -25,25 +16,25 @@ export class PlayerManager extends EntityManager {
 
 	async init() {
 		this.fsm = this.addComponent(PlayerStateMachine);
-		super.fsm.init();
 		await this.fsm.init();
-		this.state = ENTITY_STATE_ENUM.IDLE;
+		super.init({
+			x: 0,
+			y: 0,
+			type: ENTITY_TYPE_ENUM.PLAYER,
+			state: ENTITY_STATE_ENUM.IDLE,
+			direction: DIRECTION_ENUM.TOP,
+		});
 
 		this.registerEvents();
-		this.state;
 	}
 
 	registerEvents() {
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_CONTROL, this.move, this);
 	}
 
-	protected update(dt: number): void {
-		this.updatePos();
-	}
-
-	updatePos() {
+	update(): void {
 		this.updateXY();
-		this.node.setPosition((this.x - 1.5) * TILE_WIDTH, -(this.y - 1.5) * TILE_HEIGHT);
+		super.update();
 	}
 
 	updateXY() {

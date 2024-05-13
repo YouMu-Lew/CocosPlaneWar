@@ -3,7 +3,8 @@ import { SubStateMachine } from './SubStateMachine';
 
 export default class DirectionSubStateMachine extends SubStateMachine {
 	run() {
-		const dir = this.fsm.getParams(PARAMS_NAME_ENUM.DIRECTION).value;
-		this.currentState = this.stateMachines.get(DIRECTION_ORDER_ENUM[dir as number]);
+		// 获取当前参数方向并切换至相应状态
+		const value = this.fsm.getParams(PARAMS_NAME_ENUM.DIRECTION).value;
+		this.currentState = this.stateMachines.get(DIRECTION_ORDER_ENUM[value as number]);
 	}
 }
