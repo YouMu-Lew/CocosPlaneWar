@@ -1,6 +1,6 @@
 import { _decorator, Component, Sprite, UITransform } from 'cc';
 import { StateMachine } from './StateMachine';
-import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM } from '../Enums';
+import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, PARAMS_NAME_ENUM } from '../Enums';
 import { TILE_HEIGHT, TILE_WIDTH } from '../scripts/Tile/TileManager';
 import { IEntity } from '../Levels';
 import { PlayerStateMachine } from '../scripts/Player/PlayerStateMachine';
@@ -16,6 +16,7 @@ export class EntityManager extends Component {
 
 	private _state: ENTITY_STATE_ENUM = ENTITY_STATE_ENUM.IDLE;
 	private _direction: DIRECTION_ENUM = DIRECTION_ENUM.TOP;
+	private _type: ENTITY_TYPE_ENUM;
 
 	get state() {
 		return this._state;
@@ -43,6 +44,7 @@ export class EntityManager extends Component {
 
 		this.x = params.x;
 		this.y = params.y;
+		this._type = params.type;
 		this.state = params.state;
 		this.direction = params.direction;
 
