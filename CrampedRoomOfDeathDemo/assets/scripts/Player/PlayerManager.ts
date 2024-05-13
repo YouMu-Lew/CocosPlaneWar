@@ -3,6 +3,7 @@ import { CONTROLLER_EVENT, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, 
 import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 import { EntityManager } from '../../Base/EntityManager';
+import DataManager from '../../Runtime/DataManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerManager')
@@ -51,6 +52,7 @@ export class PlayerManager extends EntityManager {
 	}
 
 	move(inputDirection: CONTROLLER_EVENT) {
+		console.log(DataManager.Instance.tileInfo);
 		switch (inputDirection) {
 			case CONTROLLER_EVENT.TOP:
 				this.targetY--;

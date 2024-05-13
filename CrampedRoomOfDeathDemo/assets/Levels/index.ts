@@ -3,7 +3,7 @@ import level1 from './level01';
 import level2 from './level02';
 
 export interface ITile {
-	src: number | null;
+	src: number | null; // 瓦片图片类型
 	type: TILE_TYPE_ENUM | null;
 }
 
