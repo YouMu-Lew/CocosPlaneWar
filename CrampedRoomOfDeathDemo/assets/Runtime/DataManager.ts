@@ -18,6 +18,7 @@ export default class DataManager extends Singleton {
 
 	reset() {
 		this.mapInfo = [];
+		this.tileInfo = [];
 		this.mapRowCount = 0;
 		this.mapColumnCount = 0;
 	}
