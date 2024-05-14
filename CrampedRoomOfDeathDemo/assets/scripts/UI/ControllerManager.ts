@@ -1,6 +1,6 @@
 import { _decorator, Button, Component, Event, EventHandler, Node } from 'cc';
 import EventManager from '../../Runtime/EventManager';
-import { EVENT_TYPE } from '../../Enums';
+import { CONTROLLER_EVENT, EVENT_TYPE } from '../../Enums';
 const { ccclass, property } = _decorator;
 
 @ccclass('ControllerManager')
@@ -21,6 +21,6 @@ export class ControllerManager extends Component {
 	}
 
 	handleCtrl(evt: Event, type: string) {
-		EventManager.Instance.emit(EVENT_TYPE.PLAYER_CONTROL, type as EVENT_TYPE.PLAYER_CONTROL);
+		EventManager.Instance.emit(EVENT_TYPE.PLAYER_CONTROL, type as CONTROLLER_EVENT);
 	}
 }

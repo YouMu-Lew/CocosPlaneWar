@@ -29,7 +29,14 @@ export default class State {
 		const track = new animation.ObjectTrack(); // 创建一个对象轨道
 		track.path = new animation.TrackPath().toComponent(Sprite).toProperty('spriteFrame'); // 指定轨道路径
 
-		const frames: Array<[number, SpriteFrame]> = spriteFrames.map((item, index) => [ANIMATION_SPEED * index, item]);
+		const frames: Array<[number, SpriteFrame]> = spriteFrames.map((item, index) => {
+			/**TODO debug 读取 右转至左侧 动画时。动画序列顺序错误
+			 * turn (17)
+			 * turn (16)
+			 * turn (18)
+			 * */
+			return [ANIMATION_SPEED * index, item];
+		});
 		track.channel.curve.assignSorted(frames);
 
 		// 最后将轨道添加到动画剪辑以应用

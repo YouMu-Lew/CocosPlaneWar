@@ -1,11 +1,15 @@
-import { _decorator, Animation, SpriteFrame } from 'cc';
+import { _decorator, Animation, AnimationClip, SpriteFrame } from 'cc';
 import State from './State';
 import { StateMachine } from './StateMachine';
 
 export abstract class SubStateMachine {
 	private _currentState: State | SubStateMachine = null;
 
-	constructor(public fsm: StateMachine) {}
+	constructor(
+		public fsm: StateMachine,
+		public baseURL: string = '',
+		public wrapMode = AnimationClip.WrapMode.Normal,
+	) {}
 
 	stateMachines: Map<string, State> = new Map();
 

@@ -4,6 +4,7 @@ import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_EN
 import { TILE_HEIGHT, TILE_WIDTH } from '../scripts/Tile/TileManager';
 import { IEntity } from '../Levels';
 import { PlayerStateMachine } from '../scripts/Player/PlayerStateMachine';
+import { SubStateMachine } from './SubStateMachine';
 
 const { ccclass, property } = _decorator;
 
