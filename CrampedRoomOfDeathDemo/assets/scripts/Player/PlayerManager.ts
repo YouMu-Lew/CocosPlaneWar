@@ -58,6 +58,28 @@ export class PlayerManager extends EntityManager {
 		if (this.canMove(inputDirection)) {
 			this.move(inputDirection);
 			return;
+		} else {
+			// be blocked
+			switch (inputDirection) {
+				case CONTROLLER_EVENT.TOP:
+					this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
+					break;
+				case CONTROLLER_EVENT.BOTTOM:
+					this.state = ENTITY_STATE_ENUM.BLOCKBACK;
+					break;
+				case CONTROLLER_EVENT.LEFT:
+					this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
+					break;
+				case CONTROLLER_EVENT.RIGHT:
+					this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
+					break;
+				case CONTROLLER_EVENT.TURNLEFT:
+					this.state = ENTITY_STATE_ENUM.BLOCKTURNLEFT;
+					break;
+				case CONTROLLER_EVENT.TURNRIGHT:
+					this.state = ENTITY_STATE_ENUM.BLOCKTURNRIGHT;
+					break;
+			}
 		}
 	}
 
