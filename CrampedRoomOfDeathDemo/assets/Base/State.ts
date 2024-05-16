@@ -1,6 +1,7 @@
 import { AnimationClip, Sprite, SpriteFrame, animation } from 'cc';
 import ResourceManager from '../Runtime/ResourceManager';
 import { StateMachine } from './StateMachine';
+import { sortSpriteFrames } from '../scripts/Utils';
 
 /**
  * 1、需要 animationClip
@@ -29,14 +30,12 @@ export default class State {
 		const track = new animation.ObjectTrack(); // 创建一个对象轨道
 		track.path = new animation.TrackPath().toComponent(Sprite).toProperty('spriteFrame'); // 指定轨道路径
 
-		const frames: Array<[number, SpriteFrame]> = spriteFrames.map((item, index) => {
-			/**TODO debug 读取 右转至左侧 动画时。动画序列顺序错误
-			 * turn (17)
-			 * turn (16)
-			 * turn (18)
-			 * */
-			return [ANIMATION_SPEED * index, item];
-		});
+		// 资源加载时可能会出现乱序情况，需先对数组排序后输出
+		const frames: Array<[number, SpriteFrame]> = sortSpriteFrames(spriteFrames).map((item, index) => [
+			ANIMATION_SPEED * index,
+			item,
+		]);
+
 		track.channel.curve.assignSorted(frames);
 
 		// 最后将轨道添加到动画剪辑以应用

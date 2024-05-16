@@ -1,4 +1,4 @@
-import { Layers, Node, UITransform } from 'cc';
+import { Layers, Node, SpriteFrame, UITransform } from 'cc';
 
 /**
  * 统一创建 Node 的接口
@@ -23,7 +23,12 @@ export const createUINode = (parent: Node | null = null, name: string = ''): Nod
  * @param max
  * @returns a pseudorandom integer between [min, max).
  */
-export const randomIntByRange = (min: number, max: number): number => {
-	// (cc.) math.randomRangeInt(min.max);
-	return Math.floor(min + (max - min) * Math.random());
-};
+// (cc.) math.randomRangeInt(min.max);
+export const randomIntByRange = (min: number, max: number): number => Math.floor(min + (max - min) * Math.random());
+
+const reg = /\((\d+)\)/;
+
+const getNumberWithinString = (str: string) => parseInt(str.match(reg)[1]);
+
+export const sortSpriteFrames = (spriteFrames: SpriteFrame[]) =>
+	spriteFrames.sort((a, b) => getNumberWithinString(a.name) - getNumberWithinString(b.name));
