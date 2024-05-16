@@ -1,7 +1,8 @@
 import { _decorator, AnimationClip, Animation } from 'cc';
-import { PARAMS_NAME_ENUM } from '../../Enums';
+import { ENTITY_STATE_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
 import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
 import DirectionSubStateMachine from '../../Base/DirectionStateMachine';
+import { EntityManager } from '../../Base/EntityManager';
 const { ccclass, property } = _decorator;
 
 const IDLE_URL = 'texture/player/idle';
@@ -60,33 +61,12 @@ export class PlayerStateMachine extends StateMachine {
 			const name = this.animationComponent.defaultClip.name;
 			//const whiteList = ['turn'];
 			if (!name.includes('idle')) {
-				this.setParams(PARAMS_NAME_ENUM.IDLE, true);
+				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
 			}
 		});
 	}
 
 	run() {
-		/*
-		switch (this.currentState) {
-			case this.stateMachines.get(PARAMS_NAME_ENUM.TURNLEFT):
-			case this.stateMachines.get(PARAMS_NAME_ENUM.TURNRIGHT):
-			case this.stateMachines.get(PARAMS_NAME_ENUM.IDLE):
-				if (this.params.get(PARAMS_NAME_ENUM.TURNLEFT).value) {
-					this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.TURNLEFT);
-				} else if (this.params.get(PARAMS_NAME_ENUM.TURNRIGHT).value) {
-					this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.TURNRIGHT);
-				} else if (this.params.get(PARAMS_NAME_ENUM.IDLE).value) {
-					this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
-				} else {
-					// 确保 set 被触发
-					this.currentState = this.currentState;
-				}
-				break;
-			default:
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
-		}
-		*/
-
 		if (this.currentState === this.stateMachines.get(PARAMS_NAME_ENUM.DIRECTION)) {
 			this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
 		} else {
