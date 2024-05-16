@@ -7,6 +7,7 @@ import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import EventManager from '../../Runtime/EventManager';
 import { EVENT_TYPE } from '../../Enums';
 import { PlayerManager } from '../Player/PlayerManager';
+import { WoodenSkeletonManager } from '../Enemies/WoodenSkeletonManager';
 
 const { ccclass, property } = _decorator;
 
@@ -47,13 +48,19 @@ export class BattleManager extends Component {
 
 		this.generateTileMap();
 		this.generatePlayer();
+		this.generateEnemies();
 	}
 
 	generatePlayer() {
 		this.player = createUINode(this.stage);
-		// this.player.setParent(this.stage);
 		const playerManager = this.player.addComponent(PlayerManager);
 		playerManager.init();
+	}
+
+	generateEnemies() {
+		const enemy = createUINode(this.stage);
+		const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
+		woodenSkeletonManager.init();
 	}
 
 	nextLevel() {
