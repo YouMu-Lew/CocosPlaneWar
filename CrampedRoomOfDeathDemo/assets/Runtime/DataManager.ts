@@ -1,5 +1,7 @@
 import Singleton from '../Base/SingleTon';
 import { ITile } from '../Levels';
+import { WoodenSkeletonManager } from '../scripts/Enemies/WoodenSkeletonManager';
+import { PlayerManager } from '../scripts/Player/PlayerManager';
 import { TileManager } from '../scripts/Tile/TileManager';
 
 /**
@@ -15,11 +17,15 @@ export default class DataManager extends Singleton {
 	mapRowCount: number = 0;
 	mapColumnCount: number = 0;
 	levelIndex: number = 1;
+	player: PlayerManager = null;
+	enemies: WoodenSkeletonManager[] = [];
 
 	reset() {
 		this.mapInfo = [];
 		this.tileInfo = [];
 		this.mapRowCount = 0;
 		this.mapColumnCount = 0;
+		this.player = null;
+		this.enemies = [];
 	}
 }

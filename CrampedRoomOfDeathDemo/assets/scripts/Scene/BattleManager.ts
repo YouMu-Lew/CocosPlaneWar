@@ -51,16 +51,29 @@ export class BattleManager extends Component {
 		this.generateEnemies();
 	}
 
-	generatePlayer() {
-		this.player = createUINode(this.stage);
-		const playerManager = this.player.addComponent(PlayerManager);
-		playerManager.init();
+	async generateTileMap() {
+		const tileMap = createUINode();
+		tileMap.setParent(this.stage);
+
+		const tileMapManager = tileMap.addComponent(TileMapManager);
+		await tileMapManager.init();
+
+		this.adpatPos();
 	}
 
-	generateEnemies() {
+	async generatePlayer() {
+		this.player = createUINode(this.stage);
+		const playerManager = this.player.addComponent(PlayerManager);
+		await playerManager.init();
+		DataManager.Instance.player = playerManager;
+		EventManager.Instance.emit(EVENT_TYPE.PLAYER_BORN, true);
+	}
+
+	async generateEnemies() {
 		const enemy = createUINode(this.stage);
 		const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
-		woodenSkeletonManager.init();
+		await woodenSkeletonManager.init();
+		DataManager.Instance.enemies.push(woodenSkeletonManager);
 	}
 
 	nextLevel() {
@@ -71,23 +84,6 @@ export class BattleManager extends Component {
 	clearLevel() {
 		this.stage.destroyAllChildren();
 		DataManager.Instance.reset();
-	}
-
-	generateTileMap() {
-		const tileMap = createUINode();
-		tileMap.setParent(this.stage);
-
-		// const widget = tileMap.addComponent(Widget);
-		// widget.isAlignHorizontalCenter = true;
-		// widget.isAlignVerticalCenter = true;
-
-		// widget.horizontalCenter = 0;
-		// widget.verticalCenter = 0;
-
-		const tileMapManager = tileMap.addComponent(TileMapManager);
-		tileMapManager.init();
-
-		this.adpatPos();
 	}
 
 	adpatPos() {

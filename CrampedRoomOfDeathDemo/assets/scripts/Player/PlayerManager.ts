@@ -14,6 +14,7 @@ export class PlayerManager extends EntityManager {
 	// fsm: PlayerStateMachine;
 
 	private readonly speed: number = 0.1;
+	private isMoving: boolean = false;
 
 	async init() {
 		this.fsm = this.addComponent(PlayerStateMachine);
@@ -37,7 +38,10 @@ export class PlayerManager extends EntityManager {
 	}
 
 	update(): void {
-		this.updateXY();
+		if (!this.isMoving && (this.x != this.targetX || this.y != this.targetY)) this.isMoving = true;
+		if (this.isMoving) {
+			this.updateXY();
+		}
 		super.update();
 	}
 
@@ -51,6 +55,10 @@ export class PlayerManager extends EntityManager {
 		else {
 			if (this.y > this.targetY) this.y -= this.speed;
 			if (this.y < this.targetY) this.y += this.speed;
+		}
+		if (this.x === this.targetX && this.y === this.targetY) {
+			this.isMoving = false;
+			EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE_END);
 		}
 	}
 
