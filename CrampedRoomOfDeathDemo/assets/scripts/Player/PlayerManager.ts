@@ -131,6 +131,7 @@ export class PlayerManager extends EntityManager {
 	}
 
 	canMove(inputDirection: CONTROLLER_EVENT): boolean {
+		if (this.isMoving) return false;
 		const tileInfo = DataManager.Instance.tileInfo;
 		// 用 targetXY 确定 xy 防止在移动过程中 xy 为小数
 		const { targetX: x, targetY: y, direction } = this;
@@ -183,6 +184,8 @@ export class PlayerManager extends EntityManager {
 						break;
 				}
 			}
+			// 目标地块不存在，即地图边界外，可以转
+			if (!tileInfo[checkList[0][0]][checkList[0][1]] && !tileInfo[checkList[1][0]][checkList[1][1]]) return true;
 			return (
 				tileInfo[checkList[0][0]][checkList[0][1]].turnable &&
 				tileInfo[checkList[1][0]][checkList[1][1]].turnable
@@ -191,30 +194,17 @@ export class PlayerManager extends EntityManager {
 			// 移动
 			let checkMovePos: [number, number] = [x, y];
 			let checkTurnPos: [number, number] = [weaponX, weaponY];
-			console.log(checkMovePos);
 			this.XYMove(checkMovePos, inputDirection);
 			this.XYMove(checkTurnPos, inputDirection);
-			console.log(checkMovePos);
-			if (inputDirection === CONTROLLER_EVENT.TOP) {
-				checkMovePos[1]--;
-				checkTurnPos[1]--;
-			} else if (inputDirection === CONTROLLER_EVENT.BOTTOM) {
-				checkMovePos[1]++;
-				checkTurnPos[1]++;
-			} else if (inputDirection === CONTROLLER_EVENT.LEFT) {
-				checkMovePos[0]--;
-				checkTurnPos[0]--;
-			} else if (inputDirection === CONTROLLER_EVENT.RIGHT) {
-				checkMovePos[0]++;
-				checkTurnPos[0]++;
+			// 目标地块不存在，即地图边界外,不可移动
+			if (!tileInfo[checkMovePos[0]][checkMovePos[1]] || !tileInfo[checkTurnPos[0]][checkTurnPos[1]]) {
+				return false;
 			}
 			return (
 				tileInfo[checkMovePos[0]][checkMovePos[1]].moveable &&
 				tileInfo[checkTurnPos[0]][checkTurnPos[1]].turnable
 			);
 		}
-
-		return false;
 	}
 
 	move(inputDirection: CONTROLLER_EVENT) {
@@ -269,7 +259,11 @@ export class PlayerManager extends EntityManager {
 	}
 
 	getWeaponPos(): [weaponX: number, weaponY: number] {
+		let weaponX = this.x;
+		let weaponY = this.y;
 		// 确定武器所在位置
+		this.XYMove([weaponX,weaponY],this.direction);
+		return[weaponX,weaponY];
 		switch (this.direction) {
 			case DIRECTION_ENUM.TOP:
 				// 人物朝向向上
@@ -293,13 +287,19 @@ export class PlayerManager extends EntityManager {
 			error('错误的参数传递');
 			return;
 		}
-		pos[0]--;
-		pos[1]--;
 		switch (direction) {
 			case DIRECTION_ENUM.TOP || CONTROLLER_EVENT.TOP:
+				pos[1]--;
+				return;
 			case DIRECTION_ENUM.BOTTOM || CONTROLLER_EVENT.BOTTOM:
+				pos[1]++;
+				return;
 			case DIRECTION_ENUM.LEFT || CONTROLLER_EVENT.LEFT:
+				pos[0]--;
+				return;
 			case DIRECTION_ENUM.RIGHT || CONTROLLER_EVENT.RIGHT:
+				pos[0]++;
+				return;
 		}
 	}
 }
