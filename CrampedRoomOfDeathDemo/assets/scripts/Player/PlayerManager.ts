@@ -1,4 +1,4 @@
-import { _decorator } from 'cc';
+import { _decorator, error } from 'cc';
 import { CONTROLLER_EVENT, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
 import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
@@ -66,6 +66,9 @@ export class PlayerManager extends EntityManager {
 
 	inputHandle(inputDirection: CONTROLLER_EVENT) {
 		if (this.isDead) return;
+		if (this.canAttack(inputDirection)) {
+			return;
+		}
 		if (this.canMove(inputDirection)) {
 			this.move(inputDirection);
 			return;
@@ -99,35 +102,39 @@ export class PlayerManager extends EntityManager {
 		this.state = type;
 	}
 
+	canAttack(inputDirection: CONTROLLER_EVENT): boolean {
+		let [weaponX, weaponY] = this.getWeaponPos();
+		let attackPoint = [weaponX, weaponY];
+		let disX = 0;
+		let disY = 0;
+		switch (inputDirection) {
+			case CONTROLLER_EVENT.TOP:
+				disX = 0;
+				disY = -1;
+				break;
+			case CONTROLLER_EVENT.BOTTOM:
+				disX = 0;
+				disY = 1;
+				break;
+			case CONTROLLER_EVENT.LEFT:
+				disX = -1;
+				disY = 0;
+				break;
+			case CONTROLLER_EVENT.RIGHT:
+				disX = 1;
+				disY = 0;
+				break;
+		}
+		attackPoint[0] += disX;
+		attackPoint[1] += disY;
+		return false;
+	}
+
 	canMove(inputDirection: CONTROLLER_EVENT): boolean {
 		const tileInfo = DataManager.Instance.tileInfo;
 		// 用 targetXY 确定 xy 防止在移动过程中 xy 为小数
 		const { targetX: x, targetY: y, direction } = this;
-		let weaponX: number, weaponY: number;
-
-		// 确定武器所在位置
-		switch (direction) {
-			case DIRECTION_ENUM.TOP:
-				// 人物朝向向上
-				weaponX = x;
-				weaponY = y - 1;
-				break;
-			case DIRECTION_ENUM.BOTTOM:
-				// 人物朝向向下
-				weaponX = x;
-				weaponY = y + 1;
-				break;
-			case DIRECTION_ENUM.LEFT:
-				// 人物朝向向左
-				weaponX = x - 1;
-				weaponY = y;
-				break;
-			case DIRECTION_ENUM.RIGHT:
-				// 人物朝向向右
-				weaponX = x + 1;
-				weaponY = y;
-				break;
-		}
+		let [weaponX, weaponY] = this.getWeaponPos();
 
 		if (inputDirection === CONTROLLER_EVENT.TURNLEFT || inputDirection === CONTROLLER_EVENT.TURNRIGHT) {
 			// 转向
@@ -182,8 +189,12 @@ export class PlayerManager extends EntityManager {
 			);
 		} else {
 			// 移动
-			let checkMovePos = [x, y];
-			let checkTurnPos = [weaponX, weaponY];
+			let checkMovePos: [number, number] = [x, y];
+			let checkTurnPos: [number, number] = [weaponX, weaponY];
+			console.log(checkMovePos);
+			this.XYMove(checkMovePos, inputDirection);
+			this.XYMove(checkTurnPos, inputDirection);
+			console.log(checkMovePos);
 			if (inputDirection === CONTROLLER_EVENT.TOP) {
 				checkMovePos[1]--;
 				checkTurnPos[1]--;
@@ -254,6 +265,41 @@ export class PlayerManager extends EntityManager {
 				}
 				this.state = ENTITY_STATE_ENUM.TURNRIGHT;
 				break;
+		}
+	}
+
+	getWeaponPos(): [weaponX: number, weaponY: number] {
+		// 确定武器所在位置
+		switch (this.direction) {
+			case DIRECTION_ENUM.TOP:
+				// 人物朝向向上
+				return [this.x, this.y - 1];
+			case DIRECTION_ENUM.BOTTOM:
+				// 人物朝向向下
+				return [this.x, this.y + 1];
+			case DIRECTION_ENUM.LEFT:
+				// 人物朝向向左
+				return [this.x - 1, this.y];
+			case DIRECTION_ENUM.RIGHT:
+				// 人物朝向向右
+				return [this.x + 1, this.y];
+			default:
+				error('玩家朝向异常');
+		}
+	}
+
+	XYMove(pos: [number, number], direction: DIRECTION_ENUM | CONTROLLER_EVENT) {
+		if (direction === CONTROLLER_EVENT.TURNLEFT || direction === CONTROLLER_EVENT.TURNRIGHT) {
+			error('错误的参数传递');
+			return;
+		}
+		pos[0]--;
+		pos[1]--;
+		switch (direction) {
+			case DIRECTION_ENUM.TOP || CONTROLLER_EVENT.TOP:
+			case DIRECTION_ENUM.BOTTOM || CONTROLLER_EVENT.BOTTOM:
+			case DIRECTION_ENUM.LEFT || CONTROLLER_EVENT.LEFT:
+			case DIRECTION_ENUM.RIGHT || CONTROLLER_EVENT.RIGHT:
 		}
 	}
 }
