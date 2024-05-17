@@ -19,6 +19,7 @@ export class WoodenSkeletonManager extends EntityManager {
 			direction: DIRECTION_ENUM.TOP,
 		});
 		this.registerEvents();
+		this.onChangeDirection(true);
 	}
 
 	registerEvents() {
@@ -28,6 +29,7 @@ export class WoodenSkeletonManager extends EntityManager {
 
 	// 参数 isInit 确保在第一次加载时，执行改变朝向算法
 	onChangeDirection(isInit: boolean = false) {
+		if (!DataManager.Instance.player) return;
 		const { x: playerX, y: playerY } = DataManager.Instance.player;
 
 		const disX = playerX - this.x;
