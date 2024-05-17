@@ -6,6 +6,7 @@ import { EntityManager } from '../../Base/EntityManager';
 const { ccclass, property } = _decorator;
 
 const IDLE_URL = 'texture/woodenskeleton/idle';
+const ATTACK_URL = 'texture/woodenskeleton/attack';
 
 @ccclass('WoodenSkeletonStateMachine')
 export class WoodenSkeletonStateMachine extends StateMachine {
@@ -21,8 +22,9 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 	}
 
 	initParams() {
-		this.params.set(PARAMS_NAME_ENUM.IDLE, getInitParamsTrigger());
 		this.params.set(PARAMS_NAME_ENUM.DIRECTION, getInitParamsNumber());
+		this.params.set(PARAMS_NAME_ENUM.IDLE, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.ATTACK, getInitParamsTrigger());
 	}
 
 	initStateMachines() {
@@ -30,12 +32,12 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 			PARAMS_NAME_ENUM.IDLE,
 			new DirectionSubStateMachine(this, IDLE_URL, AnimationClip.WrapMode.Loop),
 		);
+		this.stateMachines.set(PARAMS_NAME_ENUM.ATTACK, new DirectionSubStateMachine(this, ATTACK_URL));
 	}
 
 	initAnimationEvents() {
 		this.animationComponent.on(Animation.EventType.FINISHED, () => {
 			const name = this.animationComponent.defaultClip.name;
-			//const whiteList = ['turn'];
 			if (!name.includes('idle')) {
 				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
 			}
@@ -46,11 +48,11 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 		if (this.currentState === this.stateMachines.get(PARAMS_NAME_ENUM.DIRECTION)) {
 			this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
 		} else {
-			if (this.params.get(PARAMS_NAME_ENUM.IDLE).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
+			if (this.params.get(PARAMS_NAME_ENUM.ATTACK).value) {
+				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.ATTACK);
 			} else {
-				// 确保 set 被触发
-				this.currentState = this.currentState;
+				// 默认为 IDLE 状态
+				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
 			}
 		}
 	}
