@@ -14,6 +14,9 @@ const BLOCKLEFT_URL = 'texture/player/blockleft';
 const BLOCKRIGHT_URL = 'texture/player/blockright';
 const BLOCKTURNLEFT_URL = 'texture/player/blockturnleft';
 const BLOCKTURNRIGHT_URL = 'texture/player/blockturnright';
+const ATTACK_URL = 'texture/player/attck';
+const DEATH_URL = 'texture/player/death';
+const AIRDEATH_URL = 'texture/player/airdeath';
 
 @ccclass('PlayerStateMachine')
 export class PlayerStateMachine extends StateMachine {
@@ -38,6 +41,10 @@ export class PlayerStateMachine extends StateMachine {
 		this.params.set(PARAMS_NAME_ENUM.BLOCKRIGHT, getInitParamsTrigger());
 		this.params.set(PARAMS_NAME_ENUM.BLOCKTURNLEFT, getInitParamsTrigger());
 		this.params.set(PARAMS_NAME_ENUM.BLOCKTURNRIGHT, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.ATTACK, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.DEATH, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.AIRDEATH, getInitParamsTrigger());
+
 		this.params.set(PARAMS_NAME_ENUM.DIRECTION, getInitParamsNumber());
 	}
 
@@ -54,13 +61,16 @@ export class PlayerStateMachine extends StateMachine {
 		this.stateMachines.set(PARAMS_NAME_ENUM.BLOCKRIGHT, new DirectionSubStateMachine(this, BLOCKRIGHT_URL));
 		this.stateMachines.set(PARAMS_NAME_ENUM.BLOCKTURNLEFT, new DirectionSubStateMachine(this, BLOCKTURNLEFT_URL));
 		this.stateMachines.set(PARAMS_NAME_ENUM.BLOCKTURNRIGHT, new DirectionSubStateMachine(this, BLOCKTURNRIGHT_URL));
+		this.stateMachines.set(PARAMS_NAME_ENUM.ATTACK, new DirectionSubStateMachine(this, ATTACK_URL));
+		this.stateMachines.set(PARAMS_NAME_ENUM.DEATH, new DirectionSubStateMachine(this, DEATH_URL));
+		this.stateMachines.set(PARAMS_NAME_ENUM.AIRDEATH, new DirectionSubStateMachine(this, AIRDEATH_URL));
 	}
 
 	initAnimationEvents() {
 		this.animationComponent.on(Animation.EventType.FINISHED, () => {
 			const name = this.animationComponent.defaultClip.name;
 			//const whiteList = ['turn'];
-			if (!name.includes('idle')) {
+			if (!name.includes('idle') && !name.includes('death')) {
 				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
 			}
 		});
@@ -70,28 +80,13 @@ export class PlayerStateMachine extends StateMachine {
 		if (this.currentState === this.stateMachines.get(PARAMS_NAME_ENUM.DIRECTION)) {
 			this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
 		} else {
-			if (this.params.get(PARAMS_NAME_ENUM.TURNLEFT).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.TURNLEFT);
-			} else if (this.params.get(PARAMS_NAME_ENUM.TURNRIGHT).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.TURNRIGHT);
-			} else if (this.params.get(PARAMS_NAME_ENUM.IDLE).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
-			} else if (this.params.get(PARAMS_NAME_ENUM.BLOCKBACK).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.BLOCKBACK);
-			} else if (this.params.get(PARAMS_NAME_ENUM.BLOCKFRONT).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.BLOCKFRONT);
-			} else if (this.params.get(PARAMS_NAME_ENUM.BLOCKLEFT).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.BLOCKLEFT);
-			} else if (this.params.get(PARAMS_NAME_ENUM.BLOCKRIGHT).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.BLOCKRIGHT);
-			} else if (this.params.get(PARAMS_NAME_ENUM.BLOCKTURNLEFT).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.BLOCKTURNLEFT);
-			} else if (this.params.get(PARAMS_NAME_ENUM.BLOCKTURNRIGHT).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.BLOCKTURNRIGHT);
-			} else {
-				// 确保 set 被触发
-				this.currentState = this.currentState;
-			}
+			this.params.forEach((value, key) => {
+				if (value.value === true) {
+					this.currentState = this.stateMachines.get(key);
+					return;
+				}
+			});
+			this.currentState = this.currentState;
 		}
 	}
 }

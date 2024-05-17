@@ -15,6 +15,7 @@ export class PlayerManager extends EntityManager {
 
 	private readonly speed: number = 0.1;
 	private isMoving: boolean = false;
+	public isDead: boolean = false;
 
 	async init() {
 		this.fsm = this.addComponent(PlayerStateMachine);
@@ -35,6 +36,7 @@ export class PlayerManager extends EntityManager {
 
 	registerEvents() {
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_CONTROL, this.inputHandle, this);
+		EventManager.Instance.on(EVENT_TYPE.ENEMY_ATTACK, this.onBeHit, this);
 	}
 
 	update(): void {
@@ -63,6 +65,7 @@ export class PlayerManager extends EntityManager {
 	}
 
 	inputHandle(inputDirection: CONTROLLER_EVENT) {
+		if (this.isDead) return;
 		if (this.canMove(inputDirection)) {
 			this.move(inputDirection);
 			return;
@@ -89,6 +92,11 @@ export class PlayerManager extends EntityManager {
 					break;
 			}
 		}
+	}
+
+	onBeHit(type: ENTITY_STATE_ENUM) {
+		this.isDead = true;
+		this.state = type;
 	}
 
 	canMove(inputDirection: CONTROLLER_EVENT): boolean {

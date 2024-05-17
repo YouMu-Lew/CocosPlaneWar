@@ -68,10 +68,12 @@ export class WoodenSkeletonManager extends EntityManager {
 			error('未获取到玩家数据');
 			return;
 		}
-		const { x: playerX, y: playerY } = DataManager.Instance.player;
+		const { x: playerX, y: playerY, isDead } = DataManager.Instance.player;
+		if (isDead) return;
 		const distance = Math.abs(this.x - playerX) + Math.abs(this.y - playerY);
 		if (distance <= 1) {
 			this.state = ENTITY_STATE_ENUM.ATTACK;
+			EventManager.Instance.emit(EVENT_TYPE.ENEMY_ATTACK, ENTITY_STATE_ENUM.DEATH);
 		}
 	}
 }
