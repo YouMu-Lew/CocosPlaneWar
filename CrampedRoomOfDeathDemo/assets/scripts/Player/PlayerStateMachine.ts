@@ -3,6 +3,7 @@ import { ENTITY_STATE_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
 import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
 import DirectionSubStateMachine from '../../Base/DirectionStateMachine';
 import { EntityManager } from '../../Base/EntityManager';
+import { PlayerManager } from './PlayerManager';
 const { ccclass, property } = _decorator;
 
 const IDLE_URL = 'texture/player/idle';
@@ -72,6 +73,7 @@ export class PlayerStateMachine extends StateMachine {
 			//const whiteList = ['turn'];
 			if (!name.includes('idle') && !name.includes('death')) {
 				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
+				this.node.getComponent(PlayerManager).inMotion = false;
 			}
 		});
 	}

@@ -16,6 +16,8 @@ export class PlayerManager extends EntityManager {
 	private readonly speed: number = 0.1;
 	private isMoving: boolean = false;
 	public isDead: boolean = false;
+	public isAttacking: boolean = false;
+	public inMotion: boolean = false;
 
 	async init() {
 		this.fsm = this.addComponent(PlayerStateMachine);
@@ -65,7 +67,7 @@ export class PlayerManager extends EntityManager {
 	}
 
 	inputHandle(inputDirection: CONTROLLER_EVENT) {
-		if (this.isDead) return;
+		if (this.isDead || this.inMotion || this.isAttacking || this.isMoving) return;
 		if (this.canAttack(inputDirection)) {
 			return;
 		}
@@ -262,24 +264,8 @@ export class PlayerManager extends EntityManager {
 		let weaponX = this.x;
 		let weaponY = this.y;
 		// 确定武器所在位置
-		this.XYMove([weaponX,weaponY],this.direction);
+		[weaponX,weaponY] = this.XYMove([weaponX,weaponY],this.direction);
 		return[weaponX,weaponY];
-		switch (this.direction) {
-			case DIRECTION_ENUM.TOP:
-				// 人物朝向向上
-				return [this.x, this.y - 1];
-			case DIRECTION_ENUM.BOTTOM:
-				// 人物朝向向下
-				return [this.x, this.y + 1];
-			case DIRECTION_ENUM.LEFT:
-				// 人物朝向向左
-				return [this.x - 1, this.y];
-			case DIRECTION_ENUM.RIGHT:
-				// 人物朝向向右
-				return [this.x + 1, this.y];
-			default:
-				error('玩家朝向异常');
-		}
 	}
 
 	XYMove(pos: [number, number], direction: DIRECTION_ENUM | CONTROLLER_EVENT) {
@@ -290,16 +276,17 @@ export class PlayerManager extends EntityManager {
 		switch (direction) {
 			case DIRECTION_ENUM.TOP || CONTROLLER_EVENT.TOP:
 				pos[1]--;
-				return;
+				break;
 			case DIRECTION_ENUM.BOTTOM || CONTROLLER_EVENT.BOTTOM:
 				pos[1]++;
-				return;
+				break;
 			case DIRECTION_ENUM.LEFT || CONTROLLER_EVENT.LEFT:
 				pos[0]--;
-				return;
+				break;
 			case DIRECTION_ENUM.RIGHT || CONTROLLER_EVENT.RIGHT:
 				pos[0]++;
-				return;
+				break;
 		}
+		return pos;
 	}
 }
