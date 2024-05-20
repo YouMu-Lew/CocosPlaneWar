@@ -15,7 +15,7 @@ const BLOCKLEFT_URL = 'texture/player/blockleft';
 const BLOCKRIGHT_URL = 'texture/player/blockright';
 const BLOCKTURNLEFT_URL = 'texture/player/blockturnleft';
 const BLOCKTURNRIGHT_URL = 'texture/player/blockturnright';
-const ATTACK_URL = 'texture/player/attck';
+const ATTACK_URL = 'texture/player/attack';
 const DEATH_URL = 'texture/player/death';
 const AIRDEATH_URL = 'texture/player/airdeath';
 
@@ -73,8 +73,8 @@ export class PlayerStateMachine extends StateMachine {
 			//const whiteList = ['turn'];
 			if (!name.includes('idle') && !name.includes('death')) {
 				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
-				this.node.getComponent(PlayerManager).inMotion = false;
 			}
+			this.node.getComponent(PlayerManager).inMotion = false;
 		});
 	}
 

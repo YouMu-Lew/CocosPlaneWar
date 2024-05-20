@@ -47,8 +47,8 @@ export class BattleManager extends Component {
 		DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
 
 		this.generateTileMap();
-		this.generatePlayer();
 		this.generateEnemies();
+		this.generatePlayer();
 	}
 
 	async generateTileMap() {
@@ -63,6 +63,8 @@ export class BattleManager extends Component {
 
 	async generatePlayer() {
 		this.player = createUINode(this.stage);
+		// 让 player 在渲染时显示在最前面
+		this.player.setSiblingIndex(100);
 		const playerManager = this.player.addComponent(PlayerManager);
 		await playerManager.init();
 		DataManager.Instance.player = playerManager;

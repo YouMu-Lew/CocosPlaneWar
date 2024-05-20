@@ -15,8 +15,6 @@ export class PlayerManager extends EntityManager {
 
 	private readonly speed: number = 0.1;
 	private isMoving: boolean = false;
-	public isDead: boolean = false;
-	public isAttacking: boolean = false;
 	public inMotion: boolean = false;
 
 	async init() {
@@ -62,19 +60,17 @@ export class PlayerManager extends EntityManager {
 		}
 		if (this.x === this.targetX && this.y === this.targetY) {
 			this.isMoving = false;
+			this.inMotion = false;
 			EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE_END);
 		}
 	}
 
 	inputHandle(inputDirection: CONTROLLER_EVENT) {
-		if (this.isDead || this.inMotion || this.isAttacking || this.isMoving) return;
-		if (this.canAttack(inputDirection)) {
-			return;
-		}
-		if (this.canMove(inputDirection)) {
-			this.move(inputDirection);
-			return;
-		} else {
+		if (this.isDead || this.inMotion || this.isMoving) return;
+
+		this.inMotion = true;
+
+		if (!this.canMove(inputDirection)) {
 			// be blocked
 			switch (inputDirection) {
 				case CONTROLLER_EVENT.TOP:
@@ -96,6 +92,13 @@ export class PlayerManager extends EntityManager {
 					this.state = ENTITY_STATE_ENUM.BLOCKTURNRIGHT;
 					break;
 			}
+			return;
+		}
+		// can move
+		if (this.canAttack(inputDirection)) {
+			return;
+		} else {
+			this.move(inputDirection);
 		}
 	}
 
@@ -105,31 +108,23 @@ export class PlayerManager extends EntityManager {
 	}
 
 	canAttack(inputDirection: CONTROLLER_EVENT): boolean {
-		let [weaponX, weaponY] = this.getWeaponPos();
-		let attackPoint = [weaponX, weaponY];
-		let disX = 0;
-		let disY = 0;
-		switch (inputDirection) {
-			case CONTROLLER_EVENT.TOP:
-				disX = 0;
-				disY = -1;
-				break;
-			case CONTROLLER_EVENT.BOTTOM:
-				disX = 0;
-				disY = 1;
-				break;
-			case CONTROLLER_EVENT.LEFT:
-				disX = -1;
-				disY = 0;
-				break;
-			case CONTROLLER_EVENT.RIGHT:
-				disX = 1;
-				disY = 0;
-				break;
+		if (inputDirection === CONTROLLER_EVENT.TURNLEFT || inputDirection === CONTROLLER_EVENT.TURNRIGHT) return false;
+		let attackPoint = this.XYMove(this.getWeaponPos(), inputDirection);
+		const enemies = DataManager.Instance.enemies;
+		for (let i = 0; i < enemies.length; i++) {
+			const enemy = enemies[i];
+			if (enemy.x === attackPoint[0] && enemy.y === attackPoint[1]) {
+				this.onAttack(enemy);
+				return true;
+			}
 		}
-		attackPoint[0] += disX;
-		attackPoint[1] += disY;
 		return false;
+	}
+
+	onAttack(enemy: EntityManager) {
+		this.inMotion = true;
+		this.state = ENTITY_STATE_ENUM.ATTACK;
+		EventManager.Instance.emit(EVENT_TYPE.PLAYER_ATTACK, enemy);
 	}
 
 	canMove(inputDirection: CONTROLLER_EVENT): boolean {
@@ -261,11 +256,7 @@ export class PlayerManager extends EntityManager {
 	}
 
 	getWeaponPos(): [weaponX: number, weaponY: number] {
-		let weaponX = this.x;
-		let weaponY = this.y;
-		// 确定武器所在位置
-		[weaponX,weaponY] = this.XYMove([weaponX,weaponY],this.direction);
-		return[weaponX,weaponY];
+		return this.XYMove([this.x, this.y], this.direction);
 	}
 
 	XYMove(pos: [number, number], direction: DIRECTION_ENUM | CONTROLLER_EVENT) {

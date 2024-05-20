@@ -12,8 +12,8 @@ export class WoodenSkeletonManager extends EntityManager {
 		this.fsm = this.addComponent(WoodenSkeletonStateMachine);
 		await this.fsm.init();
 		super.init({
-			x: 7,
-			y: 7,
+			x: 2,
+			y: 4,
 			type: ENTITY_TYPE_ENUM.ENEMY,
 			state: ENTITY_STATE_ENUM.IDLE,
 			direction: DIRECTION_ENUM.TOP,
@@ -26,11 +26,12 @@ export class WoodenSkeletonManager extends EntityManager {
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_BORN, this.onChangeDirection, this);
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_MOVE_END, this.onChangeDirection, this);
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_MOVE_END, this.onAttack, this);
+		EventManager.Instance.on(EVENT_TYPE.PLAYER_ATTACK, this.onBeHit, this);
 	}
 
 	// 参数 isInit 确保在第一次加载时，执行改变朝向算法
 	onChangeDirection(isInit: boolean = false) {
-		if (!DataManager.Instance.player) return;
+		if (!DataManager.Instance.player || this.isDead) return;
 		const { x: playerX, y: playerY } = DataManager.Instance.player;
 
 		const disX = playerX - this.x;
@@ -68,6 +69,7 @@ export class WoodenSkeletonManager extends EntityManager {
 			error('未获取到玩家数据');
 			return;
 		}
+		if(this.isDead) return;
 		const { x: playerX, y: playerY, isDead } = DataManager.Instance.player;
 		if (isDead) return;
 		const distance = Math.abs(this.x - playerX) + Math.abs(this.y - playerY);
@@ -75,5 +77,22 @@ export class WoodenSkeletonManager extends EntityManager {
 			this.state = ENTITY_STATE_ENUM.ATTACK;
 			EventManager.Instance.emit(EVENT_TYPE.ENEMY_ATTACK, ENTITY_STATE_ENUM.DEATH);
 		}
+	}
+
+	onBeHit(enemy:EntityManager) {
+		if(this.isDead) return;
+		if(enemy !== this) return;
+		this.death();
+	}
+
+	death (): void {
+		this.isDead = true;
+		this.state = ENTITY_STATE_ENUM.DEATH;
+		// 从数据中心中清除这个敌人
+		DataManager.Instance.enemies = DataManager.Instance.enemies.filter(enemy => enemy !== this);
+
+		this.scheduleOnce(() => {
+			this.node.destroy();
+		},3)
 	}
 }

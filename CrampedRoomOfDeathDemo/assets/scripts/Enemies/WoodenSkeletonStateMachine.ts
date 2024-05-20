@@ -7,6 +7,7 @@ const { ccclass, property } = _decorator;
 
 const IDLE_URL = 'texture/woodenskeleton/idle';
 const ATTACK_URL = 'texture/woodenskeleton/attack';
+const DEATH_URL = 'texture/woodenskeleton/death';
 
 @ccclass('WoodenSkeletonStateMachine')
 export class WoodenSkeletonStateMachine extends StateMachine {
@@ -25,6 +26,7 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 		this.params.set(PARAMS_NAME_ENUM.DIRECTION, getInitParamsNumber());
 		this.params.set(PARAMS_NAME_ENUM.IDLE, getInitParamsTrigger());
 		this.params.set(PARAMS_NAME_ENUM.ATTACK, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.DEATH, getInitParamsTrigger());
 	}
 
 	initStateMachines() {
@@ -33,12 +35,13 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 			new DirectionSubStateMachine(this, IDLE_URL, AnimationClip.WrapMode.Loop),
 		);
 		this.stateMachines.set(PARAMS_NAME_ENUM.ATTACK, new DirectionSubStateMachine(this, ATTACK_URL));
+		this.stateMachines.set(PARAMS_NAME_ENUM.DEATH, new DirectionSubStateMachine(this, DEATH_URL));
 	}
 
 	initAnimationEvents() {
 		this.animationComponent.on(Animation.EventType.FINISHED, () => {
 			const name = this.animationComponent.defaultClip.name;
-			if (!name.includes('idle')) {
+			if (!name.includes('idle') && !name.includes('death')) {
 				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
 			}
 		});
@@ -48,12 +51,13 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 		if (this.currentState === this.stateMachines.get(PARAMS_NAME_ENUM.DIRECTION)) {
 			this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
 		} else {
-			if (this.params.get(PARAMS_NAME_ENUM.ATTACK).value) {
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.ATTACK);
-			} else {
-				// 默认为 IDLE 状态
-				this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
-			}
+			this.params.forEach((value, key) => {
+				if (value.value === true) {
+					this.currentState = this.stateMachines.get(key);
+					return;
+				}
+			});
+			this.currentState = this.currentState;
 		}
 	}
 }
