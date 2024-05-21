@@ -15,7 +15,6 @@ export class PlayerManager extends EntityManager {
 
 	private readonly speed: number = 0.1;
 	private isMoving: boolean = false;
-	public inMotion: boolean = false;
 
 	async init() {
 		this.fsm = this.addComponent(PlayerStateMachine);
@@ -60,15 +59,12 @@ export class PlayerManager extends EntityManager {
 		}
 		if (this.x === this.targetX && this.y === this.targetY) {
 			this.isMoving = false;
-			this.inMotion = false;
 			EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE_END);
 		}
 	}
 
 	inputHandle(inputDirection: CONTROLLER_EVENT) {
-		if (this.isDead || this.inMotion || this.isMoving) return;
-
-		this.inMotion = true;
+		if (this.state !== ENTITY_STATE_ENUM.IDLE || this.isMoving) return;
 
 		if (!this.canMove(inputDirection)) {
 			// be blocked
@@ -122,13 +118,11 @@ export class PlayerManager extends EntityManager {
 	}
 
 	onAttack(enemy: EntityManager) {
-		this.inMotion = true;
 		this.state = ENTITY_STATE_ENUM.ATTACK;
 		EventManager.Instance.emit(EVENT_TYPE.PLAYER_ATTACK, enemy);
 	}
 
 	canMove(inputDirection: CONTROLLER_EVENT): boolean {
-		if (this.isMoving) return false;
 		const tileInfo = DataManager.Instance.tileInfo;
 		// 用 targetXY 确定 xy 防止在移动过程中 xy 为小数
 		const { targetX: x, targetY: y, direction } = this;
