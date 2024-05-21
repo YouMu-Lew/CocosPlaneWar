@@ -69,7 +69,7 @@ export class WoodenSkeletonManager extends EntityManager {
 			error('未获取到玩家数据');
 			return;
 		}
-		if(this.isDead) return;
+		if (this.isDead) return;
 		const { x: playerX, y: playerY, isDead } = DataManager.Instance.player;
 		if (isDead) return;
 		const distance = Math.abs(this.x - playerX) + Math.abs(this.y - playerY);
@@ -79,13 +79,13 @@ export class WoodenSkeletonManager extends EntityManager {
 		}
 	}
 
-	onBeHit(enemy:EntityManager) {
-		if(this.isDead) return;
-		if(enemy !== this) return;
+	onBeHit(id: string) {
+		if (this.isDead) return;
+		if (this.id !== id) return;
 		this.death();
 	}
 
-	death (): void {
+	death(): void {
 		this.isDead = true;
 		this.state = ENTITY_STATE_ENUM.DEATH;
 		// 从数据中心中清除这个敌人
@@ -93,6 +93,6 @@ export class WoodenSkeletonManager extends EntityManager {
 
 		this.scheduleOnce(() => {
 			this.node.destroy();
-		},3)
+		}, 3);
 	}
 }

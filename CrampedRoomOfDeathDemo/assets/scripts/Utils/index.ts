@@ -32,3 +32,10 @@ const getNumberWithinString = (str: string) => parseInt(str.match(reg)[1]);
 
 export const sortSpriteFrames = (spriteFrames: SpriteFrame[]) =>
 	spriteFrames.sort((a, b) => getNumberWithinString(a.name) - getNumberWithinString(b.name));
+
+/**
+ * @param len 字符串长度
+ * @returns 返回指定长度的随机数字字符串
+ */
+export const randomNumStrByLen = (len: number) =>
+	Array.from({ length: len }).reduce<string>((total, item) => total + Math.floor(Math.random() * 10), '');

@@ -110,16 +110,16 @@ export class PlayerManager extends EntityManager {
 		for (let i = 0; i < enemies.length; i++) {
 			const enemy = enemies[i];
 			if (enemy.x === attackPoint[0] && enemy.y === attackPoint[1]) {
-				this.onAttack(enemy);
+				this.onAttack(enemy.id);
 				return true;
 			}
 		}
 		return false;
 	}
 
-	onAttack(enemy: EntityManager) {
+	onAttack(enemyId: string) {
 		this.state = ENTITY_STATE_ENUM.ATTACK;
-		EventManager.Instance.emit(EVENT_TYPE.PLAYER_ATTACK, enemy);
+		EventManager.Instance.emit(EVENT_TYPE.PLAYER_ATTACK, enemyId);
 	}
 
 	canMove(inputDirection: CONTROLLER_EVENT): boolean {
