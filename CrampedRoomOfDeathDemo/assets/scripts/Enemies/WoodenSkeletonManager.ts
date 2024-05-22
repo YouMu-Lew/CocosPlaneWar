@@ -88,8 +88,7 @@ export class WoodenSkeletonManager extends EntityManager {
 	death(): void {
 		this.isDead = true;
 		this.state = ENTITY_STATE_ENUM.DEATH;
-		// 从数据中心中清除这个敌人
-		DataManager.Instance.enemies = DataManager.Instance.enemies.filter(enemy => enemy !== this);
+		EventManager.Instance.emit(EVENT_TYPE.ENEMY_DEATH, this.type, this.id);
 
 		this.scheduleOnce(() => {
 			this.node.destroy();

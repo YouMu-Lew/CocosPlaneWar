@@ -5,9 +5,10 @@ import levels, { ILevel } from '../../Levels';
 import DataManager from '../../Runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import EventManager from '../../Runtime/EventManager';
-import { EVENT_TYPE } from '../../Enums';
+import { ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
 import { PlayerManager } from '../Player/PlayerManager';
 import { WoodenSkeletonManager } from '../Enemies/WoodenSkeletonManager';
+import { DoorManager } from '../Door/DoorManager';
 
 const { ccclass, property } = _decorator;
 
@@ -19,10 +20,12 @@ export class BattleManager extends Component {
 
 	onLoad(): void {
 		EventManager.Instance.on(EVENT_TYPE.NEXT_LEVEL, this.nextLevel, this);
+		EventManager.Instance.on(EVENT_TYPE.ENEMY_DEATH, this.onEntityDeath, this);
 	}
 
 	protected onDestroy(): void {
 		EventManager.Instance.off(EVENT_TYPE.NEXT_LEVEL, this.nextLevel);
+		EventManager.Instance.off(EVENT_TYPE.ENEMY_DEATH, this.onEntityDeath);
 	}
 
 	start() {
@@ -49,6 +52,7 @@ export class BattleManager extends Component {
 		this.generateTileMap();
 		this.generateEnemies();
 		this.generatePlayer();
+		this.generateDoor();
 	}
 
 	async generateTileMap() {
@@ -78,6 +82,12 @@ export class BattleManager extends Component {
 		DataManager.Instance.enemies.push(woodenSkeletonManager);
 	}
 
+	async generateDoor() {
+		const door = createUINode(this.stage);
+		const doorManager = door.addComponent(DoorManager);
+		await doorManager.init();
+	}
+
 	nextLevel() {
 		DataManager.Instance.levelIndex++;
 		this.initLevel();
@@ -94,5 +104,17 @@ export class BattleManager extends Component {
 		const disX = (mapRowCount * TILE_WIDTH) / 2;
 		const disY = (mapColumnCount * TILE_HEIGHT) / 2 + 50;
 		this.stage.setPosition(-disX, disY);
+	}
+
+	onEntityDeath(type: ENTITY_TYPE_ENUM, id: string) {
+		if (type === ENTITY_TYPE_ENUM.ENEMY) {
+			DataManager.Instance.enemies = DataManager.Instance.enemies.filter(enemy => enemy.id !== id);
+			if (DataManager.Instance.enemies.length === 0) {
+				// 延时执行
+				setTimeout(() => {
+					EventManager.Instance.emit(EVENT_TYPE.LEVEL_CLEARED);
+				}, 1000);
+			}
+		}
 	}
 }
