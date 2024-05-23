@@ -1,16 +1,15 @@
 import { _decorator, AnimationClip, Animation } from 'cc';
-import { ENTITY_STATE_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
-import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
-import DirectionSubStateMachine from '../../Base/DirectionStateMachine';
-import { EntityManager } from '../../Base/EntityManager';
+import { ENTITY_STATE_ENUM, PARAMS_NAME_ENUM } from '../../../Enums';
+import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../../Base/StateMachine';
+import DirectionSubStateMachine from '../../../Base/DirectionStateMachine';
+import { EntityManager } from '../../../Base/EntityManager';
 const { ccclass, property } = _decorator;
 
-const IDLE_URL = 'texture/woodenskeleton/idle';
-const ATTACK_URL = 'texture/woodenskeleton/attack';
-const DEATH_URL = 'texture/woodenskeleton/death';
+const IDLE_URL = 'texture/ironskeleton/idle';
+const DEATH_URL = 'texture/ironskeleton/death';
 
-@ccclass('WoodenSkeletonStateMachine')
-export class WoodenSkeletonStateMachine extends StateMachine {
+@ccclass('IronSkeletonStateMachine')
+export class IronSkeletonStateMachine extends StateMachine {
 	async init() {
 		this.animationComponent = this.addComponent(Animation);
 
@@ -25,7 +24,6 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 	initParams() {
 		this.params.set(PARAMS_NAME_ENUM.DIRECTION, getInitParamsNumber());
 		this.params.set(PARAMS_NAME_ENUM.IDLE, getInitParamsTrigger());
-		this.params.set(PARAMS_NAME_ENUM.ATTACK, getInitParamsTrigger());
 		this.params.set(PARAMS_NAME_ENUM.DEATH, getInitParamsTrigger());
 	}
 
@@ -34,7 +32,6 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 			PARAMS_NAME_ENUM.IDLE,
 			new DirectionSubStateMachine(this, IDLE_URL, AnimationClip.WrapMode.Loop),
 		);
-		this.stateMachines.set(PARAMS_NAME_ENUM.ATTACK, new DirectionSubStateMachine(this, ATTACK_URL));
 		this.stateMachines.set(PARAMS_NAME_ENUM.DEATH, new DirectionSubStateMachine(this, DEATH_URL));
 	}
 
@@ -45,19 +42,5 @@ export class WoodenSkeletonStateMachine extends StateMachine {
 				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
 			}
 		});
-	}
-
-	run() {
-		if (this.currentState === this.stateMachines.get(PARAMS_NAME_ENUM.DIRECTION)) {
-			this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
-		} else {
-			this.params.forEach((value, key) => {
-				if (value.value === true) {
-					this.currentState = this.stateMachines.get(key);
-					return;
-				}
-			});
-			this.currentState = this.currentState;
-		}
 	}
 }

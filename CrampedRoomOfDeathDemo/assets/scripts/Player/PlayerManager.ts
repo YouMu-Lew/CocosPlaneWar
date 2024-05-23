@@ -4,6 +4,7 @@ import EventManager from '../../Runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 import { EntityManager } from '../../Base/EntityManager';
 import DataManager from '../../Runtime/DataManager';
+import { IEntity } from '../../Levels';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerManager')
@@ -16,16 +17,10 @@ export class PlayerManager extends EntityManager {
 	private readonly speed: number = 0.1;
 	private isMoving: boolean = false;
 
-	async init() {
+	async init(params: IEntity) {
 		this.fsm = this.addComponent(PlayerStateMachine);
 		await this.fsm.init();
-		super.init({
-			x: 2,
-			y: 8,
-			type: ENTITY_TYPE_ENUM.PLAYER,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
-		});
+		super.init(params);
 
 		this.targetX = this.x;
 		this.targetY = this.y;
@@ -66,6 +61,10 @@ export class PlayerManager extends EntityManager {
 	inputHandle(inputDirection: CONTROLLER_EVENT) {
 		if (this.state !== ENTITY_STATE_ENUM.IDLE || this.isMoving) return;
 
+		if (this.canAttack(inputDirection)) {
+			return;
+		}
+
 		if (!this.canMove(inputDirection)) {
 			// be blocked
 			switch (inputDirection) {
@@ -91,9 +90,7 @@ export class PlayerManager extends EntityManager {
 			return;
 		}
 		// can move
-		if (this.canAttack(inputDirection)) {
-			return;
-		} else {
+		else {
 			this.move(inputDirection);
 		}
 	}

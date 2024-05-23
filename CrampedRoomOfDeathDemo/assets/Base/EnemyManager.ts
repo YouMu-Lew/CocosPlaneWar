@@ -1,23 +1,16 @@
 import { _decorator, error } from 'cc';
-import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
-import { EntityManager } from '../../Base/EntityManager';
-import { WoodenSkeletonStateMachine } from './WoodenSkeletonStateMachine';
-import EventManager from '../../Runtime/EventManager';
-import DataManager from '../../Runtime/DataManager';
+import { EntityManager } from './EntityManager';
+import DataManager from '../Runtime/DataManager';
+import { DIRECTION_ENUM, EVENT_TYPE } from '../Enums';
+import EventManager from '../Runtime/EventManager';
+import { IEntity } from '../Levels';
+
 const { ccclass, property } = _decorator;
 
-@ccclass('WoodenSkeletonManager')
-export class WoodenSkeletonManager extends EntityManager {
-	async init() {
-		this.fsm = this.addComponent(WoodenSkeletonStateMachine);
-		await this.fsm.init();
-		super.init({
-			x: 2,
-			y: 4,
-			type: ENTITY_TYPE_ENUM.ENEMY,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
-		});
+@ccclass('EnemyManager')
+export class EnemyManager extends EntityManager {
+	async init(params: IEntity) {
+		super.init(params);
 		this.registerEvents();
 		this.onChangeDirection(true);
 	}
@@ -64,34 +57,11 @@ export class WoodenSkeletonManager extends EntityManager {
 		}
 	}
 
-	onAttack() {
-		if (!DataManager.Instance.player) {
-			error('未获取到玩家数据');
-			return;
-		}
-		if (this.isDead) return;
-		const { x: playerX, y: playerY, isDead } = DataManager.Instance.player;
-		if (isDead) return;
-		const distance = Math.abs(this.x - playerX) + Math.abs(this.y - playerY);
-		if (distance <= 1) {
-			this.state = ENTITY_STATE_ENUM.ATTACK;
-			EventManager.Instance.emit(EVENT_TYPE.ENEMY_ATTACK, ENTITY_STATE_ENUM.DEATH);
-		}
-	}
+	onAttack(...params) {}
 
 	onBeHit(id: string) {
 		if (this.isDead) return;
 		if (this.id !== id) return;
 		this.death();
-	}
-
-	death(): void {
-		this.isDead = true;
-		this.state = ENTITY_STATE_ENUM.DEATH;
-		EventManager.Instance.emit(EVENT_TYPE.ENEMY_DEATH, this.type, this.id);
-
-		this.scheduleOnce(() => {
-			this.node.destroy();
-		}, 3);
 	}
 }

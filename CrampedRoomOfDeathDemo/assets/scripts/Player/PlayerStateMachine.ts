@@ -75,18 +75,4 @@ export class PlayerStateMachine extends StateMachine {
 			}
 		});
 	}
-
-	run() {
-		if (this.currentState === this.stateMachines.get(PARAMS_NAME_ENUM.DIRECTION)) {
-			this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.IDLE);
-		} else {
-			this.params.forEach((value, key) => {
-				if (value.value === true) {
-					this.currentState = this.stateMachines.get(key);
-					return;
-				}
-			});
-			this.currentState = this.currentState;
-		}
-	}
 }

@@ -5,10 +5,11 @@ import levels, { ILevel } from '../../Levels';
 import DataManager from '../../Runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import EventManager from '../../Runtime/EventManager';
-import { ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
+import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
 import { PlayerManager } from '../Player/PlayerManager';
-import { WoodenSkeletonManager } from '../Enemies/WoodenSkeletonManager';
+import { WoodenSkeletonManager } from '../Enemies/WoodenSkeleton/WoodenSkeletonManager';
 import { DoorManager } from '../Door/DoorManager';
+import { IronSkeletonManager } from '../Enemies/IronSkeleton/IronSkeletonManager';
 
 const { ccclass, property } = _decorator;
 
@@ -20,12 +21,12 @@ export class BattleManager extends Component {
 
 	onLoad(): void {
 		EventManager.Instance.on(EVENT_TYPE.NEXT_LEVEL, this.nextLevel, this);
-		EventManager.Instance.on(EVENT_TYPE.ENEMY_DEATH, this.onEntityDeath, this);
+		EventManager.Instance.on(EVENT_TYPE.ENTITY_DEATH, this.onEntityDeath, this);
 	}
 
 	protected onDestroy(): void {
 		EventManager.Instance.off(EVENT_TYPE.NEXT_LEVEL, this.nextLevel);
-		EventManager.Instance.off(EVENT_TYPE.ENEMY_DEATH, this.onEntityDeath);
+		EventManager.Instance.off(EVENT_TYPE.ENTITY_DEATH, this.onEntityDeath);
 	}
 
 	start() {
@@ -67,10 +68,14 @@ export class BattleManager extends Component {
 
 	async generatePlayer() {
 		this.player = createUINode(this.stage);
-		// 让 player 在渲染时显示在最前面
-		this.player.setSiblingIndex(100);
 		const playerManager = this.player.addComponent(PlayerManager);
-		await playerManager.init();
+		await playerManager.init({
+			x: 2,
+			y: 8,
+			type: ENTITY_TYPE_ENUM.PLAYER,
+			state: ENTITY_STATE_ENUM.IDLE,
+			direction: DIRECTION_ENUM.TOP,
+		});
 		DataManager.Instance.player = playerManager;
 		EventManager.Instance.emit(EVENT_TYPE.PLAYER_BORN, true);
 	}
@@ -78,14 +83,43 @@ export class BattleManager extends Component {
 	async generateEnemies() {
 		const enemy = createUINode(this.stage);
 		const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
-		await woodenSkeletonManager.init();
+		await woodenSkeletonManager.init({
+			x: 2,
+			y: 4,
+			type: ENTITY_TYPE_ENUM.ENEMY,
+			state: ENTITY_STATE_ENUM.IDLE,
+			direction: DIRECTION_ENUM.TOP,
+		});
 		DataManager.Instance.enemies.push(woodenSkeletonManager);
+		DataManager.Instance.tileInfo[woodenSkeletonManager.x][woodenSkeletonManager.y].moveable = false;
+		DataManager.Instance.tileInfo[woodenSkeletonManager.x][woodenSkeletonManager.y].turnable = false;
+
+		const enemy1 = createUINode(this.stage);
+		const ironSkeletonManager = enemy1.addComponent(IronSkeletonManager);
+		await ironSkeletonManager.init({
+			x: 7,
+			y: 6,
+			type: ENTITY_TYPE_ENUM.ENEMY,
+			state: ENTITY_STATE_ENUM.IDLE,
+			direction: DIRECTION_ENUM.TOP,
+		});
+		DataManager.Instance.enemies.push(ironSkeletonManager);
+		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].moveable = false;
+		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].turnable = false;
 	}
 
 	async generateDoor() {
 		const door = createUINode(this.stage);
 		const doorManager = door.addComponent(DoorManager);
-		await doorManager.init();
+		await doorManager.init({
+			x: 7,
+			y: 8,
+			type: ENTITY_TYPE_ENUM.DOOR,
+			state: ENTITY_STATE_ENUM.IDLE,
+			direction: DIRECTION_ENUM.TOP,
+		});
+		DataManager.Instance.tileInfo[doorManager.x][doorManager.y].moveable = false;
+		DataManager.Instance.tileInfo[doorManager.x][doorManager.y].turnable = false;
 	}
 
 	nextLevel() {
@@ -106,15 +140,24 @@ export class BattleManager extends Component {
 		this.stage.setPosition(-disX, disY);
 	}
 
-	onEntityDeath(type: ENTITY_TYPE_ENUM, id: string) {
-		if (type === ENTITY_TYPE_ENUM.ENEMY) {
-			DataManager.Instance.enemies = DataManager.Instance.enemies.filter(enemy => enemy.id !== id);
-			if (DataManager.Instance.enemies.length === 0) {
-				// 延时执行
-				setTimeout(() => {
-					EventManager.Instance.emit(EVENT_TYPE.LEVEL_CLEARED);
-				}, 1000);
-			}
+	onEntityDeath(x: number, y: number, type: ENTITY_TYPE_ENUM, id: string) {
+		switch (type) {
+			case ENTITY_TYPE_ENUM.PLAYER:
+				break;
+			case ENTITY_TYPE_ENUM.ENEMY:
+				DataManager.Instance.enemies = DataManager.Instance.enemies.filter(enemy => enemy.id !== id);
+				if (DataManager.Instance.enemies.length === 0) {
+					// 延时执行
+					setTimeout(() => {
+						EventManager.Instance.emit(EVENT_TYPE.LEVEL_CLEARED);
+					}, 1000);
+				}
+				break;
+			case ENTITY_TYPE_ENUM.DOOR:
+				break;
+			default:
 		}
+		DataManager.Instance.tileInfo[x][y].moveable = true;
+		DataManager.Instance.tileInfo[x][y].turnable = true;
 	}
 }

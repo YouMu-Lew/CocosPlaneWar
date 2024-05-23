@@ -1,9 +1,17 @@
 import { _decorator, Component, Sprite, UITransform } from 'cc';
 import { StateMachine } from './StateMachine';
-import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, PARAMS_NAME_ENUM } from '../Enums';
+import {
+	DIRECTION_ENUM,
+	DIRECTION_ORDER_ENUM,
+	ENTITY_STATE_ENUM,
+	ENTITY_TYPE_ENUM,
+	EVENT_TYPE,
+	PARAMS_NAME_ENUM,
+} from '../Enums';
 import { TILE_HEIGHT, TILE_WIDTH } from '../scripts/Tile/TileManager';
 import { IEntity } from '../Levels';
 import { randomNumStrByLen } from '../scripts/Utils';
+import EventManager from '../Runtime/EventManager';
 
 const { ccclass, property } = _decorator;
 
@@ -25,7 +33,12 @@ export class EntityManager extends Component {
 
 	onAttack(...params): void {}
 	onBeHit(...params): void {}
-	death(): void {}
+
+	death(): void {
+		this.isDead = true;
+		this.state = ENTITY_STATE_ENUM.DEATH;
+		EventManager.Instance.emit(EVENT_TYPE.ENTITY_DEATH, this.x, this.y, this.type, this.id);
+	}
 
 	get state() {
 		return this._state;

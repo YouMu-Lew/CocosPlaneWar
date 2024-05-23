@@ -1,23 +1,18 @@
 import { _decorator, error } from 'cc';
-import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
+import { ENTITY_STATE_ENUM, EVENT_TYPE } from '../../Enums';
 import { EntityManager } from '../../Base/EntityManager';
 import { DoorStateMachine } from './DoorStateMachine';
 import EventManager from '../../Runtime/EventManager';
+import { IEntity } from '../../Levels';
 
 const { ccclass, property } = _decorator;
 
 @ccclass('DoorManager')
 export class DoorManager extends EntityManager {
-	async init() {
+	async init(params: IEntity) {
 		this.fsm = this.addComponent(DoorStateMachine);
 		await this.fsm.init();
-		super.init({
-			x: 7,
-			y: 8,
-			type: ENTITY_TYPE_ENUM.DOOR,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
-		});
+		super.init(params);
 		this.registerEvents();
 	}
 
@@ -32,14 +27,5 @@ export class DoorManager extends EntityManager {
 
 	onOpen() {
 		this.death();
-	}
-
-	death(): void {
-		this.isDead = true;
-		this.state = ENTITY_STATE_ENUM.DEATH;
-
-		this.scheduleOnce(() => {
-			this.node.destroy();
-		}, 1);
 	}
 }
