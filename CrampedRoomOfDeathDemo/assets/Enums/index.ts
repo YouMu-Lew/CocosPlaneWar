@@ -85,4 +85,5 @@ export enum ENTITY_TYPE_ENUM {
 	PLAYER = 'PLAYER',
 	ENEMY = 'ENEMY',
 	DOOR = 'DOOR',
+	BURST = 'BURST',
 }

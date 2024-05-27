@@ -1,4 +1,4 @@
-import { _decorator, Component, error, Node, Widget } from 'cc';
+import { _decorator, Component, error, Node } from 'cc';
 import { TileMapManager } from '../Tile/TileMapManager';
 import { createUINode } from '../Utils';
 import levels, { ILevel } from '../../Levels';
@@ -10,6 +10,7 @@ import { PlayerManager } from '../Player/PlayerManager';
 import { WoodenSkeletonManager } from '../Enemies/WoodenSkeleton/WoodenSkeletonManager';
 import { DoorManager } from '../Door/DoorManager';
 import { IronSkeletonManager } from '../Enemies/IronSkeleton/IronSkeletonManager';
+import { BurstManager } from '../Enemies/Burst/BurstManager';
 
 const { ccclass, property } = _decorator;
 
@@ -39,7 +40,7 @@ export class BattleManager extends Component {
 		this.stage.setParent(this.node);
 	}
 
-	initLevel() {
+	async initLevel() {
 		const level = levels[`level${DataManager.Instance.levelIndex}`];
 		if (!level) error('获取 level info 失败');
 
@@ -50,10 +51,10 @@ export class BattleManager extends Component {
 		DataManager.Instance.mapRowCount = this.level.mapInfo.length || 0;
 		DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
 
-		this.generateTileMap();
-		this.generateEnemies();
-		this.generatePlayer();
-		this.generateDoor();
+		await this.generateTileMap();
+		await this.generateEnemies();
+		await this.generatePlayer();
+		await this.generateDoor();
 	}
 
 	async generateTileMap() {
@@ -67,7 +68,7 @@ export class BattleManager extends Component {
 	}
 
 	async generatePlayer() {
-		this.player = createUINode(this.stage);
+		this.player = createUINode(this.stage, 'Player');
 		const playerManager = this.player.addComponent(PlayerManager);
 		await playerManager.init({
 			x: 2,
@@ -81,7 +82,7 @@ export class BattleManager extends Component {
 	}
 
 	async generateEnemies() {
-		const enemy = createUINode(this.stage);
+		const enemy = createUINode(this.stage, 'WoodenSkeleton');
 		const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
 		await woodenSkeletonManager.init({
 			x: 2,
@@ -94,7 +95,7 @@ export class BattleManager extends Component {
 		DataManager.Instance.tileInfo[woodenSkeletonManager.x][woodenSkeletonManager.y].moveable = false;
 		DataManager.Instance.tileInfo[woodenSkeletonManager.x][woodenSkeletonManager.y].turnable = false;
 
-		const enemy1 = createUINode(this.stage);
+		const enemy1 = createUINode(this.stage, 'IronSkeleton');
 		const ironSkeletonManager = enemy1.addComponent(IronSkeletonManager);
 		await ironSkeletonManager.init({
 			x: 7,
@@ -106,10 +107,21 @@ export class BattleManager extends Component {
 		DataManager.Instance.enemies.push(ironSkeletonManager);
 		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].moveable = false;
 		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].turnable = false;
+
+		const enemy2 = createUINode(this.stage, 'Burst');
+		const burstManager = enemy2.addComponent(BurstManager);
+		await burstManager.init({
+			x: 2,
+			y: 6,
+			type: ENTITY_TYPE_ENUM.BURST,
+			state: ENTITY_STATE_ENUM.IDLE,
+			direction: DIRECTION_ENUM.TOP,
+		});
+		DataManager.Instance.enemies.push(burstManager);
 	}
 
 	async generateDoor() {
-		const door = createUINode(this.stage);
+		const door = createUINode(this.stage, 'Door');
 		const doorManager = door.addComponent(DoorManager);
 		await doorManager.init({
 			x: 7,

@@ -112,8 +112,9 @@ const mapInfo = [
 			type: TILE_TYPE_ENUM.FLOOR,
 		},
 		{
-			src: 1,
-			type: TILE_TYPE_ENUM.FLOOR,
+			// 2,6
+			src: null,
+			type: null,
 		},
 		{
 			src: 1,

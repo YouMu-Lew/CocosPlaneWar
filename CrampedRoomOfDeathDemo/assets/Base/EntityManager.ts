@@ -69,8 +69,6 @@ export class EntityManager extends Component {
 		this.type = params.type;
 		this.state = params.state;
 		this.direction = params.direction;
-
-		this.getComponent(UITransform).setContentSize(TILE_WIDTH * 4, TILE_HEIGHT * 4);
 	}
 
 	update(): void {
