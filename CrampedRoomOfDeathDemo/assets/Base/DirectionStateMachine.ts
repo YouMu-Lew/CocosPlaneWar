@@ -1,15 +1,11 @@
 import { AnimationClip } from 'cc';
 import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, PARAMS_NAME_ENUM } from '../Enums';
-import { PlayerStateMachine } from '../scripts/Player/PlayerStateMachine';
 import State from './State';
 import { SubStateMachine } from './SubStateMachine';
+import { StateMachine } from './StateMachine';
 
 export default class DirectionSubStateMachine extends SubStateMachine {
-	constructor(
-		fsm: PlayerStateMachine,
-		url: string,
-		wrapMode: AnimationClip.WrapMode = AnimationClip.WrapMode.Normal,
-	) {
+	constructor(fsm: StateMachine, url: string, wrapMode: AnimationClip.WrapMode = AnimationClip.WrapMode.Normal) {
 		super(fsm, url, wrapMode);
 		this.stateMachines.set(DIRECTION_ENUM.TOP, new State(fsm, `${this.baseURL}/top`, this.wrapMode));
 		this.stateMachines.set(DIRECTION_ENUM.LEFT, new State(fsm, `${this.baseURL}/left`, this.wrapMode));

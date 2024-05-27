@@ -28,7 +28,7 @@ export class EntityManager extends Component {
 
 	private _state: ENTITY_STATE_ENUM = ENTITY_STATE_ENUM.IDLE;
 	private _direction: DIRECTION_ENUM = DIRECTION_ENUM.TOP;
-	protected type: ENTITY_TYPE_ENUM;
+	public type: ENTITY_TYPE_ENUM;
 	public isDead: boolean = false;
 
 	onAttack(...params): void {}

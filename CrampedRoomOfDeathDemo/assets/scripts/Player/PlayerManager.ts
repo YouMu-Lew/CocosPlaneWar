@@ -103,7 +103,7 @@ export class PlayerManager extends EntityManager {
 	canAttack(inputDirection: CONTROLLER_EVENT): boolean {
 		if (inputDirection === CONTROLLER_EVENT.TURNLEFT || inputDirection === CONTROLLER_EVENT.TURNRIGHT) return false;
 		let attackPoint = this.XYMove(this.getWeaponPos(), inputDirection);
-		const enemies = DataManager.Instance.enemies;
+		const enemies = DataManager.Instance.enemies.filter(enemy => enemy.type === ENTITY_TYPE_ENUM.ENEMY);
 		for (let i = 0; i < enemies.length; i++) {
 			const enemy = enemies[i];
 			if (enemy.x === attackPoint[0] && enemy.y === attackPoint[1]) {
@@ -173,7 +173,7 @@ export class PlayerManager extends EntityManager {
 				}
 			}
 			// 目标地块不存在，即地图边界外，可以转
-			if (!tileInfo[checkList[0][0]][checkList[0][1]] && !tileInfo[checkList[1][0]][checkList[1][1]]) return true;
+			if (!tileInfo[checkList[0][0]][checkList[0][1]] || !tileInfo[checkList[1][0]][checkList[1][1]]) return true;
 			return (
 				tileInfo[checkList[0][0]][checkList[0][1]].turnable &&
 				tileInfo[checkList[1][0]][checkList[1][1]].turnable
@@ -185,9 +185,10 @@ export class PlayerManager extends EntityManager {
 			this.XYMove(checkMovePos, inputDirection);
 			this.XYMove(checkTurnPos, inputDirection);
 			// 目标地块不存在，即地图边界外,不可移动
-			if (!tileInfo[checkMovePos[0]][checkMovePos[1]] || !tileInfo[checkTurnPos[0]][checkTurnPos[1]]) {
+			if (!tileInfo[checkMovePos[0]][checkMovePos[1]]) {
 				return false;
 			}
+			if (!tileInfo[checkTurnPos[0]][checkTurnPos[1]]) return true;
 			return (
 				tileInfo[checkMovePos[0]][checkMovePos[1]].moveable &&
 				tileInfo[checkTurnPos[0]][checkTurnPos[1]].turnable
