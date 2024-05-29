@@ -1,7 +1,7 @@
 import { EnemyManager } from '../Base/EnemyManager';
 import Singleton from '../Base/SingleTon';
 import { ITile } from '../Levels';
-import { BurstManager } from '../scripts/Enemies/Burst/BurstManager';
+import { BurstManager } from '../scripts/Burst/BurstManager';
 import { PlayerManager } from '../scripts/Player/PlayerManager';
 import { TileManager } from '../scripts/Tile/TileManager';
 

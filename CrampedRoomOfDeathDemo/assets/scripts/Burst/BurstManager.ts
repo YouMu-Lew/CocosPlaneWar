@@ -1,11 +1,12 @@
-import { UITransform, _decorator, error } from 'cc';
-import { ENTITY_STATE_ENUM, EVENT_TYPE } from '../../../Enums';
-import DataManager from '../../../Runtime/DataManager';
-import { EnemyManager } from '../../../Base/EnemyManager';
-import { IEntity } from '../../../Levels';
+import { _decorator, UITransform, error } from 'cc';
+import { EnemyManager } from '../../Base/EnemyManager';
+import { ENTITY_STATE_ENUM, EVENT_TYPE } from '../../Enums';
+import { IEntity } from '../../Levels';
+import DataManager from '../../Runtime/DataManager';
+import EventManager from '../../Runtime/EventManager';
+import { TILE_WIDTH, TILE_HEIGHT } from '../Tile/TileManager';
 import { BurstStateMachine } from './BurstStateMachine';
-import { TILE_HEIGHT, TILE_WIDTH } from '../../Tile/TileManager';
-import EventManager from '../../../Runtime/EventManager';
+
 const { ccclass, property } = _decorator;
 
 @ccclass('BurstManager')

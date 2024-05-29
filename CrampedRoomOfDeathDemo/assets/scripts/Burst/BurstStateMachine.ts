@@ -1,8 +1,8 @@
 import { _decorator, Animation } from 'cc';
-import { PARAMS_NAME_ENUM } from '../../../Enums';
-import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../../Base/StateMachine';
-import DirectionSubStateMachine from '../../../Base/DirectionStateMachine';
-import State from '../../../Base/State';
+import State from '../../Base/State';
+import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
+import { PARAMS_NAME_ENUM } from '../../Enums';
+
 const { ccclass, property } = _decorator;
 
 const IDLE_URL = 'texture/burst/idle/idle';

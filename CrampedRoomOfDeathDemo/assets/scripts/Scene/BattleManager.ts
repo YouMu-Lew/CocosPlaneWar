@@ -10,7 +10,7 @@ import { PlayerManager } from '../Player/PlayerManager';
 import { WoodenSkeletonManager } from '../Enemies/WoodenSkeleton/WoodenSkeletonManager';
 import { DoorManager } from '../Door/DoorManager';
 import { IronSkeletonManager } from '../Enemies/IronSkeleton/IronSkeletonManager';
-import { BurstManager } from '../Enemies/Burst/BurstManager';
+import { BurstManager } from '../Burst/BurstManager';
 
 const { ccclass, property } = _decorator;
 
