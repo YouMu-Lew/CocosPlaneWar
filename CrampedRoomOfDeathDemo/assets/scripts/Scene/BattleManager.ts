@@ -52,6 +52,7 @@ export class BattleManager extends Component {
 		DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
 
 		await this.generateTileMap();
+		await this.generateBursts();
 		await this.generateEnemies();
 		await this.generatePlayer();
 		await this.generateDoor();
@@ -65,6 +66,19 @@ export class BattleManager extends Component {
 		await tileMapManager.init();
 
 		this.adpatPos();
+	}
+
+	async generateBursts () {
+		const burst = createUINode(this.stage, 'Burst');
+		const burstManager = burst.addComponent(BurstManager);
+		await burstManager.init({
+			x: 2,
+			y: 6,
+			type: ENTITY_TYPE_ENUM.BURST,
+			state: ENTITY_STATE_ENUM.IDLE,
+			direction: DIRECTION_ENUM.TOP,
+		});
+		DataManager.Instance.bursts.push(burstManager);
 	}
 
 	async generatePlayer() {
@@ -107,17 +121,6 @@ export class BattleManager extends Component {
 		DataManager.Instance.enemies.push(ironSkeletonManager);
 		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].moveable = false;
 		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].turnable = false;
-
-		const enemy2 = createUINode(this.stage, 'Burst');
-		const burstManager = enemy2.addComponent(BurstManager);
-		await burstManager.init({
-			x: 2,
-			y: 6,
-			type: ENTITY_TYPE_ENUM.BURST,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
-		});
-		DataManager.Instance.enemies.push(burstManager);
 	}
 
 	async generateDoor() {

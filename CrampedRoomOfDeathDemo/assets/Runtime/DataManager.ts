@@ -1,6 +1,7 @@
 import { EnemyManager } from '../Base/EnemyManager';
 import Singleton from '../Base/SingleTon';
 import { ITile } from '../Levels';
+import { BurstManager } from '../scripts/Enemies/Burst/BurstManager';
 import { PlayerManager } from '../scripts/Player/PlayerManager';
 import { TileManager } from '../scripts/Tile/TileManager';
 
@@ -19,6 +20,7 @@ export default class DataManager extends Singleton {
 	levelIndex: number = 1;
 	player: PlayerManager = null;
 	enemies: EnemyManager[] = [];
+	bursts: BurstManager[] = [];
 
 	reset() {
 		this.mapInfo = [];
@@ -27,5 +29,6 @@ export default class DataManager extends Singleton {
 		this.mapColumnCount = 0;
 		this.player = null;
 		this.enemies = [];
+		this.bursts = [];
 	}
 }

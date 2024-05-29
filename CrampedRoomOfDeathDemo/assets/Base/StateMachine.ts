@@ -49,7 +49,7 @@ export abstract class StateMachine extends Component {
 			this.resetTriggers();
 		}
 	}
-
+	
 	get currentState() {
 		return this._currentState;
 	}

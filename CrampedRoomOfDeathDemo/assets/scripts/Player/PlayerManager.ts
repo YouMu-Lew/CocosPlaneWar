@@ -186,7 +186,7 @@ export class PlayerManager extends EntityManager {
 			this.XYMove(checkTurnPos, inputDirection);
 			// 目标地块不存在，即地图边界外,不可移动
 			if (!tileInfo[checkMovePos[0]][checkMovePos[1]]) {
-				const bursts = DataManager.Instance.enemies.filter(enemy => enemy.type === ENTITY_TYPE_ENUM.BURST);
+				const bursts = DataManager.Instance.bursts;
 				// 遍历 bursts
 				for (let i = 0; i < bursts.length; i++) {
 					const burst = bursts[i];
