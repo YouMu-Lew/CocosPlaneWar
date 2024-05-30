@@ -42,14 +42,14 @@ export abstract class StateMachine extends Component {
 		}
 	}
 
-	setParams(paramsName: string, value: ParamsValueType) {
+	setParams(paramsName: PARAMS_NAME_ENUM, value: ParamsValueType) {
 		if (this.params.has(paramsName)) {
 			this.params.get(paramsName).value = value;
 			this.run();
 			this.resetTriggers();
 		}
 	}
-	
+
 	get currentState() {
 		return this._currentState;
 	}

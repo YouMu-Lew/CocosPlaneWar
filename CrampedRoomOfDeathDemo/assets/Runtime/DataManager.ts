@@ -3,6 +3,7 @@ import Singleton from '../Base/SingleTon';
 import { ITile } from '../Levels';
 import { BurstManager } from '../scripts/Burst/BurstManager';
 import { PlayerManager } from '../scripts/Player/PlayerManager';
+import { SpikeManager } from '../scripts/Spike/SpikeManager';
 import { TileManager } from '../scripts/Tile/TileManager';
 
 /**
@@ -21,6 +22,7 @@ export default class DataManager extends Singleton {
 	player: PlayerManager = null;
 	enemies: EnemyManager[] = [];
 	bursts: BurstManager[] = [];
+	spikes: SpikeManager[] = [];
 
 	reset() {
 		this.mapInfo = [];
@@ -30,5 +32,6 @@ export default class DataManager extends Singleton {
 		this.player = null;
 		this.enemies = [];
 		this.bursts = [];
+		this.spikes = [];
 	}
 }

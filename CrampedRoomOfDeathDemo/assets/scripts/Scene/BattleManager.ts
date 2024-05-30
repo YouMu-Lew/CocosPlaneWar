@@ -11,6 +11,7 @@ import { WoodenSkeletonManager } from '../Enemies/WoodenSkeleton/WoodenSkeletonM
 import { DoorManager } from '../Door/DoorManager';
 import { IronSkeletonManager } from '../Enemies/IronSkeleton/IronSkeletonManager';
 import { BurstManager } from '../Burst/BurstManager';
+import { SpikeManager } from '../Spike/SpikeManager';
 
 const { ccclass, property } = _decorator;
 
@@ -53,6 +54,7 @@ export class BattleManager extends Component {
 
 		await this.generateTileMap();
 		await this.generateBursts();
+		await this.generateSpikes();
 		await this.generateEnemies();
 		await this.generatePlayer();
 		await this.generateDoor();
@@ -68,17 +70,29 @@ export class BattleManager extends Component {
 		this.adpatPos();
 	}
 
-	async generateBursts () {
+	async generateBursts() {
 		const burst = createUINode(this.stage, 'Burst');
 		const burstManager = burst.addComponent(BurstManager);
 		await burstManager.init({
 			x: 2,
-			y: 6,
+			y: 5,
 			type: ENTITY_TYPE_ENUM.BURST,
 			state: ENTITY_STATE_ENUM.IDLE,
 			direction: DIRECTION_ENUM.TOP,
 		});
 		DataManager.Instance.bursts.push(burstManager);
+	}
+
+	async generateSpikes() {
+		const spike = createUINode(this.stage, 'Spike');
+		const spikeManager = spike.addComponent(SpikeManager);
+		await spikeManager.init({
+			x: 2,
+			y: 6,
+			type: ENTITY_TYPE_ENUM.SPIKE_ONE,
+			count: 0,
+		});
+		DataManager.Instance.spikes.push(spikeManager);
 	}
 
 	async generatePlayer() {

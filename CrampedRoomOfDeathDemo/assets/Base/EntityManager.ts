@@ -46,7 +46,7 @@ export class EntityManager extends Component {
 
 	set state(newState: ENTITY_STATE_ENUM) {
 		this._state = newState;
-		this.fsm.setParams(newState, true);
+		this.fsm.setParams(newState as string as PARAMS_NAME_ENUM, true);
 	}
 
 	get direction() {

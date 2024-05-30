@@ -19,6 +19,13 @@ export interface IEntity {
 	direction: DIRECTION_ENUM;
 }
 
+export interface ISpike {
+	x: number;
+	y: number;
+	type: ENTITY_TYPE_ENUM;
+	count: number;
+}
+
 //TODO Record是啥
 const levels: Record<string, ILevel> = {
 	level1,
