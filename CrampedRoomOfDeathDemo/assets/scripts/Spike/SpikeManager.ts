@@ -7,12 +7,13 @@ import {
 	PARAMS_NAME_ENUM,
 	SPIKES_TYPE_MAP_TOTAL_COUNT_ENUM,
 } from '../../Enums';
-import { IEntity, ISpike } from '../../Levels';
+import { ISpike } from '../../Levels';
 import { TILE_WIDTH, TILE_HEIGHT } from '../Tile/TileManager';
 import { ENTITY_ID_Len } from '../../Base/EntityManager';
 import { randomNumStrByLen } from '../Utils';
 import { SpikeStateMachine } from './SpikeStateMachine';
 import EventManager from '../../Runtime/EventManager';
+import DataManager from '../../Runtime/DataManager';
 
 const { ccclass, property } = _decorator;
 
@@ -27,8 +28,6 @@ export class SpikeManager extends Component {
 	private _count: number = 0;
 	private _totalCount: number = 0;
 	public type: ENTITY_TYPE_ENUM;
-
-	onAttack(...params): void {}
 
 	get count() {
 		return this._count;
@@ -74,5 +73,16 @@ export class SpikeManager extends Component {
 
 	onPlayerMoveEnd(...params) {
 		this.count = this.count + 1 > this.totalCount ? 0 : this.count + 1;
+		if (this.count == this.totalCount) {
+			this.onAttack();
+		}
+	}
+
+	onAttack(...params): void {
+		const { x: playerX, y: playerY } = DataManager.Instance.player;
+		if (playerX == this.x && playerY == this.y) {
+			// 玩家被攻击
+			EventManager.Instance.emit(EVENT_TYPE.ENEMY_ATTACK, ENTITY_STATE_ENUM.DEATH);
+		}
 	}
 }

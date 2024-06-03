@@ -1,12 +1,15 @@
 import { getInitParamsNumber, StateMachine } from '../../Base/StateMachine';
-import { _decorator, Animation } from 'cc';
-import { ENTITY_TYPE_ENUM, PARAMS_NAME_ENUM, SPIKES_COUNT_ENUM } from '../../Enums';
-import SpikeOneSubStateMachine from './SpikeOneSubStateMachine';
+import { _decorator, Animation, error } from 'cc';
+import { ENTITY_TYPE_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
 import { SpikeManager } from './SpikeManager';
+import SpikeSubStateMachine from './SpikeSubStateMachine';
 
 const { ccclass, property } = _decorator;
 
 const SpikeOneURL = 'texture/spikes/spikesone';
+const SpikeTwoURL = 'texture/spikes/spikestwo';
+const SpikeThreeURL = 'texture/spikes/spikesthree';
+const SpikeFourURL = 'texture/spikes/spikesfour';
 
 @ccclass('SpikeStateMachine')
 export class SpikeStateMachine extends StateMachine {
@@ -27,14 +30,17 @@ export class SpikeStateMachine extends StateMachine {
 	}
 
 	initStateMachines() {
-		this.stateMachines.set(ENTITY_TYPE_ENUM.SPIKE_ONE, new SpikeOneSubStateMachine(this, SpikeOneURL));
+		this.stateMachines.set(ENTITY_TYPE_ENUM.SPIKE_ONE, new SpikeSubStateMachine(this, SpikeOneURL));
+		this.stateMachines.set(ENTITY_TYPE_ENUM.SPIKE_TWO, new SpikeSubStateMachine(this, SpikeTwoURL));
+		this.stateMachines.set(ENTITY_TYPE_ENUM.SPIKE_THREE, new SpikeSubStateMachine(this, SpikeThreeURL));
+		this.stateMachines.set(ENTITY_TYPE_ENUM.SPIKE_FOUR, new SpikeSubStateMachine(this, SpikeFourURL));
 	}
 
 	initAnimationEvents() {
 		this.animationComponent.on(Animation.EventType.FINISHED, () => {
 			if (
-				this.params.get(PARAMS_NAME_ENUM.SPIKES_CUR_COUNT) ===
-				this.params.get(PARAMS_NAME_ENUM.SPIKES_TOTAL_COUNT)
+				this.params.get(PARAMS_NAME_ENUM.SPIKES_CUR_COUNT).value ===
+				this.params.get(PARAMS_NAME_ENUM.SPIKES_TOTAL_COUNT).value
 			) {
 				this.getComponent(SpikeManager).count = 0;
 			}
@@ -42,13 +48,25 @@ export class SpikeStateMachine extends StateMachine {
 	}
 
 	run() {
-		switch (this.currentState) {
-			case this.stateMachines.get(ENTITY_TYPE_ENUM.SPIKE_ONE):
-				this.currentState = this.stateMachines.get(ENTITY_TYPE_ENUM.SPIKE_ONE);
+		let targetState = this.currentState;
+		switch (this.params.get(PARAMS_NAME_ENUM.SPIKES_TOTAL_COUNT).value) {
+			case 2:
+				targetState = this.stateMachines.get(ENTITY_TYPE_ENUM.SPIKE_ONE);
+				break;
+			case 3:
+				targetState = this.stateMachines.get(ENTITY_TYPE_ENUM.SPIKE_TWO);
+				break;
+			case 4:
+				targetState = this.stateMachines.get(ENTITY_TYPE_ENUM.SPIKE_THREE);
+				break;
+			case 5:
+				targetState = this.stateMachines.get(ENTITY_TYPE_ENUM.SPIKE_FOUR);
 				break;
 			default:
-				this.currentState = this.stateMachines.get(ENTITY_TYPE_ENUM.SPIKE_ONE);
+				// 报错，未配置的 State
+				error('SpikeStateMachine: 未配置的 State');
 				break;
 		}
+		this.currentState = targetState;
 	}
 }

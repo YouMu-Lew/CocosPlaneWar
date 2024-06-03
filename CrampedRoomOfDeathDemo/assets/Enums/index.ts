@@ -107,6 +107,7 @@ export enum SPIKES_COUNT_ENUM {
 	TWO = 'TWO',
 	THREE = 'THREE',
 	FOUR = 'FOUR',
+	FIVE = 'FIVE',
 }
 
 export enum SPIKES_COUNT_MAP_NUMBER_ENUM {
@@ -115,4 +116,5 @@ export enum SPIKES_COUNT_MAP_NUMBER_ENUM {
 	TWO = 2,
 	THREE = 3,
 	FOUR = 4,
+	FIVE = 5,
 }

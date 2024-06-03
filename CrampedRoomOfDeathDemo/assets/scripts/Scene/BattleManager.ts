@@ -1,7 +1,7 @@
 import { _decorator, Component, error, Node } from 'cc';
 import { TileMapManager } from '../Tile/TileMapManager';
 import { createUINode } from '../Utils';
-import levels, { ILevel } from '../../Levels';
+import levels, { ILevel, ISpike } from '../../Levels';
 import DataManager from '../../Runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import EventManager from '../../Runtime/EventManager';
@@ -84,14 +84,36 @@ export class BattleManager extends Component {
 	}
 
 	async generateSpikes() {
-		const spike = createUINode(this.stage, 'Spike');
-		const spikeManager = spike.addComponent(SpikeManager);
-		await spikeManager.init({
-			x: 2,
+		await this.generateSpike({
+			x: 1,
 			y: 6,
 			type: ENTITY_TYPE_ENUM.SPIKE_ONE,
 			count: 0,
 		});
+		await this.generateSpike({
+			x: 2,
+			y: 6,
+			type: ENTITY_TYPE_ENUM.SPIKE_TWO,
+			count: 0,
+		});
+		await this.generateSpike({
+			x: 3,
+			y: 6,
+			type: ENTITY_TYPE_ENUM.SPIKE_THREE,
+			count: 0,
+		});
+		await this.generateSpike({
+			x: 1,
+			y: 7,
+			type: ENTITY_TYPE_ENUM.SPIKE_FOUR,
+			count: 0,
+		});
+	}
+
+	async generateSpike(params: ISpike) {
+		const spike = createUINode(this.stage, 'Spike');
+		const spikeManager = spike.addComponent(SpikeManager);
+		await spikeManager.init(params);
 		DataManager.Instance.spikes.push(spikeManager);
 	}
 
