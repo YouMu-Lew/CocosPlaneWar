@@ -182,7 +182,8 @@ export class PlayerManager extends EntityManager {
 				}
 			}
 			// 目标地块不存在，即地图边界外，可以转
-			if (!tileInfo[checkList[0][0]][checkList[0][1]] || !tileInfo[checkList[1][0]][checkList[1][1]]) return true;
+			if ((!tileInfo[checkList[0][0]] || !tileInfo[checkList[0][0]][checkList[0][1]]) && (!tileInfo[checkList[1][0]] || !tileInfo[checkList[1][0]][checkList[1][1]]))
+				return true;
 			return (
 				tileInfo[checkList[0][0]][checkList[0][1]].turnable &&
 				tileInfo[checkList[1][0]][checkList[1][1]].turnable
@@ -194,7 +195,7 @@ export class PlayerManager extends EntityManager {
 			this.XYMove(checkMovePos, inputDirection);
 			this.XYMove(checkTurnPos, inputDirection);
 			// 目标地块不存在，即地图边界外,不可移动
-			if (!tileInfo[checkMovePos[0]][checkMovePos[1]]) {
+			if (!tileInfo[checkMovePos[0]] || !tileInfo[checkMovePos[0]][checkMovePos[1]]) {
 				const bursts = DataManager.Instance.bursts;
 				// 遍历 bursts
 				for (let i = 0; i < bursts.length; i++) {
@@ -206,7 +207,7 @@ export class PlayerManager extends EntityManager {
 				return false;
 			}
 			if (!tileInfo[checkMovePos[0]][checkMovePos[1]].moveable) return false;
-			if (!tileInfo[checkTurnPos[0]][checkTurnPos[1]]) return true;
+			if (!tileInfo[checkTurnPos[0]] || !tileInfo[checkTurnPos[0]][checkTurnPos[1]]) return true;
 			return tileInfo[checkTurnPos[0]][checkTurnPos[1]].turnable;
 		}
 	}
