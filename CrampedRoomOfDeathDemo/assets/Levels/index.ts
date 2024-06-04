@@ -1,4 +1,4 @@
-import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, TILE_TYPE_ENUM } from '../Enums';
+import { DIRECTION_ENUM, ENEMY_TYPE_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, TILE_TYPE_ENUM } from '../Enums';
 import level1 from './level01';
 import level2 from './level02';
 
@@ -9,6 +9,11 @@ export interface ITile {
 
 export interface ILevel {
 	mapInfo: Array<Array<ITile>>;
+	player: IEntity;
+	enemies: IEntity[];
+	spikes: ISpike[];
+	bursts: IEntity[];
+	door: IEntity;
 }
 
 export interface IEntity {
@@ -17,6 +22,7 @@ export interface IEntity {
 	type: ENTITY_TYPE_ENUM;
 	state: ENTITY_STATE_ENUM;
 	direction: DIRECTION_ENUM;
+	enemyType?: ENEMY_TYPE_ENUM;
 }
 
 export interface ISpike {

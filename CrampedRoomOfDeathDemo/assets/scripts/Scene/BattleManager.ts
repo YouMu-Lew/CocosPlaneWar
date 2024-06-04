@@ -1,17 +1,18 @@
 import { _decorator, Component, error, Node } from 'cc';
 import { TileMapManager } from '../Tile/TileMapManager';
 import { createUINode } from '../Utils';
-import levels, { ILevel, ISpike } from '../../Levels';
+import levels, { IEntity, ILevel } from '../../Levels';
 import DataManager from '../../Runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import EventManager from '../../Runtime/EventManager';
-import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
+import { ENEMY_TYPE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
 import { PlayerManager } from '../Player/PlayerManager';
 import { WoodenSkeletonManager } from '../Enemies/WoodenSkeleton/WoodenSkeletonManager';
 import { DoorManager } from '../Door/DoorManager';
 import { IronSkeletonManager } from '../Enemies/IronSkeleton/IronSkeletonManager';
 import { BurstManager } from '../Burst/BurstManager';
 import { SpikeManager } from '../Spike/SpikeManager';
+import { EnemyManager } from '../../Base/EnemyManager';
 
 const { ccclass, property } = _decorator;
 
@@ -71,104 +72,65 @@ export class BattleManager extends Component {
 	}
 
 	async generateBursts() {
-		const burst = createUINode(this.stage, 'Burst');
-		const burstManager = burst.addComponent(BurstManager);
-		await burstManager.init({
-			x: 2,
-			y: 5,
-			type: ENTITY_TYPE_ENUM.BURST,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
+		const bursts = this.level.bursts;
+		bursts.forEach(async burst => {
+			const burstNode = createUINode(this.stage, 'Burst');
+			const burstManager = burstNode.addComponent(BurstManager);
+			await burstManager.init(burst);
+			DataManager.Instance.bursts.push(burstManager);
 		});
-		DataManager.Instance.bursts.push(burstManager);
 	}
 
 	async generateSpikes() {
-		await this.generateSpike({
-			x: 1,
-			y: 6,
-			type: ENTITY_TYPE_ENUM.SPIKE_ONE,
-			count: 0,
+		const spikes = this.level.spikes;
+		spikes.forEach(async spike => {
+			const spikeNode = createUINode(this.stage, 'Spike');
+			const spikeManager = spikeNode.addComponent(SpikeManager);
+			await spikeManager.init(spike);
+			DataManager.Instance.spikes.push(spikeManager);
 		});
-		await this.generateSpike({
-			x: 2,
-			y: 6,
-			type: ENTITY_TYPE_ENUM.SPIKE_TWO,
-			count: 0,
-		});
-		await this.generateSpike({
-			x: 3,
-			y: 6,
-			type: ENTITY_TYPE_ENUM.SPIKE_THREE,
-			count: 0,
-		});
-		await this.generateSpike({
-			x: 1,
-			y: 7,
-			type: ENTITY_TYPE_ENUM.SPIKE_FOUR,
-			count: 0,
-		});
-	}
-
-	async generateSpike(params: ISpike) {
-		const spike = createUINode(this.stage, 'Spike');
-		const spikeManager = spike.addComponent(SpikeManager);
-		await spikeManager.init(params);
-		DataManager.Instance.spikes.push(spikeManager);
 	}
 
 	async generatePlayer() {
 		this.player = createUINode(this.stage, 'Player');
 		const playerManager = this.player.addComponent(PlayerManager);
-		await playerManager.init({
-			x: 2,
-			y: 8,
-			type: ENTITY_TYPE_ENUM.PLAYER,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
-		});
+		await playerManager.init(this.level.player);
 		DataManager.Instance.player = playerManager;
 		EventManager.Instance.emit(EVENT_TYPE.PLAYER_BORN, true);
 	}
 
 	async generateEnemies() {
-		const enemy = createUINode(this.stage, 'WoodenSkeleton');
-		const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
-		await woodenSkeletonManager.init({
-			x: 2,
-			y: 4,
-			type: ENTITY_TYPE_ENUM.ENEMY,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
+		const enemies = this.level.enemies;
+		enemies.forEach(async enemy => {
+			await this.generateEnemy(enemy);
 		});
-		DataManager.Instance.enemies.push(woodenSkeletonManager);
-		DataManager.Instance.tileInfo[woodenSkeletonManager.x][woodenSkeletonManager.y].moveable = false;
-		DataManager.Instance.tileInfo[woodenSkeletonManager.x][woodenSkeletonManager.y].turnable = false;
+	}
 
-		const enemy1 = createUINode(this.stage, 'IronSkeleton');
-		const ironSkeletonManager = enemy1.addComponent(IronSkeletonManager);
-		await ironSkeletonManager.init({
-			x: 7,
-			y: 6,
-			type: ENTITY_TYPE_ENUM.ENEMY,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
-		});
-		DataManager.Instance.enemies.push(ironSkeletonManager);
-		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].moveable = false;
-		DataManager.Instance.tileInfo[ironSkeletonManager.x][ironSkeletonManager.y].turnable = false;
+	async generateEnemy(enemyInfo: IEntity) {
+		let enemy: Node = null;
+		let enemyManager: EnemyManager = null;
+		switch (enemyInfo.enemyType) {
+			case ENEMY_TYPE_ENUM.WOODEN_SKELETON:
+				enemy = createUINode(this.stage, 'WoodenSkeleton');
+				enemyManager = enemy.addComponent(WoodenSkeletonManager);
+				break;
+			case ENEMY_TYPE_ENUM.IRON_SKELETON:
+				enemy = createUINode(this.stage, 'IronSkeleton');
+				enemyManager = enemy.addComponent(IronSkeletonManager);
+				break;
+			default:
+				break;
+		}
+		await enemyManager.init(enemyInfo);
+		DataManager.Instance.enemies.push(enemyManager);
+		DataManager.Instance.tileInfo[enemyManager.x][enemyManager.y].moveable = false;
+		DataManager.Instance.tileInfo[enemyManager.x][enemyManager.y].turnable = false;
 	}
 
 	async generateDoor() {
 		const door = createUINode(this.stage, 'Door');
 		const doorManager = door.addComponent(DoorManager);
-		await doorManager.init({
-			x: 7,
-			y: 8,
-			type: ENTITY_TYPE_ENUM.DOOR,
-			state: ENTITY_STATE_ENUM.IDLE,
-			direction: DIRECTION_ENUM.TOP,
-		});
+		await doorManager.init(this.level.door);
 		DataManager.Instance.tileInfo[doorManager.x][doorManager.y].moveable = false;
 		DataManager.Instance.tileInfo[doorManager.x][doorManager.y].turnable = false;
 	}

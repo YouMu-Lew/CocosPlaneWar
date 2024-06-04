@@ -1,5 +1,5 @@
-import { ILevel } from '.';
-import { TILE_TYPE_ENUM } from '../Enums';
+import { TILE_TYPE_ENUM, DIRECTION_ENUM, ENTITY_TYPE_ENUM, ENTITY_STATE_ENUM, ENEMY_TYPE_ENUM } from '../Enums';
+import { IEntity, ILevel, ISpike } from './index';
 
 const mapInfo = [
 	[
@@ -112,11 +112,8 @@ const mapInfo = [
 			type: TILE_TYPE_ENUM.FLOOR,
 		},
 		{
-			// 2,6
 			src: 1,
 			type: TILE_TYPE_ENUM.FLOOR,
-			// src: null,
-			// type: null,
 		},
 		{
 			src: 1,
@@ -427,11 +424,44 @@ const mapInfo = [
 	],
 ];
 
-/**
- * 因为地图信息不只有瓦片信息，还包括人物和敌人位置信息，所以多加一层封装
- */
+const player: IEntity = {
+	x: 2,
+	y: 8,
+	direction: DIRECTION_ENUM.TOP,
+	state: ENTITY_STATE_ENUM.IDLE,
+	type: ENTITY_TYPE_ENUM.PLAYER,
+};
+
+const enemies: Array<IEntity> = [
+	{
+		x: 7,
+		y: 6,
+		direction: DIRECTION_ENUM.TOP,
+		state: ENTITY_STATE_ENUM.IDLE,
+		type: ENTITY_TYPE_ENUM.ENEMY,
+		enemyType: ENEMY_TYPE_ENUM.WOODEN_SKELETON,
+	},
+];
+
+const spikes: Array<ISpike> = [];
+
+const bursts: Array<IEntity> = [];
+
+const door: IEntity = {
+	x: 7,
+	y: 8,
+	direction: DIRECTION_ENUM.BOTTOM,
+	state: ENTITY_STATE_ENUM.IDLE,
+	type: ENTITY_TYPE_ENUM.DOOR,
+};
+
 const level: ILevel = {
 	mapInfo,
+	player,
+	enemies,
+	spikes,
+	bursts,
+	door,
 };
 
 export default level;
