@@ -42,7 +42,8 @@ export class SpikeStateMachine extends StateMachine {
 				this.params.get(PARAMS_NAME_ENUM.SPIKES_CUR_COUNT).value ===
 				this.params.get(PARAMS_NAME_ENUM.SPIKES_TOTAL_COUNT).value
 			) {
-				this.getComponent(SpikeManager).count = 0;
+				// this.getComponent(SpikeManager).count = 0;
+				this.getComponent(SpikeManager).countBackZero();
 			}
 		});
 	}

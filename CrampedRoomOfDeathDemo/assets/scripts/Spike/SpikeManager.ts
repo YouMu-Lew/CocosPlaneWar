@@ -86,6 +86,10 @@ export class SpikeManager extends Component {
 		}
 	}
 
+	countBackZero() {
+		this.count = 0;
+	}
+
 	onAttack(...params): void {
 		const { x: playerX, y: playerY } = DataManager.Instance.player;
 		if (playerX == this.x && playerY == this.y) {

@@ -74,7 +74,7 @@ export class PlayerStateMachine extends StateMachine {
 			if (!name.includes('idle') && !name.includes('death')) {
 				this.node.getComponent(EntityManager).state = ENTITY_STATE_ENUM.IDLE;
 			}
-			if (name.includes('turn')) {
+			if (name.includes('turn') && !name.includes('block')) {
 				EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE_END);
 			}
 		});
