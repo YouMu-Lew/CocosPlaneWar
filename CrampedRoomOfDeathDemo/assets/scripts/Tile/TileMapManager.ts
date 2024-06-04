@@ -33,14 +33,12 @@ export class TileMapManager extends Component {
 
 				const imgSrc = `tile (${num})`;
 
-				const tile = createUINode();
+				const tile = createUINode(this.node, item.type as string);
 				const spriteFrame = spriteFrames.find(v => v.name === imgSrc) || spriteFrames[0];
 
 				const tileManager = tile.addComponent(TileManager);
 				tileManager.init(item.type, spriteFrame, i, j);
 				DataManager.Instance.tileInfo[i][j] = tileManager;
-
-				tile.setParent(this.node);
 			}
 		}
 	}
