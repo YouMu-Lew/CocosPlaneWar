@@ -33,6 +33,15 @@ export class PlayerManager extends EntityManager {
 		EventManager.Instance.on(EVENT_TYPE.ENEMY_ATTACK, this.onBeHit, this);
 	}
 
+	protected onDestroy(): void {
+		this.unregisterEvents();
+	}
+
+	unregisterEvents() {
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_CONTROL, this.inputHandle);
+		EventManager.Instance.off(EVENT_TYPE.ENEMY_ATTACK, this.onBeHit);
+	}
+
 	update(): void {
 		if (!this.isMoving && (this.x != this.targetX || this.y != this.targetY)) this.isMoving = true;
 		if (this.isMoving) {

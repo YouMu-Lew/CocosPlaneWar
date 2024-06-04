@@ -71,6 +71,14 @@ export class SpikeManager extends Component {
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_MOVE_END, this.onPlayerMoveEnd, this);
 	}
 
+	protected onDestroy(): void {
+		this.unregisterEvents();
+	}
+
+	unregisterEvents() {
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_MOVE_END, this.onPlayerMoveEnd);
+	}
+
 	onPlayerMoveEnd(...params) {
 		this.count = this.count + 1 > this.totalCount ? 0 : this.count + 1;
 		if (this.count == this.totalCount) {

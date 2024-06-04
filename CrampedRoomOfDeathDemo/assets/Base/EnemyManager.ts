@@ -22,6 +22,13 @@ export class EnemyManager extends EntityManager {
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_ATTACK, this.onBeHit, this);
 	}
 
+	unregisterEvents() {
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_BORN, this.onChangeDirection);
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_MOVE_END, this.onChangeDirection);
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_MOVE_END, this.onAttack);
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_ATTACK, this.onBeHit);
+	}
+
 	// 参数 isInit 确保在第一次加载时，执行改变朝向算法
 	onChangeDirection(isInit: boolean = false) {
 		if (!DataManager.Instance.player || this.isDead) return;
