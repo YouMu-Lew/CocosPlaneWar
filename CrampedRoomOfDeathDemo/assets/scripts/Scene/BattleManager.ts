@@ -25,14 +25,18 @@ export class BattleManager extends Component {
 	onLoad(): void {
 		EventManager.Instance.on(EVENT_TYPE.NEXT_LEVEL, this.nextLevel, this);
 		EventManager.Instance.on(EVENT_TYPE.ENTITY_DEATH, this.onEntityDeath, this);
+		EventManager.Instance.on(EVENT_TYPE.PLAYER_MOVE_END, this.checkWin, this);
 	}
 
 	protected onDestroy(): void {
 		EventManager.Instance.off(EVENT_TYPE.NEXT_LEVEL, this.nextLevel);
 		EventManager.Instance.off(EVENT_TYPE.ENTITY_DEATH, this.onEntityDeath);
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_MOVE_END, this.checkWin);
 	}
 
 	start() {
+		// 手动设置当前关卡
+		// DataManager.Instance.levelIndex = 2;
 		this.initStage();
 		this.initLevel();
 	}
@@ -72,23 +76,25 @@ export class BattleManager extends Component {
 	}
 
 	async generateBursts() {
-		const bursts = this.level.bursts;
-		bursts.forEach(async burst => {
+		const promise: Promise<void>[] = [];
+		this.level.bursts.forEach(burst => {
 			const burstNode = createUINode(this.stage, 'Burst');
 			const burstManager = burstNode.addComponent(BurstManager);
-			await burstManager.init(burst);
+			promise.push(burstManager.init(burst));
 			DataManager.Instance.bursts.push(burstManager);
 		});
+		await Promise.all(promise);
 	}
 
 	async generateSpikes() {
-		const spikes = this.level.spikes;
-		spikes.forEach(async spike => {
+		const promise: Promise<void>[] = [];
+		this.level.spikes.forEach(spike => {
 			const spikeNode = createUINode(this.stage, 'Spike');
 			const spikeManager = spikeNode.addComponent(SpikeManager);
-			await spikeManager.init(spike);
+			promise.push(spikeManager.init(spike));
 			DataManager.Instance.spikes.push(spikeManager);
 		});
+		await Promise.all(promise);
 	}
 
 	async generatePlayer() {
@@ -100,10 +106,11 @@ export class BattleManager extends Component {
 	}
 
 	async generateEnemies() {
-		const enemies = this.level.enemies;
-		enemies.forEach(async enemy => {
-			await this.generateEnemy(enemy);
+		const promise: Promise<void>[] = [];
+		this.level.enemies.forEach(enemy => {
+			promise.push(this.generateEnemy(enemy));
 		});
+		await Promise.all(promise);
 	}
 
 	async generateEnemy(enemyInfo: IEntity) {
@@ -131,6 +138,7 @@ export class BattleManager extends Component {
 		const door = createUINode(this.stage, 'Door');
 		const doorManager = door.addComponent(DoorManager);
 		await doorManager.init(this.level.door);
+		DataManager.Instance.door = doorManager;
 		DataManager.Instance.tileInfo[doorManager.x][doorManager.y].moveable = false;
 		DataManager.Instance.tileInfo[doorManager.x][doorManager.y].turnable = false;
 	}
@@ -172,5 +180,13 @@ export class BattleManager extends Component {
 		}
 		DataManager.Instance.tileInfo[x][y].moveable = true;
 		DataManager.Instance.tileInfo[x][y].turnable = true;
+	}
+
+	checkWin() {
+	    const {x: playerX, y: playerY} = DataManager.Instance.player;
+		const {x: doorX, y: doorY} = DataManager.Instance.door;
+		if (playerX === doorX && playerY === doorY) {
+		    EventManager.Instance.emit(EVENT_TYPE.NEXT_LEVEL);
+		}
 	}
 }

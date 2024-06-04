@@ -1,6 +1,6 @@
 import { _decorator, Animation } from 'cc';
 import { DIRECTION_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
-import { StateMachine, getInitParamsTrigger } from '../../Base/StateMachine';
+import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
 import State from '../../Base/State';
 import { EntityManager } from '../../Base/EntityManager';
 const { ccclass, property } = _decorator;
@@ -23,6 +23,7 @@ export class DoorStateMachine extends StateMachine {
 	initParams() {
 		this.params.set(PARAMS_NAME_ENUM.IDLE, getInitParamsTrigger());
 		this.params.set(PARAMS_NAME_ENUM.DEATH, getInitParamsTrigger());
+		this.params.set(PARAMS_NAME_ENUM.DIRECTION, getInitParamsNumber());
 	}
 
 	initStateMachines() {
@@ -36,8 +37,8 @@ export class DoorStateMachine extends StateMachine {
 	run() {
 		if (this.params.get(PARAMS_NAME_ENUM.DEATH).value) {
 			this.currentState = this.stateMachines.get(PARAMS_NAME_ENUM.DEATH);
-		} else if (this.params.get(PARAMS_NAME_ENUM.IDLE).value) {
+		} else {
 			this.currentState = this.stateMachines.get(this.getComponent(EntityManager).direction);
-		} else this.currentState = this.currentState;
+		}
 	}
 }

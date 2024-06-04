@@ -17,7 +17,7 @@ export class WoodenSkeletonManager extends EnemyManager {
 
 	onAttack() {
 		if (!DataManager.Instance.player) {
-			error('未获取到玩家数据');
+			//error('未获取到玩家数据');
 			return;
 		}
 		if (this.isDead) return;
