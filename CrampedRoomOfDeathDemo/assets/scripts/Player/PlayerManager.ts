@@ -205,11 +205,9 @@ export class PlayerManager extends EntityManager {
 				}
 				return false;
 			}
+			if (!tileInfo[checkMovePos[0]][checkMovePos[1]].moveable) return false;
 			if (!tileInfo[checkTurnPos[0]][checkTurnPos[1]]) return true;
-			return (
-				tileInfo[checkMovePos[0]][checkMovePos[1]].moveable &&
-				tileInfo[checkTurnPos[0]][checkTurnPos[1]].turnable
-			);
+			return tileInfo[checkTurnPos[0]][checkTurnPos[1]].turnable;
 		}
 	}
 
