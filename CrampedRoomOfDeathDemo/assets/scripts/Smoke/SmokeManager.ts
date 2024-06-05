@@ -33,6 +33,7 @@ export class SmokeManager extends EntityManager {
 		}
 		this.x = x;
 		this.y = y;
+        this.direction = direction;
 		this.node.setPosition((this.x - 1.5) * TILE_WIDTH, -(this.y - 1.5) * TILE_HEIGHT);
 		this.fsm.setParams(PARAMS_NAME_ENUM.DIRECTION, DIRECTION_ORDER_ENUM[direction]);
 	}
