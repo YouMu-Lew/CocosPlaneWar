@@ -215,15 +215,19 @@ export class PlayerManager extends EntityManager {
 	move(inputDirection: CONTROLLER_EVENT) {
 		switch (inputDirection) {
 			case CONTROLLER_EVENT.TOP:
+				EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE, this.targetX,this.targetY,DIRECTION_ENUM.TOP);
 				this.targetY--;
 				break;
 			case CONTROLLER_EVENT.BOTTOM:
+				EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE, this.targetX,this.targetY,DIRECTION_ENUM.BOTTOM);
 				this.targetY++;
 				break;
 			case CONTROLLER_EVENT.LEFT:
+				EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE, this.targetX,this.targetY,DIRECTION_ENUM.LEFT);
 				this.targetX--;
 				break;
 			case CONTROLLER_EVENT.RIGHT:
+				EventManager.Instance.emit(EVENT_TYPE.PLAYER_MOVE, this.targetX,this.targetY,DIRECTION_ENUM.RIGHT);
 				this.targetX++;
 				break;
 			case CONTROLLER_EVENT.TURNLEFT:

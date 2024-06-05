@@ -5,7 +5,7 @@ import levels, { IEntity, ILevel } from '../../Levels';
 import DataManager from '../../Runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../Tile/TileManager';
 import EventManager from '../../Runtime/EventManager';
-import { ENEMY_TYPE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
+import { DIRECTION_ENUM, ENEMY_TYPE_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_TYPE } from '../../Enums';
 import { PlayerManager } from '../Player/PlayerManager';
 import { WoodenSkeletonManager } from '../Enemies/WoodenSkeleton/WoodenSkeletonManager';
 import { DoorManager } from '../Door/DoorManager';
@@ -13,6 +13,7 @@ import { IronSkeletonManager } from '../Enemies/IronSkeleton/IronSkeletonManager
 import { BurstManager } from '../Burst/BurstManager';
 import { SpikeManager } from '../Spike/SpikeManager';
 import { EnemyManager } from '../../Base/EnemyManager';
+import { SmokeManager } from '../Smoke/SmokeManager';
 
 const { ccclass, property } = _decorator;
 
@@ -21,6 +22,8 @@ export class BattleManager extends Component {
 	level: ILevel = null;
 	stage: Node = null;
 	player: Node = null;
+	smoke: Node = null;
+	// smokeLayer: Node = null;
 
 	onLoad(): void {
 		EventManager.Instance.on(EVENT_TYPE.NEXT_LEVEL, this.nextLevel, this);
@@ -61,6 +64,7 @@ export class BattleManager extends Component {
 		await this.generateBursts();
 		await this.generateSpikes();
 		await this.generateEnemies();
+		await this.generateSmoke();
 		await this.generatePlayer();
 		await this.generateDoor();
 	}
@@ -95,6 +99,18 @@ export class BattleManager extends Component {
 			DataManager.Instance.spikes.push(spikeManager);
 		});
 		await Promise.all(promise);
+	}
+
+	async generateSmoke() {
+		this.smoke = createUINode(this.stage, 'Smoke');
+		const smokeManager = this.smoke.addComponent(SmokeManager);
+		await smokeManager.init({
+			x: 0,
+			y: 0,
+			type: ENTITY_TYPE_ENUM.SMOKE,
+			state: ENTITY_STATE_ENUM.DEATH,
+			direction: DIRECTION_ENUM.TOP,
+		});
 	}
 
 	async generatePlayer() {
@@ -183,10 +199,10 @@ export class BattleManager extends Component {
 	}
 
 	checkWin() {
-	    const {x: playerX, y: playerY} = DataManager.Instance.player;
-		const {x: doorX, y: doorY} = DataManager.Instance.door;
+		const { x: playerX, y: playerY } = DataManager.Instance.player;
+		const { x: doorX, y: doorY } = DataManager.Instance.door;
 		if (playerX === doorX && playerY === doorY) {
-		    EventManager.Instance.emit(EVENT_TYPE.NEXT_LEVEL);
+			EventManager.Instance.emit(EVENT_TYPE.NEXT_LEVEL);
 		}
 	}
 }
