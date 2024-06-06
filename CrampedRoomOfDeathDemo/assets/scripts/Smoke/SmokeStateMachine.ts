@@ -1,7 +1,8 @@
 import { _decorator, Animation } from 'cc';
-import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
+import { DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM } from '../../Enums';
 import { StateMachine, getInitParamsNumber, getInitParamsTrigger } from '../../Base/StateMachine';
 import State from '../../Base/State';
+import { EntityManager } from '../../Base/EntityManager';
 const { ccclass, property } = _decorator;
 
 const IDLE_URL = 'texture/smoke/idle';
@@ -35,7 +36,7 @@ export class SmokeStateMachine extends StateMachine {
 
 	initAnimationEvents() {
 		this.animationComponent.on(Animation.EventType.FINISHED, () => {
-			this.setParams(PARAMS_NAME_ENUM.DEATH, true);
+			this.getComponent(EntityManager).state = ENTITY_STATE_ENUM.DEATH;
 		});
 	}
 

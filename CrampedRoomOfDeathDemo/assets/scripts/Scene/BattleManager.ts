@@ -22,19 +22,20 @@ export class BattleManager extends Component {
 	level: ILevel = null;
 	stage: Node = null;
 	player: Node = null;
-	smoke: Node = null;
-	// smokeLayer: Node = null;
+	private smokeLayer: Node = null;
 
 	onLoad(): void {
 		EventManager.Instance.on(EVENT_TYPE.NEXT_LEVEL, this.nextLevel, this);
 		EventManager.Instance.on(EVENT_TYPE.ENTITY_DEATH, this.onEntityDeath, this);
 		EventManager.Instance.on(EVENT_TYPE.PLAYER_MOVE_END, this.checkWin, this);
+		EventManager.Instance.on(EVENT_TYPE.PLAYER_MOVE, this.generateSmoke, this);
 	}
 
 	protected onDestroy(): void {
 		EventManager.Instance.off(EVENT_TYPE.NEXT_LEVEL, this.nextLevel);
 		EventManager.Instance.off(EVENT_TYPE.ENTITY_DEATH, this.onEntityDeath);
 		EventManager.Instance.off(EVENT_TYPE.PLAYER_MOVE_END, this.checkWin);
+		EventManager.Instance.off(EVENT_TYPE.PLAYER_MOVE, this.generateSmoke);
 	}
 
 	start() {
@@ -49,7 +50,7 @@ export class BattleManager extends Component {
 		this.stage.setParent(this.node);
 	}
 
-	async initLevel() {
+	initLevel() {
 		const level = levels[`level${DataManager.Instance.levelIndex}`];
 		if (!level) error('获取 level info 失败');
 
@@ -60,13 +61,13 @@ export class BattleManager extends Component {
 		DataManager.Instance.mapRowCount = this.level.mapInfo.length || 0;
 		DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
 
-		await this.generateTileMap();
-		await this.generateBursts();
-		await this.generateSpikes();
-		await this.generateEnemies();
-		await this.generateSmoke();
-		await this.generatePlayer();
-		await this.generateDoor();
+		this.generateTileMap();
+		this.generateBursts();
+		this.generateSpikes();
+		this.generateEnemies();
+		this.generateSmokeLayer();
+		this.generatePlayer();
+		this.generateDoor();
 	}
 
 	async generateTileMap() {
@@ -101,16 +102,31 @@ export class BattleManager extends Component {
 		await Promise.all(promise);
 	}
 
-	async generateSmoke() {
-		this.smoke = createUINode(this.stage, 'Smoke');
-		const smokeManager = this.smoke.addComponent(SmokeManager);
-		await smokeManager.init({
-			x: 0,
-			y: 0,
-			type: ENTITY_TYPE_ENUM.SMOKE,
-			state: ENTITY_STATE_ENUM.DEATH,
-			direction: DIRECTION_ENUM.TOP,
-		});
+	async generateSmoke(x: number, y: number, direction: DIRECTION_ENUM) {
+		const deathSmoke = DataManager.Instance.smokes.find(smoke => smoke.state == ENTITY_STATE_ENUM.DEATH);
+		if (deathSmoke) {
+			// smoke pool 复用
+			deathSmoke.x = x;
+			deathSmoke.y = y;
+			deathSmoke.state = ENTITY_STATE_ENUM.IDLE;
+			deathSmoke.direction = direction;
+		} else {
+			const smoke = createUINode(this.smokeLayer, 'Smoke');
+			const smokeManager = smoke.addComponent(SmokeManager);
+			await smokeManager.init({
+				x,
+				y,
+				direction,
+				type: ENTITY_TYPE_ENUM.SMOKE,
+				state: ENTITY_STATE_ENUM.IDLE,
+			});
+			DataManager.Instance.smokes.push(smokeManager);
+		}
+	}
+
+	generateSmokeLayer() {
+		// 確保烟霧生成的層級在玩家之下
+		this.smokeLayer = createUINode(this.stage, 'SmokeLayer');
 	}
 
 	async generatePlayer() {
